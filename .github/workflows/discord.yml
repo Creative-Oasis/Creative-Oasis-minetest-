@@ -2,8 +2,7 @@ name: GitHub → Discord Notify
 
 on:
   push:
-  pull_request:       # PRs from the same repo
-  pull_request_target: # PRs from forks
+  pull_request:
   issues:
   release:
   fork:
@@ -21,24 +20,28 @@ jobs:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
           DISCORD_MESSAGE: |
             📌 **GitHub Event Notification**
-
             **Repository:** [${{ github.repository }}](https://github.com/${{ github.repository }})
             **Event:** ${{ github.event_name }}
             **Actor:** [${{ github.actor }}](https://github.com/${{ github.actor }})
 
+            # PRs — simple info to avoid fork issues
+            ${{ github.event_name == 'pull_request' && format('**Pull Request Event** by %s', github.actor) || '' }}
+
+            # Push commits
             ${{ github.event_name == 'push' && format('**Commits:**\n%s', join(github.event.commits.*.message, '\n')) || '' }}
 
-            # PRs (handles both pull_request and pull_request_target safely)
-            ${{ (github.event_name == 'pull_request' || github.event_name == 'pull_request_target') && format('**Pull Request:** [%s](%s) by [%s](https://github.com/%s)', github.event.pull_request.title || 'N/A', github.event.pull_request.html_url || 'N/A', github.event.pull_request.user.login || github.actor, github.event.pull_request.user.login || github.actor) || '' }}
-
+            # Issues
             ${{ github.event_name == 'issues' && format('**Issue:** [%s](%s)', github.event.issue.title, github.event.issue.html_url) || '' }}
 
+            # Release
             ${{ github.event_name == 'release' && format('**Release:** [%s](%s)', github.event.release.name, github.event.release.html_url) || '' }}
 
+            # Fork
             ${{ github.event_name == 'fork' && format('**Forked Repo:** [%s](%s) by [%s](https://github.com/%s)', github.event.forkee.full_name, github.event.forkee.html_url, github.event.forkee.owner.login, github.event.forkee.owner.login) || '' }}
 
+            # Watch (stars)
             ${{ github.event_name == 'watch' && format('⭐ %s starred the repository', github.actor) || '' }}
 
+            # Create/Delete
             ${{ github.event_name == 'create' && format('**Created %s:** %s', github.event.ref_type, github.event.ref) || '' }}
-
             ${{ github.event_name == 'delete' && format('**Deleted %s:** %s', github.event.ref_type, github.event.ref) || '' }}
