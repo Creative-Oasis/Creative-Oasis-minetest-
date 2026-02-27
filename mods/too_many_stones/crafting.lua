@@ -1363,6 +1363,23 @@ minetest.register_craft({
 		{"too_many_stones:travertine", "too_many_stones:travertine", "too_many_stones:travertine"},
 	}
 })
+-- Yellow Travertine
+minetest.register_craft({
+	output = "too_many_stones:travertine_yellow_brick 4",
+	recipe = {
+		{"too_many_stones:travertine_yellow", "too_many_stones:travertine_yellow"},
+		{"too_many_stones:travertine_yellow", "too_many_stones:travertine_yellow"},
+	}
+})
+
+minetest.register_craft({
+	output = "too_many_stones:travertine_yellow_block 9",
+	recipe = {
+		{"too_many_stones:travertine_yellow", "too_many_stones:travertine_yellow", "too_many_stones:travertine_yellow"},
+		{"too_many_stones:travertine_yellow", "too_many_stones:travertine_yellow", "too_many_stones:travertine_yellow"},
+		{"too_many_stones:travertine_yellow", "too_many_stones:travertine_yellow", "too_many_stones:travertine_yellow"},
+	}
+})
 -- Turquoise
 minetest.register_craft({
 	output = "too_many_stones:turquoise_cobble",
@@ -2754,4 +2771,25 @@ minetest.register_craft({
 	}
 })
 
+end
+
+------------------------------------------------------------------------
+-- MINECLONIA-SPECIFIC CRAFTING RECIPES
+-- "Polish" opaque MCL crystals with glass to get transparent TMS versions
+------------------------------------------------------------------------
+
+if minetest.get_modpath("mcl_amethyst") ~= nil then
+	minetest.register_craft({
+		type = "shapeless",
+		output = "too_many_stones:amethyst",
+		recipe = {"mcl_amethyst:amethyst_block", "group:material_glass"}
+	})
+end
+
+if minetest.get_modpath("mcl_deepslate") ~= nil then
+	minetest.register_craft({
+		type = "shapeless",
+		output = "too_many_stones:calcite",
+		recipe = {"mcl_deepslate:calcite", "group:material_glass"}
+	})
 end

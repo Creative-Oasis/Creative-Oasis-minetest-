@@ -1,8 +1,8 @@
 # Muitas Pedras Demais
 
-Um mod do Luanti que adiciona tantas pedras quanto eu conseguir fazer boas texturas. O TMS tem suporte para quase todos os subjogos do Luanti incluindo Fogblox, Hades Revisited, Nodecore e VoxeLibre. Basicamente, se eles têm geração de mundo, este mod os suporta.
+Um mod do Luanti que adiciona tantas pedras quanto eu conseguir fazer boas texturas. O TMS tem suporte para quase todos os subjogos do Luanti incluindo Fogblox, Hades Revisited, Mineclonia, Nodecore e VoxeLibre. Basicamente, se eles têm geração de mundo, este mod os suporta.
 
-**Versão 1.3.0** - Atualmente possui **91 tipos de pedras** (7 das quais brilham), totalizando **2,074 nós e 1 item**. Cerca de metade têm variantes de paralelepípedos, e todas (exceto Ágata, Ammolita, Opalas e Basalto Colunar) têm variantes de tijolos e blocos polidos. Escadas, lajes e muros opcionais disponíveis com os respectivos mods. Geodos disponíveis com qualquer mod de geodo.
+**Versão 1.4.0** - Atualmente possui **91 tipos de pedras** (7 das quais brilham), totalizando **2,074 nós e 1 item**. Cerca de metade têm variantes de paralelepípedos, e todas (exceto Ágata, Ammolita, Opalas e Basalto Colunar) têm variantes de tijolos e blocos polidos. Escadas, lajes e muros opcionais disponíveis com os respectivos mods. Geodos disponíveis com qualquer mod de geodo.
 
 Cada mod tem prós e contras. 7 pedras brilhantes podem ser encontradas quando megacavernas começam a gerar abaixo de y-1,000. Graças ao EmptyStar, espere uma distribuição muito melhor de pedras através dos biomas. Alguns cristais racham quando assados em um forno e começam a crescer cristais em cada lado. TMS é totalmente compatível para trás até 5.3, mas você obterá erros de log e cristais só apontam para cima em versões mais antigas.
 

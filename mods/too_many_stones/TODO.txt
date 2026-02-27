@@ -1,0 +1,11 @@
+Blacklist Comboblock as the game quite literally cannot load both this mod and it.
+
+Consider switching audio library to Xcompat? Definitely. But how?
+
+Flowstones? Decided as a separate lib mod this can load.
+
+Fix geodes_lib compat: "API has been changed. core, core_alt, core_alt_chance are replaced with inner, inner_alt, inner_alt_chance" Done. Needs committed.
+
+Add Mineclonia's weird Mapgen? Difficult but could pay off in spades. Done.
+
+Add settings to disable every feature of the mod in the launcher enabling TMS to become a mere library if someone wishes.

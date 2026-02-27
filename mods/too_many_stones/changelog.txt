@@ -172,3 +172,11 @@ V1.3.0
 Added Aegirine
 Added Geyserite
 Added Gneiss
+
+V1.4.0
+Added Mineclonia mapgen support with climate-based ore distribution
+Stones now spawn in Nether (netherrack, blackstone, basalt) and End (end stone)
+Added crafting recipes to convert MCL opaque crystals to transparent TMS versions
+Refactored game detection and mapgen loading for cleaner code
+Split mapgen into separate files per game for better maintainability
+Renamed mapgen.lua to mapgen_default.lua for clarity

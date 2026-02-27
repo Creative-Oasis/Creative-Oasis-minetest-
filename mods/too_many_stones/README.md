@@ -1,8 +1,8 @@
 # Too Many Stones
 
-A Luanti mod that adds as many stones as I can make good textures for. TMS has support for nearly all Luanti subgames including Fogblox, Hades Revisited, Nodecore, and VoxeLibre. Basically if they have mapgen this mod support it.
+A Luanti mod that adds as many stones as I can make good textures for. TMS has support for nearly all Luanti subgames including Fogblox, Hades Revisited, Mineclonia, Nodecore, and VoxeLibre. Basically if they have mapgen this mod support it.
 
-**Version 1.3.0** - Currently features **91 stone types** (7 of which glow), totaling **2,074 nodes and 1 item**. About half have cobble variants, and all (except Agate, Ammolite, Opals, and Columnar Basalt) have brick and polished block variants. Optional stairs, slabs, and walls available with respective mods. Geodes available with either geode mod.
+**Version 1.4.0** - Currently features **91 stone types** (7 of which glow), totaling **2,074 nodes and 1 item**. About half have cobble variants, and all (except Agate, Ammolite, Opals, and Columnar Basalt) have brick and polished block variants. Optional stairs, slabs, and walls available with respective mods. Geodes available with either geode mod.
 
 Each mod has pros and cons. 7 Glowing stones can be found as megacaves start generating below y-1,000. Thanks to EmptyStar, expect much better stone distribution across biomes. Some crystals crack when baked in a furnace and start growing crystals on each side. TMS is fully compatible back to 5.3, but you'll get log errors and crystals only face upward on older versions.
 

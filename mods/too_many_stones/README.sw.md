@@ -1,8 +1,8 @@
 # Mawe Mengi Sana
 
-Kifunga cha Luanti kinachoongeza mawe mengi kama ninavyoweza kutengeneza picha nzuri. TMS inasaidia karibu michezo yote ndogo ya Luanti ikiwa ni pamoja na Fogblox, Hades Revisited, Nodecore na VoxeLibre. Kimsingi, ikiwa ina utengenezaji wa ulimwengu, kifunga hiki kinakisaidia.
+Kifunga cha Luanti kinachoongeza mawe mengi kama ninavyoweza kutengeneza picha nzuri. TMS inasaidia karibu michezo yote ndogo ya Luanti ikiwa ni pamoja na Fogblox, Hades Revisited, Mineclonia, Nodecore na VoxeLibre. Kimsingi, ikiwa ina utengenezaji wa ulimwengu, kifunga hiki kinakisaidia.
 
-**Toleo 1.3.0** - Kwa sasa kina **aina 91 za mawe** (7 zinazoangaza), jumla ya **nodi 2,074 na kitu 1**. Karibu nusu zina mabadiliko ya makokoto, na zote (isipokuwa Akati, Ammoliti, Opali na Basalti ya Nguzo) zina mabadiliko ya matofali na vipande vya urembo. Ngazi, vigae na kuta vinavyopatikana kwa hiari na mods husika. Jiodi zinapatikana na kifunga chochote cha jiodi.
+**Toleo 1.4.0** - Kwa sasa kina **aina 91 za mawe** (7 zinazoangaza), jumla ya **nodi 2,074 na kitu 1**. Karibu nusu zina mabadiliko ya makokoto, na zote (isipokuwa Akati, Ammoliti, Opali na Basalti ya Nguzo) zina mabadiliko ya matofali na vipande vya urembo. Ngazi, vigae na kuta vinavyopatikana kwa hiari na mods husika. Jiodi zinapatikana na kifunga chochote cha jiodi.
 
 Kila kifunga kina faida na hasara. Mawe 7 yanayoangaza yanaweza kupatikana wakati mapango makubwa yanapoanza kuzalishwa chini ya y-1,000. Kwa shukrani za EmptyStar, tarajia mgawanyo bora zaidi wa mawe katika mazingira. Baadhi ya madini hupasuka yanapookwa katika tanuru na huanza kukuza madini kila upande. TMS inategemezwa kabisa nyuma hadi 5.3, lakini utapata makosa ya kumbukumbu na madini yanaoelekezwa juu tu katika matoleo ya zamani.
 

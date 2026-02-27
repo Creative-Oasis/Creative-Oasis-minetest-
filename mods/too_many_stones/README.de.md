@@ -1,8 +1,8 @@
 # Zu Viele Steine
 
-Ein Luanti-Mod, der so viele Steine hinzufügt, wie ich gute Texturen erstellen kann. TMS unterstützt fast alle Luanti-Unterspiele einschließlich Fogblox, Hades Revisited, Nodecore und VoxeLibre. Grundsätzlich, wenn sie Weltgenerierung haben, unterstützt dieser Mod sie.
+Ein Luanti-Mod, der so viele Steine hinzufügt, wie ich gute Texturen erstellen kann. TMS unterstützt fast alle Luanti-Unterspiele einschließlich Fogblox, Hades Revisited, Mineclonia, Nodecore und VoxeLibre. Grundsätzlich, wenn sie Weltgenerierung haben, unterstützt dieser Mod sie.
 
-**Version 1.3.0** - Enthält derzeit **91 Steinarten** (7 davon leuchten), insgesamt **2.074 Knoten und 1 Gegenstand**. Etwa die Hälfte hat Kopfsteinpflaster-Varianten, und alle (außer Achat, Ammolit, Opale und Säulenbasalt) haben Ziegel- und polierte Blockvarianten. Optionale Treppen, Stufen und Mauern verfügbar mit entsprechenden Mods. Geoden verfügbar mit einem der Geoden-Mods.
+**Version 1.4.0** - Enthält derzeit **91 Steinarten** (7 davon leuchten), insgesamt **2.074 Knoten und 1 Gegenstand**. Etwa die Hälfte hat Kopfsteinpflaster-Varianten, und alle (außer Achat, Ammolit, Opale und Säulenbasalt) haben Ziegel- und polierte Blockvarianten. Optionale Treppen, Stufen und Mauern verfügbar mit entsprechenden Mods. Geoden verfügbar mit einem der Geoden-Mods.
 
 Jeder Mod hat Vor- und Nachteile. 7 leuchtende Steine können gefunden werden, wenn Megahöhlen unter y-1.000 zu generieren beginnen. Dank EmptyStar, erwarten Sie eine viel bessere Steinverteilung über Biome. Einige Kristalle zerbrechen beim Backen in einem Ofen und beginnen Kristalle auf jeder Seite zu züchten. TMS ist vollständig kompatibel zurück bis 5.3, aber Sie erhalten Log-Fehler und Kristalle zeigen nur nach oben auf älteren Versionen.
 
