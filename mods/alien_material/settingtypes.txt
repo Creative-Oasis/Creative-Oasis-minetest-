@@ -1,1 +1,0 @@
-alien_material.alien_apple_granted_hearts (How much hearts are granted by alien apple) int 4 0 20

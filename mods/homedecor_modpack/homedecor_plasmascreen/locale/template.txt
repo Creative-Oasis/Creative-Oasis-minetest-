@@ -1,4 +1,0 @@
-# textdomain: homedecor_plasmascreen
-Plasma Screen TV Stand=
-Plasma TV=
-Plasma TV (off)=

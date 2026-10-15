@@ -1,6 +1,0 @@
-Adds many types of vehicles:
-
-- Normal cars.
-- Boats.
-- Hovercrafts.
-- And mesecars.

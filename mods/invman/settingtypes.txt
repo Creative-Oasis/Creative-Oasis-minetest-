@@ -1,1 +1,0 @@
-invman.width (Width of inventory. Set to 9 for mineclone) int 8

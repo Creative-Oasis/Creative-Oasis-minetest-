@@ -1,5 +1,0 @@
-# textdomain: signs_api
-Text=
- (first @1 lines only)=
-Font=
-Write=

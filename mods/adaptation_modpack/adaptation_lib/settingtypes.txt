@@ -1,3 +1,0 @@
-
-# Enable adaption lib developer commands
-adaptation_lib_developer_commands (Enable adaptation lib developer commands) bool false

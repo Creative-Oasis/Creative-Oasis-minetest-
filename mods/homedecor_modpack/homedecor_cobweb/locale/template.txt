@@ -1,2 +1,0 @@
-# textdomain: homedecor_cobweb
-Cobweb=

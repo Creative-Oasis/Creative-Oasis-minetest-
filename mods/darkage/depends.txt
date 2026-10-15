@@ -1,5 +1,0 @@
-default
-farming
-moreblocks?
-stairs?
-unifieddyes?

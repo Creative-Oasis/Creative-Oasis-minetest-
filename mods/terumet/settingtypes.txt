@@ -1,1 +1,0 @@
-terumet.moreblocks_integration (Enable automatic integration w/ moreblocks) bool false

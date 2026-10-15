@@ -1,3 +1,0 @@
-progressbar2
-psycopg2
-pyzstd

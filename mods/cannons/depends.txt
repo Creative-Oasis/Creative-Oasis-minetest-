@@ -1,6 +1,0 @@
-default
-bucket
-mesecons?
-locks?
-moreores?
-tnt?

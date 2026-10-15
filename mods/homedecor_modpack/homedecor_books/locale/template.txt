@@ -1,8 +1,0 @@
-# textdomain: homedecor_books
-red=
-green=
-blue=
-violet=
-grey=
-brown=
-Writable Book (@1)=
