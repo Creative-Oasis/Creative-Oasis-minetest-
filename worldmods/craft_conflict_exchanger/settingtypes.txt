@@ -1,0 +1,2 @@
+craft_conflict_exchanger_allow_exchanger_crafting (Whether the Exchanger node is craftable) bool true
+craft_conflict_exchanger_allow_exchanger_command (Whether the Exchanger node can be obtained via console command) bool true

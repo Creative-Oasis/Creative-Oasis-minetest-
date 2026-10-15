@@ -1,0 +1,14 @@
+# textdomain: signs
+Close=
+Edit=
+Title=
+Text=
+Title font=
+Write=
+(right-click to read more text)=
+Wooden sign=
+Wooden long sign=
+Wooden direction sign=
+Poster=
+Small label=
+Label=

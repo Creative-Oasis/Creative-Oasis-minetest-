@@ -1,0 +1,6 @@
+# textdomain: homedecor_foyer
+Wall-mounted coat rack=
+Coat tree=
+Green welcome mat=
+Brown welcome mat=
+Grey welcome mat=

@@ -1,0 +1,29 @@
+#Maximum tool uses
+uraniumstuff.max_tool_uses (How many times the tools can be used) int 400
+
+#Full punch interval
+uraniumstuff.full_punch_interval (Base punching time for all tools) float 0.3
+
+#Damage multiplier
+uraniumstuff.damage_multiplier (How much stronger the tools will be from mithril) float 1.5
+
+#Radiation damage
+uraniumstuff.radiation_damage (Damage any irradiated mob will take every second) float 5
+
+#Allow multitool
+uraniumstuff.allow_multitool (The Uranium Multitool will be available) bool true
+
+#Allow irradiating mobs
+uraniumstuff.allow_irradiating_mobs (The tools will irradiate mobs) bool true
+
+#Allow armor radiation
+uraniumstuff.allow_armor_radiation (Without protection gem, the armor will be dangerous to wear) bool true
+
+#Allow tool radiation
+uraniumstuff.allow_tool_radiation (Without protection gem, the tools will be dangerous to use) bool true
+
+#Leave residue
+uraniumstuff.leave_residue (Mobs killed by radiation will leave green goo residue) bool true
+
+#Max goo range
+uraniumstuff.max_goo_range (Maximum distance for evil goo to follow mobs) int 15

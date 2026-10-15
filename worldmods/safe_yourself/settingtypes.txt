@@ -1,0 +1,16 @@
+
+
+# Name of the respawn command
+safe_yourself.respawn_command (Respawn command name) string safe_yourself_respawn
+
+# Name of the one HP command
+safe_yourself.one_hp_command (One HP command name) string safe_yourself_one_hp
+
+# Enable notifications for players with old clients
+safe_yourself.notify_old_clients (Notify old clients) bool true
+
+# Color of notification messages - supports hex format (#FF8800) or named colors (red, orange, yellow, white, etc.)
+safe_yourself.notification_color (Notification color) string #FF8800
+
+# Delay in seconds before sending notification after player joins (allows player to fully connect)
+safe_yourself.notification_delay (Notification delay) float 2.0 0.1 600.0

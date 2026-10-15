@@ -1,0 +1,4 @@
+# textdomain: homedecor_trash_cans
+Green Trash Can=
+Trash Can=
+Small Trash Can=

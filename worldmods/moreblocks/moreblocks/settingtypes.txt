@@ -1,0 +1,2 @@
+# Add a yellow outline around trap nodes, to make them visibly distinct
+moreblocks.outline_trap_nodes (Outline trap nodes) bool true

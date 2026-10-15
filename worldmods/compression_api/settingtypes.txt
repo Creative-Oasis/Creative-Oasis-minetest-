@@ -1,0 +1,1 @@
+max_compression_level (Maximum compression level) int 10

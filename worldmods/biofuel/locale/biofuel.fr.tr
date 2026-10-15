@@ -1,0 +1,9 @@
+# textdomain: biofuel
+A Minetest Mod to produce biofuel from unused plants.=Un mod Minetest pour produire du biocarburant à partir de plantes inutilisées.
+progress: @1%=progression: @1%
+To start fuel production add biomass =Pour démarrer la production de carburant, ajoutez de la biomasse
+Biofuel Refinery=Raffinerie de biocarburant
+Biofuel Refinery Active=Raffinerie de biocarburant active
+Bottle of Biofuel=Bouteille de biocarburant
+Canister of Biofuel=Bidon de biocarburant
+Vial of Biofuel=Fiole de biocarburant

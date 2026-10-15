@@ -1,0 +1,20 @@
+msgid "Set your home position here?"
+msgstr "¿Establecer aquí tu posición de inicio?"
+
+msgid "Position: @1"
+msgstr "Posición: @1"
+
+msgid "Confirm"
+msgstr "Confirmar"
+
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgid "Home position set to: @1"
+msgstr "Posición de inicio establecida en: @1"
+
+msgid "You don't have the \"home\" privilege!"
+msgstr "¡No tienes el privilegio \"home\"!"
+
+msgid "Home position confirmation expired. Please try again."
+msgstr "La confirmación de la posición de inicio ha caducado. Inténtalo de nuevo."

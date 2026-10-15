@@ -1,0 +1,140 @@
+local trampolinebox = {
+	type = "fixed",
+	fixed = {
+		{-0.5, -0.2, -0.5,  0.5,    0,  0.5},
+
+		{-0.5, -0.5, -0.5, -0.4, -0.2, -0.4},
+		{ 0.4, -0.5, -0.5,  0.5, -0.2, -0.4},
+		{ 0.4, -0.5,  0.4,  0.5, -0.2,  0.5},
+		{-0.5, -0.5,  0.4, -0.4, -0.2,  0.5},
+	}
+}
+
+local cushionbox = {
+	type = "fixed",
+	fixed = {
+		{-0.5, -0.5, -0.5,  0.5, -0.3,  0.5},
+	}
+}
+
+-- Increase trampoline level
+local trampoline_punch = function(pos, node)
+	local id = tonumber(string.sub(node.name, #node.name)) or 1
+	if id < 6 then
+		id = id + 1
+		minetest.swap_node(pos, {name = string.sub(node.name, 1, #node.name - 1)..id})
+		minetest.get_meta(pos):set_string("infotext", "Bouncy Level: "..id)
+	end
+end
+
+-- Decrease trampoline level
+local power_decrease = function(pos, node)
+	local id = tonumber(string.sub(node.name, #node.name)) or 1
+	if id > 1 then
+		id = id - 1
+		minetest.swap_node(pos, {name = string.sub(node.name, 1, #node.name - 1)..id})
+		minetest.get_meta(pos):set_string("infotext", "Bouncy Level: "..id)
+	end
+end
+
+local use_texture_alpha = minetest.features.use_texture_alpha_string_modes and "clip" or nil
+
+-- Register trampolines 1–6
+for i = 1, 6 do
+	minetest.register_node("jumping:trampoline"..i, {
+		description = "Trampoline",
+		drawtype = "nodebox",
+		node_box = trampolinebox,
+		selection_box = trampolinebox,
+		paramtype = "light",
+
+		on_construct = function(pos)
+			minetest.get_meta(pos):set_string("infotext", "Bouncy Level: "..i)
+		end,
+
+		on_punch = trampoline_punch,
+		on_rightclick = power_decrease,
+
+		drop = "jumping:trampoline1",
+		use_texture_alpha = use_texture_alpha,
+
+		tiles = {
+			"jumping_trampoline_top.png",
+			"jumping_trampoline_bottom.png",
+			"jumping_trampoline_sides.png^jumping_trampoline_sides_overlay"..i..".png"
+		},
+
+		is_ground_content = false,
+
+		groups = {
+			dig_immediate = 2,
+			bouncy = 30 + i * 30,
+			fall_damage_add_percent = -100,
+			not_in_creative_inventory = (i > 1 and 1 or nil),
+		},
+	})
+end
+
+-- Cushion
+minetest.register_node("jumping:cushion", {
+	description = "Cushion",
+	drawtype = "nodebox",
+	node_box = cushionbox,
+	selection_box = cushionbox,
+	paramtype = "light",
+	use_texture_alpha = use_texture_alpha,
+
+	tiles = {
+		"jumping_cushion_tb.png",
+		"jumping_cushion_tb.png",
+		"jumping_cushion_sides.png"
+	},
+
+	is_ground_content = false,
+
+	groups = {
+		dig_immediate = 2,
+		bouncy = 3,
+		fall_damage_add_percent = -100,
+	},
+})
+
+-- Craft recipes
+if minetest.get_modpath("default") then
+	minetest.register_craft({
+		output = "jumping:trampoline1",
+		recipe = {
+			{"jumping:cushion", "jumping:cushion", "jumping:cushion"},
+			{"default:steel_ingot", "", "default:steel_ingot"}
+		}
+	})
+end
+
+if minetest.get_modpath("farming") and minetest.get_modpath("wool") then
+	minetest.register_craft({
+		output = "jumping:cushion",
+		recipe = {
+			{"farming:cotton", "group:wool", "farming:cotton"},
+			{"farming:cotton", "group:wool", "farming:cotton"},
+			{"farming:cotton", "farming:cotton", "farming:cotton"}
+		}
+	})
+end
+
+
+minetest.register_on_player_hpchange(function(player, hp_change, reason)
+	-- Only modify FALL DAMAGE
+	if hp_change >= 0 then return hp_change end
+	if reason.type ~= "fall" then return hp_change end
+
+
+	local pos = player:get_pos()
+	pos.y = pos.y - 1.1
+	local node = minetest.get_node_or_nil(pos)
+
+	if node and node.name:find("jumping:trampoline") then
+		return 0 
+	end
+
+	return hp_change
+end, true)

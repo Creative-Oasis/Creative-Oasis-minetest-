@@ -1,0 +1,13 @@
+# textdomain: tugsteno
+tugsten lump=material tugsteno
+tugsten ingot=lingote tugsteno
+tugsten ore=mineral tugsteno
+tugsten block=bloque tugsteno
+tugsten pickaxe=pico tugsteno
+tugsten sword=espada tugsteno
+tugsten axe=hacha tugsteno
+tugsten shield=escudo tugsteno
+tugsten chestplate=coraza tugsteno
+tugsten helmet=casco tugsteno
+tugsten kneepads=rodilleras tugsteno
+tugsten boots=botas tugsteno

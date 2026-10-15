@@ -1,0 +1,14 @@
+# textdomain: homedecor_roofing
+Glass Skylight=
+Glass Skylight Frosted=
+asphalt=
+terracotta=
+wood=
+Shingles (@1)=
+@1 (outer corner)=
+@1 (inner corner)=
+Wood Shingles=
+Asphalt Shingles=
+Terracotta Shingles=
+Glass Shingles=
+Chimney=

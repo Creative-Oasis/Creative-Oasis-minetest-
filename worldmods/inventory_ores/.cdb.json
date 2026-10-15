@@ -1,0 +1,11 @@
+{
+    "type": "MOD",
+    "name": "inventory_ores",
+    "title": "inventory ores",
+    "short_description": "shows where to find ores in an inventory manager.",
+    "repo": "https://github.com/fluxionary/minetest-inventory_ores.git",
+    "website": "https://github.com/fluxionary/minetest-inventory_ores",
+    "issue_tracker": "https://github.com/fluxionary/minetest-inventory_ores/issues",
+    "license": "LGPL-3.0-or-later",
+    "media_license": "CC-BY-SA-4.0"
+}

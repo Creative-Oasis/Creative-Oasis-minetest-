@@ -1,0 +1,8 @@
+# textdomain: hopper
+Hopper (Place onto sides for side-hopper)=
+Side Hopper (Place into crafting to return normal Hopper)=
+Void Hopper (Use first to set destination container)=
+Output container set=
+Not a registered container!=
+No container position set!=
+Container without void hopper support!=

@@ -1,0 +1,524 @@
+local S = ele.translator
+
+-- Machine definitions
+
+local pw = core.get_modpath("pipeworks") ~= nil
+local mc = core.get_modpath("mesecons") ~= nil
+local tl = core.get_modpath("tubelib") ~= nil
+local mcl = core.get_modpath("mcl_core") ~= nil
+local flib = core.get_modpath("fluid_lib") ~= nil
+
+local function can_dig(pos, player)
+    local meta = core.get_meta(pos)
+    local inv = meta:get_inventory()
+    return inv:is_empty("dst") and inv:is_empty("src")
+end
+
+ele.default = {}
+
+function ele.default.allow_metadata_inventory_put(pos, listname, index, stack,
+                                                  player)
+    if core.is_protected(pos, player:get_player_name()) then return 0 end
+
+    if listname == "dst" then return 0 end
+
+    return stack:get_count()
+end
+
+function ele.default.allow_metadata_inventory_move(pos, from_list, from_index,
+                                                   to_list, to_index, count,
+                                                   player)
+    local meta = core.get_meta(pos)
+    local inv = meta:get_inventory()
+    local stack = inv:get_stack(from_list, from_index)
+    return ele.default.allow_metadata_inventory_put(pos, to_list, to_index,
+                                                    stack, player)
+end
+
+function ele.default.allow_metadata_inventory_take(pos, listname, index, stack,
+                                                   player)
+    if core.is_protected(pos, player:get_player_name()) then return 0 end
+
+    return stack:get_count()
+end
+
+ele.default.metadata_inventory_changed = ele.helpers.start_timer
+
+-- State machine descriptions
+ele.default.states = {
+    [0] = {s = "on", d = S("Always on"), e = "toggle"},
+    {s = "off", d = S("Always off"), e = "toggle"},
+    {s = "signal", d = S("Enable by Mesecons signal"), e = "mesecons"},
+    {s = "interrupt", d = S("Disable by Mesecons signal"), e = "mesecons"}
+}
+
+-- Preserve power storage in the item stack dropped
+local function preserve_metadata(pos, oldnode, oldmeta, drops)
+    local meta = core.get_meta(pos)
+    local storage = ele.helpers.get_node_property(meta, pos, "storage")
+    local capacity = ele.helpers.get_node_property(meta, pos, "capacity")
+
+    local nodedesc = core.registered_nodes[oldnode.name].description
+    local partsstr = meta:get_string("components")
+
+    if storage == 0 and partsstr == "" then return drops end
+
+    for i, stack in pairs(drops) do
+        local stack_meta = stack:get_meta()
+        stack_meta:set_int("storage", storage)
+
+        local desc = ele.capacity_text(capacity, storage)
+
+        if partsstr ~= "" then
+            stack_meta:set_string("components", partsstr)
+            desc = desc .. "\n" ..
+                       core.colorize("#9647ff", S("Modified Device"))
+        end
+
+        stack_meta:set_string("description", nodedesc .. "\n" .. desc)
+        drops[i] = stack
+    end
+
+    return drops
+end
+
+-- Retrieve power storage from itemstack when placed
+local function retrieve_metadata(pos, placer, itemstack, pointed_thing)
+    local item_meta = itemstack:get_meta()
+    local storage = item_meta:get_int("storage")
+    local partsstr = item_meta:get_string("components")
+
+    local meta = core.get_meta(pos)
+    if storage > 0 or partsstr ~= "" then
+        meta:set_int("storage", storage)
+
+        if partsstr ~= "" then
+            meta:set_string("components", partsstr)
+
+            if elepm then elepm.handle_machine_upgrades(pos) end
+        else
+            ele.helpers.start_timer(pos)
+        end
+    end
+
+    -- Set machine owner to do protected actions
+    if placer ~= nil and placer:get_player_name() then
+        meta:set_string("owner", placer:get_player_name())
+    end
+
+    return false
+end
+
+function ele.capacity_text(capacity, storage)
+    return S("Charge: @1 / @2 @3", ele.helpers.comma_value(storage),
+             ele.helpers.comma_value(capacity), ele.unit)
+end
+
+-- Get fake ObjectRef for the owner of the machine to allow protected actions.
+function ele.get_machine_owner(pos)
+    local meta = core.get_meta(pos)
+    local owner = meta:get_string("owner")
+
+    return {
+        get_inventory = function() return nil end,
+        get_wield_index = function() return 0 end,
+        is_player = function() return false end,
+        get_player_control = function() return {sneak = false} end,
+        get_player_name = function() return owner or "" end
+    }
+end
+
+-- API support
+local tube = {
+    insert_object = function(pos, node, stack, direction)
+        local meta = core.get_meta(pos)
+        local inv = meta:get_inventory()
+        ele.helpers.start_timer(pos)
+        return inv:add_item("src", stack)
+    end,
+    can_insert = function(pos, node, stack, direction)
+        local meta = core.get_meta(pos)
+        local inv = meta:get_inventory()
+        if meta:get_int("splitstacks") == 1 then
+            stack = stack:peek_item(1)
+        end
+        return inv:room_for_item("src", stack)
+    end,
+    input_inventory = "dst",
+
+    connect_sides = {left = 1, right = 1, back = 1, top = 1, bottom = 1}
+}
+
+local tubelib_tube = {
+    on_pull_item = function(pos, side, player_name)
+        local meta = core.get_meta(pos)
+        ele.helpers.start_timer(pos)
+        return tubelib.get_item(meta, "dst")
+    end,
+    on_push_item = function(pos, side, item, player_name)
+        local meta = core.get_meta(pos)
+        ele.helpers.start_timer(pos)
+        return tubelib.put_item(meta, "src", item)
+    end,
+    on_unpull_item = function(pos, side, item, player_name)
+        local meta = core.get_meta(pos)
+        ele.helpers.start_timer(pos)
+        return tubelib.put_item(meta, "dst", item)
+    end
+}
+
+local mesecons_def = {
+    effector = {
+        action_on = function(pos, node)
+            local meta = core.get_meta(pos)
+            meta:set_int("signal_interrupt", 1)
+        end,
+        action_off = function(pos, node)
+            local meta = core.get_meta(pos)
+            meta:set_int("signal_interrupt", 0)
+        end,
+        action_change = ele.helpers.start_timer
+    }
+}
+
+-- Functions
+
+local function switch_state(pos, state_def)
+    local meta = core.get_meta(pos)
+    local state = meta:get_int("state")
+    local states = {}
+    for id, state in pairs(ele.default.states) do
+        if state_def[state.e] then states[#states + 1] = id end
+    end
+
+    if #states == 0 then return end
+
+    state = state + 1
+    if state >= #states then state = 0 end
+    state = states[state + 1]
+    meta:set_int("state", state)
+
+    ele.helpers.start_timer(pos)
+end
+
+-- Patch a table
+local function apply_patches(table, patches)
+    for k, v in pairs(patches) do
+        if table[k] and type(table[k]) == "table" then
+            apply_patches(table[k], v)
+        else
+            table[k] = v
+        end
+    end
+end
+
+-- Register a base device
+function ele.register_base_device(nodename, nodedef)
+    local tlsupp = tl and nodedef.groups and
+                       (nodedef.groups["tubedevice"] or nodedef.groups["tube"])
+
+    -- VoxeLibre default hardness
+    if mcl then
+        nodedef._mcl_blast_resistance = nodedef._mcl_blast_resistance or 4
+        nodedef._mcl_hardness = nodedef._mcl_hardness or 3
+
+        if not nodedef.groups or not nodedef.groups.pickaxey then
+            nodedef.groups.pickaxey = 1
+        end
+    end
+
+    -- Override construct callback
+    local original_on_construct = nodedef.on_construct
+    nodedef.on_construct = function(pos)
+        if nodedef.groups and nodedef.groups["ele_machine"] then
+            local meta = core.get_meta(pos)
+            meta:set_int("storage", 0)
+        end
+
+        ele.clear_networks(pos)
+
+        if original_on_construct then original_on_construct(pos) end
+    end
+
+    -- Override destruct callback
+    local original_after_destruct = nodedef.after_destruct
+    nodedef.after_destruct = function(pos)
+
+        ele.clear_networks(pos)
+
+        if original_after_destruct then original_after_destruct(pos) end
+    end
+
+    -- Save storage amount when picked up
+    local original_preserve_metadata = nodedef.preserve_metadata
+    nodedef.preserve_metadata = function(pos, oldnode, oldmeta, drops)
+        drops = preserve_metadata(pos, oldnode, oldmeta, drops)
+        if original_preserve_metadata then
+            drops = original_preserve_metadata(pos, oldnode, oldmeta, drops)
+        end
+        return drops
+    end
+
+    local original_after_place_node = nodedef.after_place_node
+    nodedef.after_place_node = function(pos, placer, itemstack, pointed_thing)
+        local ret = retrieve_metadata(pos, placer, itemstack, pointed_thing)
+
+        if tlsupp then tubelib.add_node(pos, nodename) end
+
+        if original_after_place_node then
+            ret = original_after_place_node(pos, placer, itemstack,
+                                            pointed_thing)
+        end
+
+        return ret
+    end
+
+    local original_after_dig_node = nodedef.after_dig_node
+    nodedef.after_dig_node = function(pos, placer, itemstack, pointed_thing)
+        if tlsupp then tubelib.remove_node(pos) end
+
+        if original_after_dig_node then
+            return
+                original_after_dig_node(pos, placer, itemstack, pointed_thing)
+        end
+    end
+
+    -- Prevent digging when there's items inside
+    if not nodedef.can_dig then nodedef.can_dig = can_dig end
+
+    -- Explicitly allow the disabling of the state machine
+    if nodedef.groups["state_machine"] ~= 0 and not nodedef["states"] then
+        nodedef.states = {toggle = true}
+    end
+
+    -- Pipeworks support
+    if pw and nodedef.groups and
+        (nodedef.groups["tubedevice"] or nodedef.groups["tube"]) then
+        if nodedef['tube'] == false then
+            nodedef['tube'] = nil
+            nodedef.groups["tubedevice"] = nil
+            nodedef.groups["tube"] = nil
+        elseif nodedef['tube'] then
+            for key, val in pairs(tube) do
+                if not nodedef['tube'][key] then
+                    nodedef['tube'][key] = val
+                end
+            end
+        else
+            nodedef['tube'] = tube
+        end
+    end
+
+    -- Basic Mineclonia hopper support.
+    -- Set a container value in groups for alternate logic or nil for none.
+    -- See https://codeberg.org/mineclonia/mineclonia/src/branch/main/GROUPS.md#declarative-groups
+    if mcl and not nodedef.groups["container"] then
+        nodedef.groups["container"] = 4
+    end
+
+    -- Node IO Support
+    if nodedef.groups["tubedevice"] or nodedef.groups["tube"] then
+        nodedef.node_io_can_put_item = function(pos, node, side, itemstack, count)
+            if itemstack == nil and not count then
+                return true
+            end
+            local meta = core.get_meta(pos)
+            local inv = meta:get_inventory()
+            local istack_real = ItemStack(itemstack)
+            istack_real:set_count(count)
+            return inv:room_for_item("src", istack_real)
+        end
+        nodedef.node_io_put_item = function(pos, node, side, putter, itemstack)
+            local meta = core.get_meta(pos)
+            local inv = meta:get_inventory()
+            ele.helpers.start_timer(pos)
+            return inv:add_item("src", itemstack)
+        end
+        nodedef.node_io_can_take_item = function(pos, node, side)
+            return true
+        end
+        nodedef.node_io_get_item_size = function(pos, node, side)
+            local meta = core.get_meta(pos)
+            local inv = meta:get_inventory()
+            return inv:get_size("dst")
+        end
+        nodedef.node_io_get_item_name = function(pos, node, side, index)
+            local meta = core.get_meta(pos)
+            local inv = meta:get_inventory()
+            return inv:get_stack("dst", index):get_name()
+        end
+        nodedef.node_io_get_item_stack =
+            function(pos, node, side, index)
+                local meta = core.get_meta(pos)
+                local inv = meta:get_inventory()
+                return inv:get_stack("dst", index)
+            end
+        nodedef.node_io_take_item = function(pos, node, side, taker, want_item,
+                                             want_count)
+            local meta = core.get_meta(pos)
+            local inv = meta:get_inventory()
+            local stack = ItemStack(want_item)
+            stack:set_count(want_count)
+            ele.helpers.start_timer(pos)
+            return inv:take_item("dst", stack)
+        end
+    end
+
+    -- Mesecons support
+    if mc then
+        nodedef["mesecons"] = mesecons_def
+        if nodedef.states and nodedef.states["mesecons"] ~= false then
+            nodedef.states["mesecons"] = true
+        end
+    end
+
+    -- STATE MACHINE
+    local original_on_receive_fields = nodedef.on_receive_fields
+    nodedef.on_receive_fields = function(pos, formname, fields, sender)
+        if sender and sender ~= "" and
+            core.is_protected(pos, sender:get_player_name()) then
+            return
+        end
+
+        if nodedef.states then
+            if fields["cyclestate"] then
+                switch_state(pos, nodedef.states)
+            end
+        end
+
+        if original_on_receive_fields then
+            return original_on_receive_fields(pos, formname, fields, sender)
+        end
+    end
+
+    -- Finally, register the damn thing already
+    core.register_node(nodename, nodedef)
+    local active_name = nil
+
+    -- Register an active variant if configured.
+    if nodedef.ele_active_node then
+        local active_nodedef = table.copy(nodedef)
+        active_name = nodename .. "_active"
+
+        if nodedef.ele_active_node ~= true then
+            active_name = nodedef.ele_active_node
+
+            if i ~= 1 then active_name = active_name .. "_" .. i end
+        end
+
+        if nodedef.ele_active_nodedef then
+            apply_patches(active_nodedef, nodedef.ele_active_nodedef)
+
+            nodedef.ele_active_nodedef = nil
+            active_nodedef.ele_active_nodedef = nil
+        end
+
+        -- Remove formspec functions from active nodedefs
+        if active_nodedef.get_formspec then
+            active_nodedef.get_formspec = nil
+        end
+
+        active_nodedef.groups["ele_active"] = 1
+        active_nodedef.groups["not_in_creative_inventory"] = 1
+        active_nodedef.drop = nodename
+
+        core.register_node(active_name, active_nodedef)
+    end
+
+    -- tubelib support
+    if tlsupp then
+        local extras = {}
+
+        if active_name then extras = {active_name} end
+
+        tubelib.register_node(nodename, extras, tubelib_tube)
+    end
+
+    -- nodeio fluids
+    if nodedef.groups and nodedef.groups['fluid_container'] and flib then
+        fluid_lib.register_node(nodename)
+        if active_name then fluid_lib.register_node(active_name) end
+    end
+end
+
+function ele.register_machine(nodename, nodedef)
+    if not nodedef.groups then nodedef.groups = {} end
+
+    -- Start cleaning up the nodedef
+    local defaults = {
+        ele_capacity = 1600,
+        ele_inrush = 64,
+        ele_usage = 64,
+        ele_output = 64,
+        ele_sides = nil
+    }
+
+    -- Ensure everything that's required is present
+    for k, v in pairs(defaults) do if not nodedef[k] then nodedef[k] = v end end
+
+    if nodedef.paramtype2 == 0 or not nodedef.paramtype2 then
+        nodedef.paramtype2 = "facedir"
+    else
+        -- nodedef.paramtype2 = nil
+    end
+
+    -- Ensure machine group is used properly
+    if not nodedef.groups["ele_conductor"] and not nodedef.groups["ele_machine"] then
+        nodedef.groups["ele_machine"] = 1
+    elseif nodedef.groups["ele_conductor"] and nodedef.groups["ele_machine"] then
+        nodedef.groups["ele_machine"] = 0
+    end
+
+    if not nodedef.ele_no_automatic_ports then
+        -- Add ports to the device's faces
+        if nodedef.tiles and #nodedef.tiles == 6 then
+            for i = 1, 5 do
+                nodedef.tiles[i] = nodedef.tiles[i] ..
+                                       "^elepower_power_port.png"
+            end
+        end
+
+        -- Add ports to the device's active faces
+        if nodedef.ele_active_nodedef and nodedef.ele_active_nodedef.tiles and
+            #nodedef.ele_active_nodedef.tiles == 6 then
+            for i = 1, 5 do
+                nodedef.ele_active_nodedef.tiles[i] =
+                    nodedef.ele_active_nodedef.tiles[i] ..
+                        "^elepower_power_port.png"
+            end
+        end
+    end
+    nodedef.ele_no_automatic_ports = nil
+
+    -- Default metadata handlers for "src" and "dst"
+    if not nodedef.allow_metadata_inventory_put then
+        nodedef.allow_metadata_inventory_put = ele.default
+                                                   .allow_metadata_inventory_put
+        nodedef.allow_metadata_inventory_move = ele.default
+                                                    .allow_metadata_inventory_move
+    end
+
+    if not nodedef.allow_metadata_inventory_take then
+        nodedef.allow_metadata_inventory_take = ele.default
+                                                    .allow_metadata_inventory_take
+    end
+
+    -- Default metadata changed handlers for inventories
+    -- Starts the timer on the node
+    if not nodedef.on_metadata_inventory_move then
+        nodedef.on_metadata_inventory_move = ele.default
+                                                 .metadata_inventory_changed
+    end
+
+    if not nodedef.on_metadata_inventory_put then
+        nodedef.on_metadata_inventory_put = ele.default
+                                                .metadata_inventory_changed
+    end
+
+    if not nodedef.on_metadata_inventory_take then
+        nodedef.on_metadata_inventory_take = ele.default
+                                                 .metadata_inventory_changed
+    end
+
+    ele.register_base_device(nodename, nodedef)
+end

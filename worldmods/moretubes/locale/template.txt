@@ -1,0 +1,22 @@
+# textdomain: moretubes
+
+##[ src/decelerator.lua ]##
+Decelerating Pneumatic Tube Segment=
+
+##[ src/eject.lua ]##
+Eject Tube Segment=
+
+##[ src/low_priority.lua ]##
+Low Priority Tube Segment=
+
+##[ src/reverse.lua ]##
+Reversing Tube Segment=
+
+##[ src/straight.lua ]##
+Straight Only Tube=
+Conducting One Way Tube=
+Conducting Straight Only Tube=
+Digiline Conducting One Way Tube=
+Digiline Conducting Straight Only Tube=
+Mesecon and Digiline Conducting One Way Tube=
+Mesecon and Digiline Conducting Straight Only Tube=

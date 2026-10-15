@@ -1,0 +1,16 @@
+# textdomain: torch_bomb
+Rocket accelerates at 1 m/s^2.@nFuse duration from 1 to @1 seconds:=
+Set=
+@1 Rocket=
+Torch Bomb=
+Mega Torch Bomb=
+Torch Grenade=
+@1 Torch Crossbow=
+Wooden=
+Bronze=
+Steel=
+Iron=
+Copper=
+Small Torch Blossom=
+Torch Blossom=
+Mega Torch Blossom=

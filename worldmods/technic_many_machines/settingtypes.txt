@@ -1,0 +1,15 @@
+[technic_many_machines]
+# Enable the cryptominer machine (experimental and potentially unbalanced)
+technic_many_machines_enable_cryptominer (Enable Cryptominer) bool false
+
+# Output item for the cryptominer (leave empty for default behavior)
+technic_many_machines_cryptominer_output (Cryptominer Output) string 
+
+# Enable smoother movement for moving walkways (may impact performance)
+technic_many_machines.walkwaysmooth (Smooth Walkway) false
+
+# Speed multiplier for moving walkways (higher values make them faster)
+technic_many_machines.walkway_speed (Walkway speed) int 1
+
+# Test items to see color of base items
+technic_many_machines_enable_test_items (Enable test items) bool false

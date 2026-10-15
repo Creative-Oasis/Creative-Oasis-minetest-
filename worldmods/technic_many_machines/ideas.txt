@@ -1,0 +1,18 @@
+I am very forgetful and seem to only have ideas when not coding, so ill write them here
+crusher(crushes rocks into small chunks), starting at MV)
+magnetic 
+Rocks can be crushed->grinded->separated in some way?
+source: https://www.flyability.com/blog/mineral-processing
+machines that could do this: magnetic separator, froth floatation, electrostatic separation, and gravitational separator
+The final four need water, and need the water removed afterwards.
+crusher and grinder types:
+Cone crushers, Gyratory crushers, Jaw crushers, SAG mill grinders, Rod mill grinders, Ball mill egrinders, Pebble crushers
+Sizing and classifacation 
+Bar screens, banana screens, Fine screens, Flip flop screens, Grizzlies, Multi-deck screens, Radial sieves, Vibratory screens, Wedge wire screens
+Wire mesh screens, Fluidized classifiers, Spiral classifiers, Gas cyclones, Hydrocyclones, Ore sorters, Rake classifiers, Rotating trommels
+Concentration equipment
+Cleaners, Recleaners, Roughers, Scavengers
+Dewatering Equipment
+Dewatering screens
+Thickeners/clarifiers, Belt press/membrane filter press, Fluidised beds, Hearth dryers, Rotary dryers, Rotary tray dryers, Spray dryers
+WIll probably support underch and too_many_stones, and (maybe) darkage.

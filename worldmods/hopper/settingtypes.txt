@@ -1,0 +1,2 @@
+# lazy container support to auto-detect containers not added via api
+lazy_container_support (Lazy Container Support) bool false

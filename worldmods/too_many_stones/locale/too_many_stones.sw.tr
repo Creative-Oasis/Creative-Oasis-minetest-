@@ -1,0 +1,2522 @@
+# textdomain: too_many_stones
+
+Too Many Stones=Mawe Mengi Sana
+90 stones that will spawn in most games. Supports English, Español, Français, Deutsch, Pусский, Português, 日本語, Kiswahili=Mawe 90 ambayo yatatokea katika michezo mingi. Inasaidia English, Español, Français, Deutsch, Pусский, Português, 日本語, Kiswahili
+
+### nodes.lua ###
+
+Aegirine=Aegirini
+Aegirine Block=Kizuizi cha Aegirini
+Aegirine Brick=Tofali la Aegirini
+Cracked Aegirine Brick=Tofali la Aegirini Lililo na Ufa
+
+Blue Agate=Akiki Buluu
+Gray Agate=Akiki Kijivu
+Green Agate=Akiki Kijani
+Moss Agate=Akiki Uani
+Orange Agate=Akiki Machungwa
+Purple Agate=Akiki Zambarau
+Red Agate=Akiki Nyekundu
+
+Amazonite=Amazoniti
+Amazonite Block=Kizuizi cha Amazoniti
+Cobbled Amazonite=Mawe ya Amazoniti
+Amazonite Brick=Tofali la Amazoniti
+Cracked Amazonite Brick=Tofali la Amazoniti Lililo na Ufa
+
+Amber=Kaharaba
+Amber Block=Kizuizi cha Kaharaba
+Amber Brick=Tofali la Kaharaba
+Cracked Amber Brick=Tofali la Kaharaba Lililo na Ufa
+
+Amethyst=Amethisti
+Amethyst Block=Kizuizi cha Amethisti
+Amethyst Brick=Tofali la Amethisti
+Cracked Amethyst Brick=Tofali la Amethisti Lililo na Ufa
+
+Ammolite=Amoliti
+
+Andesite=Andesiti
+Andesite Block=Kizuizi cha Andesiti
+Andesite Brick=Tofali la Andesiti
+Cracked Andesite Brick=Tofali la Andesiti Lililo na Ufa
+Cobbled Andesite=Mawe ya Andesiti
+
+Basalt=Basalti
+Basalt Block=Kizuizi cha Basalti
+Basalt Brick=Tofali la Basalti
+Cracked Basalt Brick=Tofali la Basalti Lililo na Ufa
+Cobbled Basalt=Mawe ya Basalti
+Basalt Tile=Vigae vya Basalti
+
+Batch=Mchanganyiko wa Kioo
+
+Columnar Basalt=Basalti ya Nguzo
+
+Black Opal=Opali Nyeusi
+
+Grey Calcite=Kalkiti Kijivu
+Grey Calcite Block=Kizuizi cha Kalkiti Kijivu
+Grey Calcite Brick=Tofali la Kalkiti Kijivu
+Cracked Grey Calcite Brick=Tofali la Kalkiti Kijivu Lililo na Ufa
+
+Calcite=Kalkiti
+Calcite Block=Kizuizi cha Kalkiti
+Calcite Brick=Tofali la Kalkiti
+Cracked Calcite Brick=Tofali la Kalkiti Lililo na Ufa
+
+Orange Calcite=Kalkiti Machungwa
+Orange Calcite Block=Kizuizi cha Kalkiti Machungwa
+Orange Calcite Brick=Tofali la Kalkiti Machungwa
+Cracked Orange Calcite Brick=Tofali la Kalkiti Machungwa Lililo na Ufa
+
+Carnotite=Karnotiti
+Carnotite Block=Kizuizi cha Karnotiti
+Carnotite Brick=Tofali la Karnotiti
+Cracked Carnotite Brick=Tofali la Karnotiti Lililo na Ufa
+Cobbled Carnotite=Mawe ya Karnotiti
+
+Celestine=Selestini
+Celestine Block=Kizuizi cha Selestini
+Celestine Brick=Tofali la Selestini
+Cracked Celestine Brick=Tofali la Selestini Lililo na Ufa
+
+Chalcanthite=Chalkanthiti
+Chalcanthite Block=Kizuizi cha Chalkanthiti
+Chalcanthite Brick=Tofali la Chalkanthiti
+Cracked Chalcanthite Brick=Tofali la Chalkanthiti Lililo na Ufa
+Cobbled Chalcanthite=Mawe ya Chalkanthiti
+
+Chrysoprase=Chrysoprasi
+Chrysoprase Block=Kizuizi cha Chrysoprasi
+Chrysoprase Brick=Tofali la Chrysoprasi
+Cracked Chrysoprase Brick=Tofali la Chrysoprasi Lililo na Ufa
+
+Citrine=Sitrini
+Citrine Block=Kizuizi cha Sitrini
+Citrine Brick=Tofali la Sitrini
+Cracked Citrine Brick=Tofali la Sitrini Lililo na Ufa
+
+Covellite=Koveliti
+Covellite Block=Kizuizi cha Koveliti
+Covellite Brick=Tofali la Koveliti
+Cracked Covellite Brick=Tofali la Koveliti Lililo na Ufa
+Cobbled Covellite=Mawe ya Koveliti
+
+Crocoite=Krokoiti
+Crocoite Block=Kizuizi cha Krokoiti
+Crocoite Brick=Tofali la Krokoiti
+Cracked Crocoite Brick=Tofali la Krokoiti Lililo na Ufa
+
+Diorite=Dioriti
+Diorite Block=Kizuizi cha Dioriti
+Diorite Brick=Tofali la Dioriti
+Cracked Diorite Brick=Tofali la Dioriti Lililo na Ufa
+Cobbled Diorite=Mawe ya Dioriti
+
+Erythrite=Erithriti
+Erythrite Block=Kizuizi cha Erithriti
+Erythrite Brick=Tofali la Erithriti
+Cracked Erythrite Brick=Tofali la Erithriti Lililo na Ufa
+
+Eudialite=Eudialiti
+Eudialite Block=Kizuizi cha Eudialiti
+Eudialite Brick=Tofali la Eudialiti
+Cracked Eudialite Brick=Tofali la Eudialiti Lililo na Ufa
+
+Fluorite=Fluoriti
+Fluorite Block=Kizuizi cha Fluoriti
+Fluorite Brick=Tofali la Fluoriti
+Cracked Fluorite Brick=Tofali la Fluoriti Lililo na Ufa
+
+Fire Opal=Opali ya Moto
+
+Gabbro=Gabro
+Gabbro Block=Kizuizi cha Gabro
+Cobbled Gabbro=Mawe ya Gabro
+Gabbro Brick=Tofali la Gabro
+Cracked Gabbro Brick=Tofali la Gabro Lililo na Ufa
+
+Galena=Galena
+Galena Block=Kizuizi cha Galena
+Galena Brick=Tofali la Galena
+Cracked Galena Brick=Tofali la Galena Lililo na Ufa
+
+Geyserite=Geyseriti
+Geyserite Block=Kizuizi cha Geyseriti
+Cobbled Geyserite=Mawe ya Geyseriti
+Geyserite Brick=Tofali la Geyseriti
+Cracked Geyserite Brick=Tofali la Geyseriti Lililo na Ufa
+
+Gneiss=Gneisi
+Gneiss Block=Kizuizi cha Gneisi
+Cobbled Gneiss=Mawe ya Gneisi
+Gneiss Brick=Tofali la Gneisi
+Cracked Gneiss Brick=Tofali la Gneisi Lililo na Ufa
+
+Black Granite=Graniti Nyeusi
+Black Granite Block=Kizuizi cha Graniti Nyeusi
+Black Granite Brick=Tofali la Graniti Nyeusi
+Cracked Black Granite Brick=Tofali la Graniti Nyeusi Lililo na Ufa
+Cobbled Black Granite=Mawe ya Graniti Nyeusi
+
+Blue Granite=Graniti Buluu
+Blue Granite Block=Kizuizi cha Graniti Buluu
+Blue Granite Brick=Tofali la Graniti Buluu
+Cracked Blue Granite Brick=Tofali la Graniti Buluu Lililo na Ufa
+Cobbled Blue Granite=Mawe ya Graniti Buluu
+
+Gray Granite=Graniti Kijivu
+Gray Granite Block=Kizuizi cha Graniti Kijivu
+Gray Granite Brick=Tofali la Graniti Kijivu
+Cracked Gray Granite Brick=Tofali la Graniti Kijivu Lililo na Ufa
+Cobbled Gray Granite=Mawe ya Graniti Kijivu
+
+Green Granite=Graniti Kijani
+Green Granite Block=Kizuizi cha Graniti Kijani
+Green Granite Brick=Tofali la Graniti Kijani
+Cracked Green Granite Brick=Tofali la Graniti Kijani Lililo na Ufa
+Cobbled Green Granite=Mawe ya Graniti Kijani
+
+Pink Granite=Graniti Waridi
+Pink Granite Block=Kizuizi cha Graniti Waridi
+Pink Granite Brick=Tofali la Graniti Waridi
+Cracked Pink Granite Brick=Tofali la Graniti Waridi Lililo na Ufa
+Cobbled Pink Granite=Mawe ya Graniti Waridi
+
+Red Granite=Graniti Nyekundu
+Red Granite Block=Kizuizi cha Graniti Nyekundu
+Red Granite Brick=Tofali la Graniti Nyekundu
+Cracked Red Granite Brick=Tofali la Graniti Nyekundu Lililo na Ufa
+Cobbled Red Granite=Mawe ya Graniti Nyekundu
+
+White Granite=Graniti Nyeupe
+White Granite Block=Kizuizi cha Graniti Nyeupe
+White Granite Brick=Tofali la Graniti Nyeupe
+Cracked White Granite Brick=Tofali la Graniti Nyeupe Lililo na Ufa
+Cobbled White Granite=Mawe ya Graniti Nyeupe
+
+Yellow Granite=Graniti Njano
+Yellow Granite Block=Kizuizi cha Graniti Njano
+Yellow Granite Brick=Tofali la Graniti Njano
+Cracked Yellow Granite Brick=Tofali la Graniti Njano Lililo na Ufa
+Cobbled Yellow Granite=Mawe ya Graniti Njano
+
+Heliodor=Heliodori
+Heliodor Block=Kizuizi cha Heliodori
+Heliodor Brick=Tofali la Heliodori
+Cracked Heliodor Brick=Tofali la Heliodori Lililo na Ufa
+
+Howlite=Howliti
+Howlite Block=Kizuizi cha Howliti
+Howlite Brick=Tofali la Howliti
+Cracked Howlite Brick=Tofali la Howliti Lililo na Ufa
+Cobbled Howlite=Mawe ya Howliti
+
+Ilvaite=Ilvaiti
+Ilvaite Block=Kizuizi cha Ilvaiti
+Ilvaite Brick=Tofali la Ilvaiti
+Cracked Ilvaite Brick=Tofali la Ilvaiti Lililo na Ufa
+Cobbled Ilvaite=Mawe ya Ilvaiti
+
+Jade=Jadi
+Jade Block=Kizuizi cha Jadi
+Jade Brick=Tofali la Jadi
+Cracked Jade Brick=Tofali la Jadi Lililo na Ufa
+Cobbled Jade=Mawe ya Jadi
+
+Red Jasper=Jaspa Nyekundu
+Red Jasper Block=Kizuizi cha Jaspa Nyekundu
+Red Jasper Brick=Tofali la Jaspa Nyekundu
+Cracked Red Jasper Brick=Tofali la Jaspa Nyekundu Lililo na Ufa
+Cobbled Red Jasper=Mawe ya Jaspa Nyekundu
+
+Kyanite=Kyaniti
+Kyanite Block=Kizuizi cha Kyaniti
+Kyanite Brick=Tofali la Kyaniti
+Cracked Kyanite Brick=Tofali la Kyaniti Lililo na Ufa
+Cobbled Kyanite=Mawe ya Kyaniti
+
+Lapis Lazuli=Lapis Lazuli
+Lapis Lazuli Block=Kizuizi cha Lapis Lazuli
+Lapis Lazuli Brick=Tofali la Lapis Lazuli
+Cracked Lapis Lazuli Brick=Tofali la Lapis Lazuli Lililo na Ufa
+
+Lepidolite=Lepidoliti
+Lepidolite Block=Kizuizi cha Lepidoliti
+Lepidolite Brick=Tofali la Lepidoliti
+Cracked Lepidolite Brick=Tofali la Lepidoliti Lililo na Ufa
+Cobbled Lepidolite=Mawe ya Lepidoliti
+
+Blue Limestone=Chokaa Buluu
+Blue Limestone Block=Kizuizi cha Chokaa Buluu
+Blue Limestone Brick=Tofali la Chokaa Buluu
+Cracked Blue Limestone Brick=Tofali la Chokaa Buluu Lililo na Ufa
+Cobbled Blue Limestone=Mawe ya Chokaa Buluu
+
+White Limestone=Chokaa Nyeupe
+White Limestone Block=Kizuizi cha Chokaa Nyeupe
+White Limestone Brick=Tofali la Chokaa Nyeupe
+Cracked White Limestone Brick=Tofali la Chokaa Nyeupe Lililo na Ufa
+Cobbled White Limestone=Mawe ya Chokaa Nyeupe
+
+Marble=Marumaru
+Marble Block=Kizuizi cha Marumaru
+Marble Brick=Tofali la Marumaru
+Cracked Marble Brick=Tofali la Marumaru Lililo na Ufa
+Cobbled Marble=Mawe ya Marumaru
+
+Moonstone=Jiwe la Mwezi
+Moonstone Block=Kizuizi cha Jiwe la Mwezi
+Moonstone Brick=Tofali la Jiwe la Mwezi
+Cracked Moonstone Brick=Tofali la Jiwe la Mwezi Lililo na Ufa
+
+Morion Quartz=Kwatzi Morioni
+Morion Quartz Block=Kizuizi cha Kwatzi Morioni
+Morion Quartz Brick=Tofali la Kwatzi Morioni
+Cracked Morion Quartz Brick=Tofali la Kwatzi Morioni Lililo na Ufa
+
+Mudstone=Jiwe la Matope
+Mudstone Block=Kizuizi cha Jiwe la Matope
+Cobbled Mudstone=Mawe ya Jiwe la Matope
+Mudstone Brick=Tofali la Jiwe la Matope
+Cracked Mudstone Brick=Tofali la Jiwe la Matope Lililo na Ufa
+
+Opal=Opali
+
+Picture Jasper=Jaspa ya Picha
+
+Prasiolite=Prasioliti
+Prasiolite Block=Kizuizi cha Prasioliti
+Prasiolite Brick=Tofali la Prasioliti
+Cracked Prasiolite Brick=Tofali la Prasioliti Lililo na Ufa
+
+Pumice=Pumisi
+Pumice Block=Kizuizi cha Pumisi
+Pumice Brick=Tofali la Pumisi
+Cracked Pumice Brick=Tofali la Pumisi Lililo na Ufa
+
+Pyrite=Pairiti
+Pyrite Block=Kizuizi cha Pairiti
+Cobbled Pyrite=Mawe ya Pairiti
+Pyrite Brick=Tofali la Pairiti
+Cracked Pyrite Brick=Tofali la Pairiti Lililo na Ufa
+
+Quartz=Kwatzi
+Quartz Block=Kizuizi cha Kwatzi
+Quartz Brick=Tofali la Kwatzi
+Cracked Quartz Brick=Tofali la Kwatzi Lililo na Ufa
+
+Rose Quartz=Kwatzi Waridi
+Rose Quartz Block=Kizuizi cha Kwatzi Waridi
+Rose Quartz Brick=Tofali la Kwatzi Waridi
+Cracked Rose Quartz Brick=Tofali la Kwatzi Waridi Lililo na Ufa
+
+Rhodonite=Rhodoniti
+Rhodonite Block=Kizuizi cha Rhodoniti
+Rhodonite Brick=Tofali la Rhodoniti
+Cracked Rhodonite Brick=Tofali la Rhodoniti Lililo na Ufa
+Cobbled Rhodonite=Mawe ya Rhodoniti
+
+Scoria=Skoriya
+Scoria Block=Kizuizi cha Skoriya
+Scoria Brick=Tofali la Skoriya
+Cracked Scoria Brick=Tofali la Skoriya Lililo na Ufa
+Cobbled Scoria=Mawe ya Skoriya
+
+Serpentine=Serpentini
+Serpentine Block=Kizuizi cha Serpentini
+Cobbled Serpentine=Mawe ya Serpentini
+Serpentine Brick=Tofali la Serpentini
+Cracked Serpentine Brick=Tofali la Serpentini Lililo na Ufa
+
+Shale=Sheli
+Shale Block=Kizuizi cha Sheli
+Shale Brick=Tofali la Sheli
+Cracked Shale Brick=Tofali la Sheli Lililo na Ufa
+Cobbled Shale=Mawe ya Sheli
+
+Slate=Sleti
+Slate Block=Kizuizi cha Sleti
+Slate Brick=Tofali la Sleti
+Cracked Slate Brick=Tofali la Sleti Lililo na Ufa
+Cobbled Slate=Mawe ya Sleti
+Slate Tile=Vigae vya Sleti
+
+Smokey Quartz=Kwatzi ya Moshi
+Smokey Quartz Block=Kizuizi cha Kwatzi ya Moshi
+Smokey Quartz Brick=Tofali la Kwatzi ya Moshi
+Cracked Smokey Quartz Brick=Tofali la Kwatzi ya Moshi Lililo na Ufa
+
+Soapstone=Jiwe la Sabuni
+Soapstone Block=Kizuizi cha Jiwe la Sabuni
+Soapstone Brick=Tofali la Jiwe la Sabuni
+Cracked Soapstone Brick=Tofali la Jiwe la Sabuni Lililo na Ufa
+
+Sodalite=Sodaliti
+Sodalite Block=Kizuizi cha Sodaliti
+Cobbled Sodalite=Mawe ya Sodaliti
+Sodalite Brick=Tofali la Sodaliti
+Cracked Sodalite Brick=Tofali la Sodaliti Lililo na Ufa
+
+Sugilite=Sugiliti
+Sugilite Block=Kizuizi cha Sugiliti
+Sugilite Brick=Tofali la Sugiliti
+Cracked Sugilite Brick=Tofali la Sugiliti Lililo na Ufa
+Cobbled Sugilite=Mawe ya Sugiliti
+
+Green Tourmaline=Turmalini Kijani
+Green Tourmaline Block=Kizuizi cha Turmalini Kijani
+Green Tourmaline Brick=Tofali la Turmalini Kijani
+Cracked Green Tourmaline Brick=Tofali la Turmalini Kijani Lililo na Ufa
+
+Paraiba Tourmaline=Turmalini Paraiba
+Paraiba Tourmaline Block=Kizuizi cha Turmalini Paraiba
+Paraiba Tourmaline Brick=Tofali la Turmalini Paraiba
+Cracked Paraiba Tourmaline Brick=Tofali la Turmalini Paraiba Lililo na Ufa
+
+Pink Tourmaline=Turmalini Waridi
+Pink Tourmaline Block=Kizuizi cha Turmalini Waridi
+Pink Tourmaline Brick=Tofali la Turmalini Waridi
+Cracked Pink Tourmaline Brick=Tofali la Turmalini Waridi Lililo na Ufa
+
+Travertine=Traversini
+Travertine Block=Kizuizi cha Traversini
+Cobbled Travertine=Mawe ya Traversini
+Travertine Brick=Tofali la Traversini
+Cracked Travertine Brick=Tofali la Traversini Lililo na Ufa
+
+Yellow Travertine=Traversini Njano
+Yellow Travertine Block=Kizuizi cha Traversini Njano
+Cobbled Yellow Travertine=Mawe ya Traversini Njano
+Yellow Travertine Brick=Tofali la Traversini Njano
+Cracked Yellow Travertine Brick=Tofali la Traversini Njano Lililo na Ufa
+
+Beige Tuff=Tafi Rangi ya Kahawia
+Beige Tuff Block=Kizuizi cha Tafi Rangi ya Kahawia
+Cobbled Beige Tuff=Mawe ya Tafi Rangi ya Kahawia
+Beige Tuff Brick=Tofali la Tafi Rangi ya Kahawia
+Cracked Beige Tuff=Tafi Rangi ya Kahawia Yenye Nyufa
+
+Grey Tuff=Tafi Kijivu
+Grey Tuff Block=Kizuizi cha Tafi Kijivu
+Cobbled Grey Tuff=Mawe ya Tafi Kijivu
+Grey Tuff Brick=Tofali la Tafi Kijivu
+Cracked Grey Tuff=Tafi Kijivu Yenye Nyufa
+
+Red Tuff=Tafi Nyekundu
+Red Tuff Block=Kizuizi cha Tafi Nyekundu
+Cobbled Red Tuff=Mawe ya Tafi Nyekundu
+Red Tuff Brick=Tofali la Tafi Nyekundu
+Cracked Red Tuff=Tafi Nyekundu Yenye Nyufa
+
+Turquoise=Feruzi
+Turquoise Block=Kizuizi cha Feruzi
+Turquoise Brick=Tofali la Feruzi
+Cracked Turquoise Brick=Tofali la Feruzi Lililo na Ufa
+Cobbled Turquoise=Mawe ya Feruzi
+Turquoise Pebble=Kokoto la Feruzi
+
+Vivianite=Vivianiti
+Vivianite Block=Kizuizi cha Vivianiti
+Vivianite Brick=Tofali la Vivianiti
+Cracked Vivianite Brick=Tofali la Vivianiti Lililo na Ufa
+
+### wall.lua ###
+
+Aegirine Wall=Ukuta wa Aegirini
+Aegirine Brick Wall=Ukuta wa Tofali la Aegirini
+
+Blue Agate Wall=Ukuta wa Akiki Buluu
+Gray Agate Wall=Ukuta wa Akiki Kijivu
+Green Agate Wall=Ukuta wa Akiki Kijani
+Moss Agate Wall=Ukuta wa Akiki Uani
+Orange Agate Wall=Ukuta wa Akiki Machungwa
+Purple Agate Wall=Ukuta wa Akiki Zambarau
+Red Agate Wall=Ukuta wa Akiki Nyekundu
+
+Amazonite Wall=Ukuta wa Amazoniti
+Cobbled Amazonite Wall=Ukuta wa Mawe ya Amazoniti
+Amazonite Brick Wall=Ukuta wa Tofali la Amazoniti
+Amazonite Block Wall=Ukuta wa Kizuizi cha Amazoniti
+Cracked Amazonite Brick Wall=Ukuta wa Tofali la Amazoniti Lililo na Ufa
+
+Amber Wall=Ukuta wa Kaharaba
+Amber Brick Wall=Ukuta wa Tofali la Kaharaba
+Amber Block Wall=Ukuta wa Kizuizi cha Kaharaba
+Cracked Amber Brick Wall=Ukuta wa Tofali la Kaharaba Lililo na Ufa
+
+Amethyst Wall=Ukuta wa Amethisti
+Amethyst Brick Wall=Ukuta wa Tofali la Amethisti
+Amethyst Block Wall=Ukuta wa Kizuizi cha Amethisti
+Cracked Amethyst Brick Wall=Ukuta wa Tofali la Amethisti Lililo na Ufa
+
+Andesite Wall=Ukuta wa Andesiti
+Andesite Block Wall=Ukuta wa Kizuizi cha Andesiti
+Andesite Brick Wall=Ukuta wa Tofali la Andesiti
+Cracked Andesite Brick Wall=Ukuta wa Tofali la Andesiti Lililo na Ufa
+Cobbled Andesite Wall=Ukuta wa Mawe ya Andesiti
+
+Basalt Wall=Ukuta wa Basalti
+Basalt Brick Wall=Ukuta wa Tofali la Basalti
+Basalt Block Wall=Ukuta wa Kizuizi cha Basalti
+Cracked Basalt Brick Wall=Ukuta wa Tofali la Basalti Lililo na Ufa
+Cobbled Basalt Wall=Ukuta wa Mawe ya Basalti
+Basalt Tile Wall=Ukuta wa Vigae vya Basalti
+
+Black Moonstone Wall=Ukuta wa Jiwe la Mwezi Nyeusi
+Black Moonstone Brick Wall=Ukuta wa Tofali la Jiwe la Mwezi Nyeusi
+Black Moonstone Block Wall=Ukuta wa Kizuizi cha Jiwe la Mwezi Nyeusi
+Cracked Black Moonstone Brick Wall=Ukuta wa Tofali la Jiwe la Mwezi Nyeusi Lililo na Ufa
+
+Grey Calcite Wall=Ukuta wa Kalkiti Kijivu
+Grey Calcite Brick Wall=Ukuta wa Tofali la Kalkiti Kijivu
+Grey Calcite Block Wall=Ukuta wa Kizuizi cha Kalkiti Kijivu
+Cracked Grey Calcite Brick Wall=Ukuta wa Tofali la Kalkiti Kijivu Lililo na Ufa
+
+Calcite Wall=Ukuta wa Kalkiti
+Calcite Brick Wall=Ukuta wa Tofali la Kalkiti
+Calcite Block Wall=Ukuta wa Kizuizi cha Kalkiti
+Cracked Calcite Brick Wall=Ukuta wa Tofali la Kalkiti Lililo na Ufa
+
+Orange Calcite Wall=Ukuta wa Kalkiti Machungwa
+Orange Calcite Brick Wall=Ukuta wa Tofali la Kalkiti Machungwa
+Orange Calcite Block Wall=Ukuta wa Kizuizi cha Kalkiti Machungwa
+Cracked Orange Calcite Brick Wall=Ukuta wa Tofali la Kalkiti Machungwa Lililo na Ufa
+
+Carnotite Wall=Ukuta wa Karnotiti
+Carnotite Brick Wall=Ukuta wa Tofali la Karnotiti
+Carnotite Block Wall=Ukuta wa Kizuizi cha Karnotiti
+Cracked Carnotite Brick Wall=Ukuta wa Tofali la Karnotiti Lililo na Ufa
+Cobbled Carnotite Wall=Ukuta wa Mawe ya Karnotiti
+
+Celestine Wall=Ukuta wa Selestini
+Celestine Brick Wall=Ukuta wa Tofali la Selestini
+Celestine Block Wall=Ukuta wa Kizuizi cha Selestini
+Cracked Celestine Brick Wall=Ukuta wa Tofali la Selestini Lililo na Ufa
+
+Chalcanthite Wall=Ukuta wa Chalkanthiti
+Chalcanthite Brick Wall=Ukuta wa Tofali la Chalkanthiti
+Chalcanthite Block Wall=Ukuta wa Kizuizi cha Chalkanthiti
+Cracked Chalcanthite Brick Wall=Ukuta wa Tofali la Chalkanthiti Lililo na Ufa
+Cobbled Chalcanthite Wall=Ukuta wa Mawe ya Chalkanthiti
+
+Chrysoprase Wall=Ukuta wa Chrysoprasi
+Chrysoprase Brick Wall=Ukuta wa Tofali la Chrysoprasi
+Chrysoprase Block Wall=Ukuta wa Kizuizi cha Chrysoprasi
+Cracked Chrysoprase Brick Wall=Ukuta wa Tofali la Chrysoprasi Lililo na Ufa
+
+Citrine Wall=Ukuta wa Sitrini
+Citrine Brick Wall=Ukuta wa Tofali la Sitrini
+Citrine Block Wall=Ukuta wa Kizuizi cha Sitrini
+Cracked Citrine Brick Wall=Ukuta wa Tofali la Sitrini Lililo na Ufa
+
+Covellite Wall=Ukuta wa Koveliti
+Covellite Brick Wall=Ukuta wa Tofali la Koveliti
+Covellite Block Wall=Ukuta wa Kizuizi cha Koveliti
+Cracked Covellite Brick Wall=Ukuta wa Tofali la Koveliti Lililo na Ufa
+Cobbled Covellite Wall=Ukuta wa Mawe ya Koveliti
+
+Crocoite Wall=Ukuta wa Krokoiti
+Crocoite Brick Wall=Ukuta wa Tofali la Krokoiti
+Crocoite Block Wall=Ukuta wa Kizuizi cha Krokoiti
+Cracked Crocoite Brick Wall=Ukuta wa Tofali la Krokoiti Lililo na Ufa
+
+Diorite Wall=Ukuta wa Dioriti
+Diorite Brick Wall=Ukuta wa Tofali la Dioriti
+Diorite Block Wall=Ukuta wa Kizuizi cha Dioriti
+Cracked Diorite Brick Wall=Ukuta wa Tofali la Dioriti Lililo na Ufa
+Cobbled Diorite Wall=Ukuta wa Mawe ya Dioriti
+
+Erythrite Wall=Ukuta wa Erithriti
+Erythrite Brick Wall=Ukuta wa Tofali la Erithriti
+Erythrite Block Wall=Ukuta wa Kizuizi cha Erithriti
+Cracked Erythrite Brick Wall=Ukuta wa Tofali la Erithriti Lililo na Ufa
+
+Eudialite Wall=Ukuta wa Eudialiti
+Eudialite Brick Wall=Ukuta wa Tofali la Eudialiti
+Eudialite Block Wall=Ukuta wa Kizuizi cha Eudialiti
+Cracked Eudialite Brick Wall=Ukuta wa Tofali la Eudialiti Lililo na Ufa
+
+Fluorite Wall=Ukuta wa Fluoriti
+Fluorite Brick Wall=Ukuta wa Tofali la Fluoriti
+Fluorite Block Wall=Ukuta wa Kizuizi cha Fluoriti
+Cracked Fluorite Brick Wall=Ukuta wa Tofali la Fluoriti Lililo na Ufa
+
+Gabbro Wall=Ukuta wa Gabro
+Cobbled Gabbro Wall=Ukuta wa Mawe ya Gabro
+Gabbro Brick Wall=Ukuta wa Tofali la Gabro
+Gabbro Block Wall=Ukuta wa Kizuizi cha Gabro
+Cracked Gabbro Brick Wall=Ukuta wa Tofali la Gabro Lililo na Ufa
+
+Galena Wall=Ukuta wa Galena
+Galena Brick Wall=Ukuta wa Tofali la Galena
+Galena Block Wall=Ukuta wa Kizuizi cha Galena
+Cracked Galena Brick Wall=Ukuta wa Tofali la Galena Lililo na Ufa
+
+Geyserite Wall=Ukuta wa Geyseriti
+Geyserite Block Wall=Ukuta wa Kizuizi cha Geyseriti
+Cobbled Geyserite Wall=Ukuta wa Mawe ya Geyseriti
+Geyserite Brick Wall=Ukuta wa Tofali la Geyseriti
+Cracked Geyserite Brick Wall=Ukuta wa Tofali la Geyseriti Lililo na Ufa
+
+Gneiss Wall=Ukuta wa Gneisi
+Gneiss Block Wall=Ukuta wa Kizuizi cha Gneisi
+Cobbled Gneiss Wall=Ukuta wa Mawe ya Gneisi
+Gneiss Brick Wall=Ukuta wa Tofali la Gneisi
+Cracked Gneiss Brick Wall=Ukuta wa Tofali la Gneisi Lililo na Ufa
+
+Black Granite Wall=Ukuta wa Graniti Nyeusi
+Black Granite Brick Wall=Ukuta wa Tofali la Graniti Nyeusi
+Black Granite Block Wall=Ukuta wa Kizuizi cha Graniti Nyeusi
+Cracked Black Granite Brick Wall=Ukuta wa Tofali la Graniti Nyeusi Lililo na Ufa
+Cobbled Black Granite Wall=Ukuta wa Mawe ya Graniti Nyeusi
+
+Blue Granite Wall=Ukuta wa Graniti Buluu
+Blue Granite Brick Wall=Ukuta wa Tofali la Graniti Buluu
+Blue Granite Block Wall=Ukuta wa Kizuizi cha Graniti Buluu
+Cracked Blue Granite Brick Wall=Ukuta wa Tofali la Graniti Buluu Lililo na Ufa
+Cobbled Blue Granite Wall=Ukuta wa Mawe ya Graniti Buluu
+
+Gray Granite Wall=Ukuta wa Graniti Kijivu
+Gray Granite Brick Wall=Ukuta wa Tofali la Graniti Kijivu
+Gray Granite Block Wall=Ukuta wa Kizuizi cha Graniti Kijivu
+Cracked Gray Granite Brick Wall=Ukuta wa Tofali la Graniti Kijivu Lililo na Ufa
+Cobbled Gray Granite Wall=Ukuta wa Mawe ya Graniti Kijivu
+
+Green Granite Wall=Ukuta wa Graniti Kijani
+Green Granite Brick Wall=Ukuta wa Tofali la Graniti Kijani
+Green Granite Block Wall=Ukuta wa Kizuizi cha Graniti Kijani
+Cracked Green Granite Brick Wall=Ukuta wa Tofali la Graniti Kijani Lililo na Ufa
+Cobbled Green Granite Wall=Ukuta wa Mawe ya Graniti Kijani
+
+Pink Granite Wall=Ukuta wa Graniti Waridi
+Pink Granite Brick Wall=Ukuta wa Tofali la Graniti Waridi
+Pink Granite Block Wall=Ukuta wa Kizuizi cha Graniti Waridi
+Cracked Pink Granite Brick Wall=Ukuta wa Tofali la Graniti Waridi Lililo na Ufa
+Cobbled Pink Granite Wall=Ukuta wa Mawe ya Graniti Waridi
+
+Red Granite Wall=Ukuta wa Graniti Nyekundu
+Red Granite Brick Wall=Ukuta wa Tofali la Graniti Nyekundu
+Red Granite Block Wall=Ukuta wa Kizuizi cha Graniti Nyekundu
+Cracked Red Granite Brick Wall=Ukuta wa Tofali la Graniti Nyekundu Lililo na Ufa
+Cobbled Red Granite Wall=Ukuta wa Mawe ya Graniti Nyekundu
+
+White Granite Wall=Ukuta wa Graniti Nyeupe
+White Granite Brick Wall=Ukuta wa Tofali la Graniti Nyeupe
+White Granite Block Wall=Ukuta wa Kizuizi cha Graniti Nyeupe
+Cracked White Granite Brick Wall=Ukuta wa Tofali la Graniti Nyeupe Lililo na Ufa
+Cobbled White Granite Wall=Ukuta wa Mawe ya Graniti Nyeupe
+
+Yellow Granite Wall=Ukuta wa Graniti Njano
+Yellow Granite Brick Wall=Ukuta wa Tofali la Graniti Njano
+Yellow Granite Block Wall=Ukuta wa Kizuizi cha Graniti Njano
+Cracked Yellow Granite Brick Wall=Ukuta wa Tofali la Graniti Njano Lililo na Ufa
+Cobbled Yellow Granite Wall=Ukuta wa Mawe ya Graniti Njano
+
+Heliodor Wall=Ukuta wa Heliodori
+Heliodor Brick Wall=Ukuta wa Tofali la Heliodori
+Heliodor Block Wall=Ukuta wa Kizuizi cha Heliodori
+Cracked Heliodor Brick Wall=Ukuta wa Tofali la Heliodori Lililo na Ufa
+
+Howlite Wall=Ukuta wa Howliti
+Howlite Brick Wall=Ukuta wa Tofali la Howliti
+Howlite Block Wall=Ukuta wa Kizuizi cha Howliti
+Cracked Howlite Brick Wall=Ukuta wa Tofali la Howliti Lililo na Ufa
+Cobbled Howlite Wall=Ukuta wa Mawe ya Howliti
+
+Ilvaite Wall=Ukuta wa Ilvaiti
+Ilvaite Brick Wall=Ukuta wa Tofali la Ilvaiti
+Ilvaite Block Wall=Ukuta wa Kizuizi cha Ilvaiti
+Cracked Ilvaite Brick Wall=Ukuta wa Tofali la Ilvaiti Lililo na Ufa
+Cobbled Ilvaite Wall=Ukuta wa Mawe ya Ilvaiti
+
+Jade Wall=Ukuta wa Jadi
+Jade Brick Wall=Ukuta wa Tofali la Jadi
+Jade Block Wall=Ukuta wa Kizuizi cha Jadi
+Cracked Jade Brick Wall=Ukuta wa Tofali la Jadi Lililo na Ufa
+Cobbled Jade Wall=Ukuta wa Mawe ya Jadi
+
+Red Jasper Wall=Ukuta wa Jaspa Nyekundu
+Red Jasper Brick Wall=Ukuta wa Tofali la Jaspa Nyekundu
+Red Jasper Block Wall=Ukuta wa Kizuizi cha Jaspa Nyekundu
+Cracked Red Jasper Brick Wall=Ukuta wa Tofali la Jaspa Nyekundu Lililo na Ufa
+Cobbled Red Jasper Wall=Ukuta wa Mawe ya Jaspa Nyekundu
+
+Kyanite Wall=Ukuta wa Kyaniti
+Kyanite Brick Wall=Ukuta wa Tofali la Kyaniti
+Kyanite Block Wall=Ukuta wa Kizuizi cha Kyaniti
+Cracked Kyanite Brick Wall=Ukuta wa Tofali la Kyaniti Lililo na Ufa
+Cobbled Kyanite Wall=Ukuta wa Mawe ya Kyaniti
+
+Lapis Lazuli Wall=Ukuta wa Lapis Lazuli
+Lapis Lazuli Brick Wall=Ukuta wa Tofali la Lapis Lazuli
+Lapis Lazuli Block Wall=Ukuta wa Kizuizi cha Lapis Lazuli
+Cracked Lapis Lazuli Brick Wall=Ukuta wa Tofali la Lapis Lazuli Lililo na Ufa
+
+Lepidolite Wall=Ukuta wa Lepidoliti
+Lepidolite Brick Wall=Ukuta wa Tofali la Lepidoliti
+Lepidolite Block Wall=Ukuta wa Kizuizi cha Lepidoliti
+Cracked Lepidolite Brick Wall=Ukuta wa Tofali la Lepidoliti Lililo na Ufa
+Cobbled Lepidolite Wall=Ukuta wa Mawe ya Lepidoliti
+
+Blue Limestone Wall=Ukuta wa Chokaa Buluu
+Blue Limestone Brick Wall=Ukuta wa Tofali la Chokaa Buluu
+Blue Limestone Block Wall=Ukuta wa Kizuizi cha Chokaa Buluu
+Cracked Blue Limestone Brick Wall=Ukuta wa Tofali la Chokaa Buluu Lililo na Ufa
+Cobbled Blue Limestone Wall=Ukuta wa Mawe ya Chokaa Buluu
+
+White Limestone Wall=Ukuta wa Chokaa Nyeupe
+White Limestone Brick Wall=Ukuta wa Tofali la Chokaa Nyeupe
+White Limestone Block Wall=Ukuta wa Kizuizi cha Chokaa Nyeupe
+Cracked White Limestone Brick Wall=Ukuta wa Tofali la Chokaa Nyeupe Lililo na Ufa
+Cobbled White Limestone Wall=Ukuta wa Mawe ya Chokaa Nyeupe
+
+Marble Wall=Ukuta wa Marumaru
+Marble Brick Wall=Ukuta wa Tofali la Marumaru
+Marble Block Wall=Ukuta wa Kizuizi cha Marumaru
+Cracked Marble Brick Wall=Ukuta wa Tofali la Marumaru Lililo na Ufa
+Cobbled Marble Wall=Ukuta wa Mawe ya Marumaru
+
+Moonstone Wall=Ukuta wa Jiwe la Mwezi
+Moonstone Brick Wall=Ukuta wa Tofali la Jiwe la Mwezi
+Moonstone Block Wall=Ukuta wa Kizuizi cha Jiwe la Mwezi
+Cracked Moonstone Brick Wall=Ukuta wa Tofali la Jiwe la Mwezi Lililo na Ufa
+
+Morion Quartz Wall=Ukuta wa Kwatzi Morioni
+Morion Quartz Brick Wall=Ukuta wa Tofali la Kwatzi Morioni
+Morion Quartz Block Wall=Ukuta wa Kizuizi cha Kwatzi Morioni
+Cracked Morion Quartz Brick Wall=Ukuta wa Tofali la Kwatzi Morioni Lililo na Ufa
+
+Mudstone Wall=Ukuta wa Jiwe la Matope
+Cobbled Mudstone Wall=Ukuta wa Mawe ya Jiwe la Matope
+Mudstone Brick Wall=Ukuta wa Tofali la Jiwe la Matope
+Mudstone Block Wall=Ukuta wa Kizuizi cha Jiwe la Matope
+Cracked Mudstone Brick Wall=Ukuta wa Tofali la Jiwe la Matope Lililo na Ufa
+
+Prasiolite Wall=Ukuta wa Prasioliti
+Prasiolite Brick Wall=Ukuta wa Tofali la Prasioliti
+Prasiolite Block Wall=Ukuta wa Kizuizi cha Prasioliti
+Cracked Prasiolite Brick Wall=Ukuta wa Tofali la Prasioliti Lililo na Ufa
+
+Pumice Wall=Ukuta wa Pumisi
+Pumice Brick Wall=Ukuta wa Tofali la Pumisi
+Pumice Block Wall=Ukuta wa Kizuizi cha Pumisi
+Cracked Pumice Brick Wall=Ukuta wa Tofali la Pumisi Lililo na Ufa
+
+Pyrite Wall=Ukuta wa Pairiti
+Pyrite Brick Wall=Ukuta wa Tofali la Pairiti
+Pyrite Block Wall=Ukuta wa Kizuizi cha Pairiti
+Cracked Pyrite Brick Wall=Ukuta wa Tofali la Pairiti Lililo na Ufa
+
+Quartz Wall=Ukuta wa Kwatzi
+Quartz Brick Wall=Ukuta wa Tofali la Kwatzi
+Quartz Block Wall=Ukuta wa Kizuizi cha Kwatzi
+Cracked Quartz Brick Wall=Ukuta wa Tofali la Kwatzi Lililo na Ufa
+
+Rose Quartz Wall=Ukuta wa Kwatzi Waridi
+Rose Quartz Brick Wall=Ukuta wa Tofali la Kwatzi Waridi
+Rose Quartz Block Wall=Ukuta wa Kizuizi cha Kwatzi Waridi
+Cracked Rose Quartz Brick Wall=Ukuta wa Tofali la Kwatzi Waridi Lililo na Ufa
+
+Rhodonite Wall=Ukuta wa Rhodoniti
+Rhodonite Brick Wall=Ukuta wa Tofali la Rhodoniti
+Rhodonite Block Wall=Ukuta wa Kizuizi cha Rhodoniti
+Cracked Rhodonite Brick Wall=Ukuta wa Tofali la Rhodoniti Lililo na Ufa
+Cobbled Rhodonite Wall=Ukuta wa Mawe ya Rhodoniti
+
+Scoria Wall=Ukuta wa Skoriya
+Scoria Brick Wall=Ukuta wa Tofali la Skoriya
+Scoria Block Wall=Ukuta wa Kizuizi cha Skoriya
+Cracked Scoria Brick Wall=Ukuta wa Tofali la Skoriya Lililo na Ufa
+Cobbled Scoria Wall=Ukuta wa Mawe ya Skoriya
+
+Serpentine Wall=Ukuta wa Serpentini
+Cobbled Serpentine Wall=Ukuta wa Mawe ya Serpentini
+Serpentine Brick Wall=Ukuta wa Tofali la Serpentini
+Serpentine Block Wall=Ukuta wa Kizuizi cha Serpentini
+Cracked Serpentine Brick Wall=Ukuta wa Tofali la Serpentini Lililo na Ufa
+
+Shale Wall=Ukuta wa Sheli
+Shale Brick Wall=Ukuta wa Tofali la Sheli
+Shale Block Wall=Ukuta wa Kizuizi cha Sheli
+Cracked Shale Brick Wall=Ukuta wa Tofali la Sheli Lililo na Ufa
+Cobbled Shale Wall=Ukuta wa Mawe ya Sheli
+
+Slate Wall=Ukuta wa Sleti
+Slate Brick Wall=Ukuta wa Tofali la Sleti
+Slate Block Wall=Ukuta wa Kizuizi cha Sleti
+Cracked Slate Brick Wall=Ukuta wa Tofali la Sleti Lililo na Ufa
+Cobbled Slate Wall=Ukuta wa Mawe ya Sleti
+Slate Tile Wall=Ukuta wa Vigae vya Sleti
+
+Smokey Quartz Wall=Ukuta wa Kwatzi ya Moshi
+Smokey Quartz Brick Wall=Ukuta wa Tofali la Kwatzi ya Moshi
+Smokey Quartz Block Wall=Ukuta wa Kizuizi cha Kwatzi ya Moshi
+Cracked Smokey Quartz Brick Wall=Ukuta wa Tofali la Kwatzi ya Moshi Lililo na Ufa
+
+Soapstone Wall=Ukuta wa Jiwe la Sabuni
+Soapstone Brick Wall=Ukuta wa Tofali la Jiwe la Sabuni
+Soapstone Block Wall=Ukuta wa Kizuizi cha Jiwe la Sabuni
+Cracked Soapstone Brick Wall=Ukuta wa Tofali la Jiwe la Sabuni Lililo na Ufa
+
+Sodalite Wall=Ukuta wa Sodaliti
+Cobbled Sodalite Wall=Ukuta wa Mawe ya Sodaliti
+Sodalite Brick Wall=Ukuta wa Tofali la Sodaliti
+Sodalite Block Wall=Ukuta wa Kizuizi cha Sodaliti
+Cracked Sodalite Brick Wall=Ukuta wa Tofali la Sodaliti Lililo na Ufa
+
+Sugilite Wall=Ukuta wa Sugiliti
+Sugilite Brick Wall=Ukuta wa Tofali la Sugiliti
+Sugilite Block Wall=Ukuta wa Kizuizi cha Sugiliti
+Cracked Sugilite Brick Wall=Ukuta wa Tofali la Sugiliti Lililo na Ufa
+Cobbled Sugilite Wall=Ukuta wa Mawe ya Sugiliti
+
+Green Tourmaline Wall=Ukuta wa Turmalini Kijani
+Green Tourmaline Brick Wall=Ukuta wa Tofali la Turmalini Kijani
+Green Tourmaline Block Wall=Ukuta wa Kizuizi cha Turmalini Kijani
+Cracked Green Tourmaline Brick Wall=Ukuta wa Tofali la Turmalini Kijani Lililo na Ufa
+
+Paraiba Tourmaline Wall=Ukuta wa Turmalini Paraiba
+Paraiba Tourmaline Brick Wall=Ukuta wa Tofali la Turmalini Paraiba
+Paraiba Tourmaline Block Wall=Ukuta wa Kizuizi cha Turmalini Paraiba
+Cracked Paraiba Tourmaline Brick Wall=Ukuta wa Tofali la Turmalini Paraiba Lililo na Ufa
+
+Pink Tourmaline Wall=Ukuta wa Turmalini Waridi
+Pink Tourmaline Brick Wall=Ukuta wa Tofali la Turmalini Waridi
+Pink Tourmaline Block Wall=Ukuta wa Kizuizi cha Turmalini Waridi
+Cracked Pink Tourmaline Brick Wall=Ukuta wa Tofali la Turmalini Waridi Lililo na Ufa
+
+Travertine Wall=Ukuta wa Traversini
+Cobbled Travertine Wall=Ukuta wa Mawe ya Traversini
+Travertine Brick Wall=Ukuta wa Tofali la Traversini
+Travertine Block Wall=Ukuta wa Kizuizi cha Traversini
+Cracked Travertine Brick Wall=Ukuta wa Tofali la Traversini Lililo na Ufa
+
+Yellow Travertine Wall=Ukuta wa Traversini Njano
+Cobbled Yellow Travertine Wall=Ukuta wa Mawe ya Traversini Njano
+Yellow Travertine Brick Wall=Ukuta wa Tofali la Traversini Njano
+Yellow Travertine Block Wall=Ukuta wa Kizuizi cha Traversini Njano
+Cracked Yellow Travertine Brick Wall=Ukuta wa Tofali la Traversini Njano Lililo na Ufa
+
+Beige Tuff Wall=Ukuta wa Tafi Rangi ya Kahawia
+Beige Tuff Block Wall=Ukuta wa Kizuizi cha Tafi Rangi ya Kahawia
+Cobbled Beige Tuff Wall=Ukuta wa Mawe ya Tafi Rangi ya Kahawia
+Beige Tuff Brick Wall=Ukuta wa Tofali la Tafi Rangi ya Kahawia
+Cracked Beige Tuff Wall=Ukuta wa Tafi Rangi ya Kahawia Yenye Nyufa
+
+Grey Tuff Wall=Ukuta wa Tafi Kijivu
+Grey Tuff Block Wall=Ukuta wa Kizuizi cha Tafi Kijivu
+Cobbled Grey Tuff Wall=Ukuta wa Mawe ya Tafi Kijivu
+Grey Tuff Brick Wall=Ukuta wa Tofali la Tafi Kijivu
+Cracked Grey Tuff Wall=Ukuta wa Tafi Kijivu Yenye Nyufa
+
+Red Tuff Wall=Ukuta wa Tafi Nyekundu
+Red Tuff Block Wall=Ukuta wa Kizuizi cha Tafi Nyekundu
+Cobbled Red Tuff Wall=Ukuta wa Mawe ya Tafi Nyekundu
+Red Tuff Brick Wall=Ukuta wa Tofali la Tafi Nyekundu
+Cracked Red Tuff Wall=Ukuta wa Tafi Nyekundu Yenye Nyufa
+
+Turquoise Wall=Ukuta wa Feruzi
+Turquoise Brick Wall=Ukuta wa Tofali la Feruzi
+Turquoise Block Wall=Ukuta wa Kizuizi cha Feruzi
+Cracked Turquoise Brick Wall=Ukuta wa Tofali la Feruzi Lililo na Ufa
+Cobbled Turquoise Wall=Ukuta wa Mawe ya Feruzi
+
+Vivianite Wall=Ukuta wa Vivianiti
+Vivianite Brick Wall=Ukuta wa Tofali la Vivianiti
+Vivianite Block Wall=Ukuta wa Kizuizi cha Vivianiti
+Cracked Vivianite Brick Wall=Ukuta wa Tofali la Vivianiti Lililo na Ufa
+
+### stairs.lua ###
+
+Aegirine Slab=Kibao cha Aegirini
+
+Blue Agate Slab=Kibao cha Akiki Buluu
+Gray Agate Slab=Kibao cha Akiki Kijivu
+Green Agate Slab=Kibao cha Akiki Kijani
+Moss Agate Slab=Kibao cha Akiki Uani
+Orange Agate Slab=Kibao cha Akiki Machungwa
+Purple Agate Slab=Kibao cha Akiki Zambarau
+Red Agate Slab=Kibao cha Akiki Nyekundu
+
+Amazonite Slab=Kibao cha Amazoniti
+Cobbled Amazonite Slab=Kibao cha Mawe ya Amazoniti
+Amazonite Brick Slab=Kibao cha Tofali la Amazoniti
+Amazonite Block Slab=Kibao cha Kizuizi cha Amazoniti
+Cracked Amazonite Brick Slab=Kibao cha Tofali la Amazoniti Lililo na Ufa
+
+Amber Slab=Kibao cha Kaharaba
+Amber Brick Slab=Kibao cha Tofali la Kaharaba
+Amber Block Slab=Kibao cha Kizuizi cha Kaharaba
+Cracked Amber Brick Slab=Kibao cha Tofali la Kaharaba Lililo na Ufa
+
+Amethyst Slab=Kibao cha Amethisti
+Amethyst Brick Slab=Kibao cha Tofali la Amethisti
+Amethyst Block Slab=Kibao cha Kizuizi cha Amethisti
+Cracked Amethyst Brick Slab=Kibao cha Tofali la Amethisti Lililo na Ufa
+
+Andesite Slab=Kibao cha Andesiti
+Andesite Block Slab=Kibao cha Kizuizi cha Andesiti
+Andesite Brick Slab=Kibao cha Tofali la Andesiti
+Cracked Andesite Brick Slab=Kibao cha Tofali la Andesiti Lililo na Ufa
+Cobbled Andesite Slab=Kibao cha Mawe ya Andesiti
+
+Basalt Slab=Kibao cha Basalti
+Basalt Brick Slab=Kibao cha Tofali la Basalti
+Basalt Block Slab=Kibao cha Kizuizi cha Basalti
+Cracked Basalt Brick Slab=Kibao cha Tofali la Basalti Lililo na Ufa
+Cobbled Basalt Slab=Kibao cha Mawe ya Basalti
+Basalt Tile Slab=Kibao cha Vigae vya Basalti
+
+Black Moonstone Slab=Kibao cha Jiwe la Mwezi Nyeusi
+Black Moonstone Brick Slab=Kibao cha Tofali la Jiwe la Mwezi Nyeusi
+Black Moonstone Block Slab=Kibao cha Kizuizi cha Jiwe la Mwezi Nyeusi
+Cracked Black Moonstone Brick Slab=Kibao cha Tofali la Jiwe la Mwezi Nyeusi Lililo na Ufa
+
+Grey Calcite Slab=Kibao cha Kalkiti Kijivu
+Grey Calcite Brick Slab=Kibao cha Tofali la Kalkiti Kijivu
+Grey Calcite Block Slab=Kibao cha Kizuizi cha Kalkiti Kijivu
+Cracked Grey Calcite Brick Slab=Kibao cha Tofali la Kalkiti Kijivu Lililo na Ufa
+
+Calcite Slab=Kibao cha Kalkiti
+Calcite Brick Slab=Kibao cha Tofali la Kalkiti
+Calcite Block Slab=Kibao cha Kizuizi cha Kalkiti
+Cracked Calcite Brick Slab=Kibao cha Tofali la Kalkiti Lililo na Ufa
+
+Orange Calcite Slab=Kibao cha Kalkiti Machungwa
+Orange Calcite Brick Slab=Kibao cha Tofali la Kalkiti Machungwa
+Orange Calcite Block Slab=Kibao cha Kizuizi cha Kalkiti Machungwa
+Cracked Orange Calcite Brick Slab=Kibao cha Tofali la Kalkiti Machungwa Lililo na Ufa
+
+Carnotite Slab=Kibao cha Karnotiti
+Carnotite Brick Slab=Kibao cha Tofali la Karnotiti
+Carnotite Block Slab=Kibao cha Kizuizi cha Karnotiti
+Cracked Carnotite Brick Slab=Kibao cha Tofali la Karnotiti Lililo na Ufa
+Cobbled Carnotite Slab=Kibao cha Mawe ya Karnotiti
+
+Celestine Slab=Kibao cha Selestini
+Celestine Brick Slab=Kibao cha Tofali la Selestini
+Celestine Block Slab=Kibao cha Kizuizi cha Selestini
+Cracked Celestine Brick Slab=Kibao cha Tofali la Selestini Lililo na Ufa
+
+Chalcanthite Slab=Kibao cha Chalkanthiti
+Chalcanthite Brick Slab=Kibao cha Tofali la Chalkanthiti
+Chalcanthite Block Slab=Kibao cha Kizuizi cha Chalkanthiti
+Cracked Chalcanthite Brick Slab=Kibao cha Tofali la Chalkanthiti Lililo na Ufa
+Cobbled Chalcanthite Slab=Kibao cha Mawe ya Chalkanthiti
+
+Chrysoprase Slab=Kibao cha Chrysoprasi
+Chrysoprase Brick Slab=Kibao cha Tofali la Chrysoprasi
+Chrysoprase Block Slab=Kibao cha Kizuizi cha Chrysoprasi
+Cracked Chrysoprase Brick Slab=Kibao cha Tofali la Chrysoprasi Lililo na Ufa
+
+Citrine Slab=Kibao cha Sitrini
+Citrine Brick Slab=Kibao cha Tofali la Sitrini
+Citrine Block Slab=Kibao cha Kizuizi cha Sitrini
+Cracked Citrine Brick Slab=Kibao cha Tofali la Sitrini Lililo na Ufa
+
+Covellite Slab=Kibao cha Koveliti
+Covellite Brick Slab=Kibao cha Tofali la Koveliti
+Covellite Block Slab=Kibao cha Kizuizi cha Koveliti
+Cracked Covellite Brick Slab=Kibao cha Tofali la Koveliti Lililo na Ufa
+Cobbled Covellite Slab=Kibao cha Mawe ya Koveliti
+
+Crocoite Slab=Kibao cha Krokoiti
+Crocoite Brick Slab=Kibao cha Tofali la Krokoiti
+Crocoite Block Slab=Kibao cha Kizuizi cha Krokoiti
+Cracked Crocoite Brick Slab=Kibao cha Tofali la Krokoiti Lililo na Ufa
+
+Diorite Slab=Kibao cha Dioriti
+Diorite Brick Slab=Kibao cha Tofali la Dioriti
+Diorite Block Slab=Kibao cha Kizuizi cha Dioriti
+Cracked Diorite Brick Slab=Kibao cha Tofali la Dioriti Lililo na Ufa
+Cobbled Diorite Slab=Kibao cha Mawe ya Dioriti
+
+Erythrite Slab=Kibao cha Erithriti
+Erythrite Brick Slab=Kibao cha Tofali la Erithriti
+Erythrite Block Slab=Kibao cha Kizuizi cha Erithriti
+Cracked Erythrite Brick Slab=Kibao cha Tofali la Erithriti Lililo na Ufa
+
+Eudialite Slab=Kibao cha Eudialiti
+Eudialite Brick Slab=Kibao cha Tofali la Eudialiti
+Eudialite Block Slab=Kibao cha Kizuizi cha Eudialiti
+Cracked Eudialite Brick Slab=Kibao cha Tofali la Eudialiti Lililo na Ufa
+
+Fluorite Slab=Kibao cha Fluoriti
+Fluorite Brick Slab=Kibao cha Tofali la Fluoriti
+Fluorite Block Slab=Kibao cha Kizuizi cha Fluoriti
+Cracked Fluorite Brick Slab=Kibao cha Tofali la Fluoriti Lililo na Ufa
+
+Gabbro Slab=Kibao cha Gabro
+Cobbled Gabbro Slab=Kibao cha Mawe ya Gabro
+Gabbro Brick Slab=Kibao cha Tofali la Gabro
+Gabbro Block Slab=Kibao cha Kizuizi cha Gabro
+Cracked Gabbro Brick Slab=Kibao cha Tofali la Gabro Lililo na Ufa
+
+Galena Slab=Kibao cha Galena
+Galena Brick Slab=Kibao cha Tofali la Galena
+Galena Block Slab=Kibao cha Kizuizi cha Galena
+Cracked Galena Brick Slab=Kibao cha Tofali la Galena Lililo na Ufa
+
+Geyserite Slab=Kibao cha Geyseriti
+Geyserite Block Slab=Kibao cha Kizuizi cha Geyseriti
+Cobbled Geyserite Slab=Kibao cha Mawe ya Geyseriti
+Geyserite Brick Slab=Kibao cha Tofali la Geyseriti
+Cracked Geyserite Brick Slab=Kibao cha Tofali la Geyseriti Lililo na Ufa
+
+Gneiss Slab=Kibao cha Gneisi
+Gneiss Block Slab=Kibao cha Kizuizi cha Gneisi
+Cobbled Gneiss Slab=Kibao cha Mawe ya Gneisi
+Gneiss Brick Slab=Kibao cha Tofali la Gneisi
+Cracked Gneiss Brick Slab=Kibao cha Tofali la Gneisi Lililo na Ufa
+
+Black Granite Slab=Kibao cha Graniti Nyeusi
+Black Granite Brick Slab=Kibao cha Tofali la Graniti Nyeusi
+Black Granite Block Slab=Kibao cha Kizuizi cha Graniti Nyeusi
+Cracked Black Granite Brick Slab=Kibao cha Tofali la Graniti Nyeusi Lililo na Ufa
+Cobbled Black Granite Slab=Kibao cha Mawe ya Graniti Nyeusi
+
+Blue Granite Slab=Kibao cha Graniti Buluu
+Blue Granite Brick Slab=Kibao cha Tofali la Graniti Buluu
+Blue Granite Block Slab=Kibao cha Kizuizi cha Graniti Buluu
+Cracked Blue Granite Brick Slab=Kibao cha Tofali la Graniti Buluu Lililo na Ufa
+Cobbled Blue Granite Slab=Kibao cha Mawe ya Graniti Buluu
+
+Gray Granite Slab=Kibao cha Graniti Kijivu
+Gray Granite Brick Slab=Kibao cha Tofali la Graniti Kijivu
+Gray Granite Block Slab=Kibao cha Kizuizi cha Graniti Kijivu
+Cracked Gray Granite Brick Slab=Kibao cha Tofali la Graniti Kijivu Lililo na Ufa
+Cobbled Gray Granite Slab=Kibao cha Mawe ya Graniti Kijivu
+
+Green Granite Slab=Kibao cha Graniti Kijani
+Green Granite Brick Slab=Kibao cha Tofali la Graniti Kijani
+Green Granite Block Slab=Kibao cha Kizuizi cha Graniti Kijani
+Cracked Green Granite Brick Slab=Kibao cha Tofali la Graniti Kijani Lililo na Ufa
+Cobbled Green Granite Slab=Kibao cha Mawe ya Graniti Kijani
+
+Pink Granite Slab=Kibao cha Graniti Waridi
+Pink Granite Brick Slab=Kibao cha Tofali la Graniti Waridi
+Pink Granite Block Slab=Kibao cha Kizuizi cha Graniti Waridi
+Cracked Pink Granite Brick Slab=Kibao cha Tofali la Graniti Waridi Lililo na Ufa
+Cobbled Pink Granite Slab=Kibao cha Mawe ya Graniti Waridi
+
+Red Granite Slab=Kibao cha Graniti Nyekundu
+Red Granite Brick Slab=Kibao cha Tofali la Graniti Nyekundu
+Red Granite Block Slab=Kibao cha Kizuizi cha Graniti Nyekundu
+Cracked Red Granite Brick Slab=Kibao cha Tofali la Graniti Nyekundu Lililo na Ufa
+Cobbled Red Granite Slab=Kibao cha Mawe ya Graniti Nyekundu
+
+White Granite Slab=Kibao cha Graniti Nyeupe
+White Granite Brick Slab=Kibao cha Tofali la Graniti Nyeupe
+White Granite Block Slab=Kibao cha Kizuizi cha Graniti Nyeupe
+Cracked White Granite Brick Slab=Kibao cha Tofali la Graniti Nyeupe Lililo na Ufa
+Cobbled White Granite Slab=Kibao cha Mawe ya Graniti Nyeupe
+
+Yellow Granite Slab=Kibao cha Graniti Njano
+Yellow Granite Brick Slab=Kibao cha Tofali la Graniti Njano
+Yellow Granite Block Slab=Kibao cha Kizuizi cha Graniti Njano
+Cracked Yellow Granite Brick Slab=Kibao cha Tofali la Graniti Njano Lililo na Ufa
+Cobbled Yellow Granite Slab=Kibao cha Mawe ya Graniti Njano
+
+Heliodor Slab=Kibao cha Heliodori
+Heliodor Brick Slab=Kibao cha Tofali la Heliodori
+Heliodor Block Slab=Kibao cha Kizuizi cha Heliodori
+Cracked Heliodor Brick Slab=Kibao cha Tofali la Heliodori Lililo na Ufa
+
+Howlite Slab=Kibao cha Howliti
+Howlite Brick Slab=Kibao cha Tofali la Howliti
+Howlite Block Slab=Kibao cha Kizuizi cha Howliti
+Cracked Howlite Brick Slab=Kibao cha Tofali la Howliti Lililo na Ufa
+Cobbled Howlite Slab=Kibao cha Mawe ya Howliti
+
+Ilvaite Slab=Kibao cha Ilvaiti
+Ilvaite Brick Slab=Kibao cha Tofali la Ilvaiti
+Ilvaite Block Slab=Kibao cha Kizuizi cha Ilvaiti
+Cracked Ilvaite Brick Slab=Kibao cha Tofali la Ilvaiti Lililo na Ufa
+Cobbled Ilvaite Slab=Kibao cha Mawe ya Ilvaiti
+
+Jade Slab=Kibao cha Jadi
+Jade Brick Slab=Kibao cha Tofali la Jadi
+Jade Block Slab=Kibao cha Kizuizi cha Jadi
+Cracked Jade Brick Slab=Kibao cha Tofali la Jadi Lililo na Ufa
+Cobbled Jade Slab=Kibao cha Mawe ya Jadi
+
+Red Jasper Slab=Kibao cha Jaspa Nyekundu
+Red Jasper Brick Slab=Kibao cha Tofali la Jaspa Nyekundu
+Red Jasper Block Slab=Kibao cha Kizuizi cha Jaspa Nyekundu
+Cracked Red Jasper Brick Slab=Kibao cha Tofali la Jaspa Nyekundu Lililo na Ufa
+Cobbled Red Jasper Slab=Kibao cha Mawe ya Jaspa Nyekundu
+
+Kyanite Slab=Kibao cha Kyaniti
+Kyanite Brick Slab=Kibao cha Tofali la Kyaniti
+Kyanite Block Slab=Kibao cha Kizuizi cha Kyaniti
+Cracked Kyanite Brick Slab=Kibao cha Tofali la Kyaniti Lililo na Ufa
+Cobbled Kyanite Slab=Kibao cha Mawe ya Kyaniti
+
+Lapis Lazuli Slab=Kibao cha Lapis Lazuli
+Lapis Lazuli Brick Slab=Kibao cha Tofali la Lapis Lazuli
+Lapis Lazuli Block Slab=Kibao cha Kizuizi cha Lapis Lazuli
+Cracked Lapis Lazuli Brick Slab=Kibao cha Tofali la Lapis Lazuli Lililo na Ufa
+
+Lepidolite Slab=Kibao cha Lepidoliti
+Lepidolite Brick Slab=Kibao cha Tofali la Lepidoliti
+Lepidolite Block Slab=Kibao cha Kizuizi cha Lepidoliti
+Cracked Lepidolite Brick Slab=Kibao cha Tofali la Lepidoliti Lililo na Ufa
+Cobbled Lepidolite Slab=Kibao cha Mawe ya Lepidoliti
+
+Blue Limestone Slab=Kibao cha Chokaa Buluu
+Blue Limestone Brick Slab=Kibao cha Tofali la Chokaa Buluu
+Blue Limestone Block Slab=Kibao cha Kizuizi cha Chokaa Buluu
+Cracked Blue Limestone Brick Slab=Kibao cha Tofali la Chokaa Buluu Lililo na Ufa
+Cobbled Blue Limestone Slab=Kibao cha Mawe ya Chokaa Buluu
+
+White Limestone Slab=Kibao cha Chokaa Nyeupe
+White Limestone Brick Slab=Kibao cha Tofali la Chokaa Nyeupe
+White Limestone Block Slab=Kibao cha Kizuizi cha Chokaa Nyeupe
+Cracked White Limestone Brick Slab=Kibao cha Tofali la Chokaa Nyeupe Lililo na Ufa
+Cobbled White Limestone Slab=Kibao cha Mawe ya Chokaa Nyeupe
+
+Marble Slab=Kibao cha Marumaru
+Marble Brick Slab=Kibao cha Tofali la Marumaru
+Marble Block Slab=Kibao cha Kizuizi cha Marumaru
+Cracked Marble Brick Slab=Kibao cha Tofali la Marumaru Lililo na Ufa
+Cobbled Marble Slab=Kibao cha Mawe ya Marumaru
+
+Moonstone Slab=Kibao cha Jiwe la Mwezi
+Moonstone Brick Slab=Kibao cha Tofali la Jiwe la Mwezi
+Moonstone Block Slab=Kibao cha Kizuizi cha Jiwe la Mwezi
+Cracked Moonstone Brick Slab=Kibao cha Tofali la Jiwe la Mwezi Lililo na Ufa
+
+Morion Quartz Slab=Kibao cha Kwatzi Morioni
+Morion Quartz Brick Slab=Kibao cha Tofali la Kwatzi Morioni
+Morion Quartz Block Slab=Kibao cha Kizuizi cha Kwatzi Morioni
+Cracked Morion Quartz Brick Slab=Kibao cha Tofali la Kwatzi Morioni Lililo na Ufa
+
+Mudstone Slab=Kibao cha Jiwe la Matope
+Cobbled Mudstone Slab=Kibao cha Mawe ya Jiwe la Matope
+Mudstone Brick Slab=Kibao cha Tofali la Jiwe la Matope
+Mudstone Block Slab=Kibao cha Kizuizi cha Jiwe la Matope
+Cracked Mudstone Brick Slab=Kibao cha Tofali la Jiwe la Matope Lililo na Ufa
+
+Prasiolite Slab=Kibao cha Prasioliti
+Prasiolite Brick Slab=Kibao cha Tofali la Prasioliti
+Prasiolite Block Slab=Kibao cha Kizuizi cha Prasioliti
+Cracked Prasiolite Brick Slab=Kibao cha Tofali la Prasioliti Lililo na Ufa
+
+Pumice Slab=Kibao cha Pumisi
+Pumice Brick Slab=Kibao cha Tofali la Pumisi
+Pumice Block Slab=Kibao cha Kizuizi cha Pumisi
+Cracked Pumice Brick Slab=Kibao cha Tofali la Pumisi Lililo na Ufa
+
+Pyrite Slab=Kibao cha Pairiti
+Pyrite Brick Slab=Kibao cha Tofali la Pairiti
+Pyrite Block Slab=Kibao cha Kizuizi cha Pairiti
+Cracked Pyrite Brick Slab=Kibao cha Tofali la Pairiti Lililo na Ufa
+
+Quartz Slab=Kibao cha Kwatzi
+Quartz Brick Slab=Kibao cha Tofali la Kwatzi
+Quartz Block Slab=Kibao cha Kizuizi cha Kwatzi
+Cracked Quartz Brick Slab=Kibao cha Tofali la Kwatzi Lililo na Ufa
+
+Rose Quartz Slab=Kibao cha Kwatzi Waridi
+Rose Quartz Brick Slab=Kibao cha Tofali la Kwatzi Waridi
+Rose Quartz Block Slab=Kibao cha Kizuizi cha Kwatzi Waridi
+Cracked Rose Quartz Brick Slab=Kibao cha Tofali la Kwatzi Waridi Lililo na Ufa
+
+Rhodonite Slab=Kibao cha Rhodoniti
+Rhodonite Brick Slab=Kibao cha Tofali la Rhodoniti
+Rhodonite Block Slab=Kibao cha Kizuizi cha Rhodoniti
+Cracked Rhodonite Brick Slab=Kibao cha Tofali la Rhodoniti Lililo na Ufa
+Cobbled Rhodonite Slab=Kibao cha Mawe ya Rhodoniti
+
+Scoria Slab=Kibao cha Skoriya
+Scoria Brick Slab=Kibao cha Tofali la Skoriya
+Scoria Block Slab=Kibao cha Kizuizi cha Skoriya
+Cracked Scoria Brick Slab=Kibao cha Tofali la Skoriya Lililo na Ufa
+Cobbled Scoria Slab=Kibao cha Mawe ya Skoriya
+
+Serpentine Slab=Kibao cha Serpentini
+Cobbled Serpentine Slab=Kibao cha Mawe ya Serpentini
+Serpentine Brick Slab=Kibao cha Tofali la Serpentini
+Serpentine Block Slab=Kibao cha Kizuizi cha Serpentini
+Cracked Serpentine Brick Slab=Kibao cha Tofali la Serpentini Lililo na Ufa
+
+Shale Slab=Kibao cha Sheli
+Shale Brick Slab=Kibao cha Tofali la Sheli
+Shale Block Slab=Kibao cha Kizuizi cha Sheli
+Cracked Shale Brick Slab=Kibao cha Tofali la Sheli Lililo na Ufa
+Cobbled Shale Slab=Kibao cha Mawe ya Sheli
+
+Slate Slab=Kibao cha Sleti
+Slate Brick Slab=Kibao cha Tofali la Sleti
+Slate Block Slab=Kibao cha Kizuizi cha Sleti
+Cracked Slate Brick Slab=Kibao cha Tofali la Sleti Lililo na Ufa
+Cobbled Slate Slab=Kibao cha Mawe ya Sleti
+Slate Tile Slab=Kibao cha Vigae vya Sleti
+
+Smokey Quartz Slab=Kibao cha Kwatzi ya Moshi
+Smokey Quartz Brick Slab=Kibao cha Tofali la Kwatzi ya Moshi
+Smokey Quartz Block Slab=Kibao cha Kizuizi cha Kwatzi ya Moshi
+Cracked Smokey Quartz Brick Slab=Kibao cha Tofali la Kwatzi ya Moshi Lililo na Ufa
+
+Soapstone Slab=Kibao cha Jiwe la Sabuni
+Soapstone Brick Slab=Kibao cha Tofali la Jiwe la Sabuni
+Soapstone Block Slab=Kibao cha Kizuizi cha Jiwe la Sabuni
+Cracked Soapstone Brick Slab=Kibao cha Tofali la Jiwe la Sabuni Lililo na Ufa
+
+Sodalite Slab=Kibao cha Sodaliti
+Cobbled Sodalite Slab=Kibao cha Mawe ya Sodaliti
+Sodalite Brick Slab=Kibao cha Tofali la Sodaliti
+Sodalite Block Slab=Kibao cha Kizuizi cha Sodaliti
+Cracked Sodalite Brick Slab=Kibao cha Tofali la Sodaliti Lililo na Ufa
+
+Sugilite Slab=Kibao cha Sugiliti
+Sugilite Brick Slab=Kibao cha Tofali la Sugiliti
+Sugilite Block Slab=Kibao cha Kizuizi cha Sugiliti
+Cracked Sugilite Brick Slab=Kibao cha Tofali la Sugiliti Lililo na Ufa
+Cobbled Sugilite Slab=Kibao cha Mawe ya Sugiliti
+
+Green Tourmaline Slab=Kibao cha Turmalini Kijani
+Green Tourmaline Brick Slab=Kibao cha Tofali la Turmalini Kijani
+Green Tourmaline Block Slab=Kibao cha Kizuizi cha Turmalini Kijani
+Cracked Green Tourmaline Brick Slab=Kibao cha Tofali la Turmalini Kijani Lililo na Ufa
+
+Paraiba Tourmaline Slab=Kibao cha Turmalini Paraiba
+Paraiba Tourmaline Brick Slab=Kibao cha Tofali la Turmalini Paraiba
+Paraiba Tourmaline Block Slab=Kibao cha Kizuizi cha Turmalini Paraiba
+Cracked Paraiba Tourmaline Brick Slab=Kibao cha Tofali la Turmalini Paraiba Lililo na Ufa
+
+Pink Tourmaline Slab=Kibao cha Turmalini Waridi
+Pink Tourmaline Brick Slab=Kibao cha Tofali la Turmalini Waridi
+Pink Tourmaline Block Slab=Kibao cha Kizuizi cha Turmalini Waridi
+Cracked Pink Tourmaline Brick Slab=Kibao cha Tofali la Turmalini Waridi Lililo na Ufa
+
+Travertine Slab=Kibao cha Traversini
+Cobbled Travertine Slab=Kibao cha Mawe ya Traversini
+Travertine Brick Slab=Kibao cha Tofali la Traversini
+Travertine Block Slab=Kibao cha Kizuizi cha Traversini
+Cracked Travertine Brick Slab=Kibao cha Tofali la Traversini Lililo na Ufa
+
+Yellow Travertine Slab=Kibao cha Traversini Njano
+Cobbled Yellow Travertine Slab=Kibao cha Mawe ya Traversini Njano
+Yellow Travertine Brick Slab=Kibao cha Tofali la Traversini Njano
+Yellow Travertine Block Slab=Kibao cha Kizuizi cha Traversini Njano
+Cracked Yellow Travertine Brick Slab=Kibao cha Tofali la Traversini Njano Lililo na Ufa
+
+Beige Tuff Slab=Kibao cha Tafi Rangi ya Kahawia
+Beige Tuff Block Slab=Kibao cha Kizuizi cha Tafi Rangi ya Kahawia
+Cobbled Beige Tuff Slab=Kibao cha Mawe ya Tafi Rangi ya Kahawia
+Beige Tuff Brick Slab=Kibao cha Tofali la Tafi Rangi ya Kahawia
+Cracked Beige Tuff Slab=Kibao cha Tafi Rangi ya Kahawia Yenye Nyufa
+
+Grey Tuff Slab=Kibao cha Tafi Kijivu
+Grey Tuff Block Slab=Kibao cha Kizuizi cha Tafi Kijivu
+Cobbled Grey Tuff Slab=Kibao cha Mawe ya Tafi Kijivu
+Grey Tuff Brick Slab=Kibao cha Tofali la Tafi Kijivu
+Cracked Grey Tuff Slab=Kibao cha Tafi Kijivu Yenye Nyufa
+
+Red Tuff Slab=Kibao cha Tafi Nyekundu
+Red Tuff Block Slab=Kibao cha Kizuizi cha Tafi Nyekundu
+Cobbled Red Tuff Slab=Kibao cha Mawe ya Tafi Nyekundu
+Red Tuff Brick Slab=Kibao cha Tofali la Tafi Nyekundu
+Cracked Red Tuff Slab=Kibao cha Tafi Nyekundu Yenye Nyufa
+
+Turquoise Slab=Kibao cha Feruzi
+Turquoise Brick Slab=Kibao cha Tofali la Feruzi
+Turquoise Block Slab=Kibao cha Kizuizi cha Feruzi
+Cracked Turquoise Brick Slab=Kibao cha Tofali la Feruzi Lililo na Ufa
+Cobbled Turquoise Slab=Kibao cha Mawe ya Feruzi
+
+Vivianite Slab=Kibao cha Vivianiti
+Vivianite Brick Slab=Kibao cha Tofali la Vivianiti
+Vivianite Block Slab=Kibao cha Kizuizi cha Vivianiti
+Cracked Vivianite Brick Slab=Kibao cha Tofali la Vivianiti Lililo na Ufa
+
+
+
+Aegirine Stair=Ngazi za Aegirini
+
+Blue Agate Stair=Ngazi za Akiki Buluu
+Gray Agate Stair=Ngazi za Akiki Kijivu
+Green Agate Stair=Ngazi za Akiki Kijani
+Moss Agate Stair=Ngazi za Akiki Uani
+Orange Agate Stair=Ngazi za Akiki Machungwa
+Purple Agate Stair=Ngazi za Akiki Zambarau
+Red Agate Stair=Ngazi za Akiki Nyekundu
+
+Amazonite Stair=Ngazi za Amazoniti
+Cobbled Amazonite Stair=Ngazi za Mawe ya Amazoniti
+Amazonite Brick Stair=Ngazi za Tofali la Amazoniti
+Amazonite Block Stair=Ngazi za Kizuizi cha Amazoniti
+Cracked Amazonite Brick Stair=Ngazi za Tofali la Amazoniti Lililo na Ufa
+
+Amber Stair=Ngazi za Kaharaba
+Amber Brick Stair=Ngazi za Tofali la Kaharaba
+Amber Block Stair=Ngazi za Kizuizi cha Kaharaba
+Cracked Amber Brick Stair=Ngazi za Tofali la Kaharaba Lililo na Ufa
+
+Amethyst Stair=Ngazi za Amethisti
+Amethyst Brick Stair=Ngazi za Tofali la Amethisti
+Amethyst Block Stair=Ngazi za Kizuizi cha Amethisti
+Cracked Amethyst Brick Stair=Ngazi za Tofali la Amethisti Lililo na Ufa
+
+Andesite Stair=Ngazi za Andesiti
+Andesite Block Stair=Ngazi za Kizuizi cha Andesiti
+Andesite Brick Stair=Ngazi za Tofali la Andesiti
+Cracked Andesite Brick Stair=Ngazi za Tofali la Andesiti Lililo na Ufa
+Cobbled Andesite Stair=Ngazi za Mawe ya Andesiti
+
+Basalt Stair=Ngazi za Basalti
+Basalt Brick Stair=Ngazi za Tofali la Basalti
+Basalt Block Stair=Ngazi za Kizuizi cha Basalti
+Cracked Basalt Brick Stair=Ngazi za Tofali la Basalti Lililo na Ufa
+Cobbled Basalt Stair=Ngazi za Mawe ya Basalti
+Basalt Tile Stair=Ngazi za Vigae vya Basalti
+
+Black Moonstone Stair=Ngazi za Jiwe la Mwezi Nyeusi
+Black Moonstone Brick Stair=Ngazi za Tofali la Jiwe la Mwezi Nyeusi
+Black Moonstone Block Stair=Ngazi za Kizuizi cha Jiwe la Mwezi Nyeusi
+Cracked Black Moonstone Brick Stair=Ngazi za Tofali la Jiwe la Mwezi Nyeusi Lililo na Ufa
+
+Grey Calcite Stair=Ngazi za Kalkiti Kijivu
+Grey Calcite Brick Stair=Ngazi za Tofali la Kalkiti Kijivu
+Grey Calcite Block Stair=Ngazi za Kizuizi cha Kalkiti Kijivu
+Cracked Grey Calcite Brick Stair=Ngazi za Tofali la Kalkiti Kijivu Lililo na Ufa
+
+Calcite Stair=Ngazi za Kalkiti
+Calcite Brick Stair=Ngazi za Tofali la Kalkiti
+Calcite Block Stair=Ngazi za Kizuizi cha Kalkiti
+Cracked Calcite Brick Stair=Ngazi za Tofali la Kalkiti Lililo na Ufa
+
+Orange Calcite Stair=Ngazi za Kalkiti Machungwa
+Orange Calcite Brick Stair=Ngazi za Tofali la Kalkiti Machungwa
+Orange Calcite Block Stair=Ngazi za Kizuizi cha Kalkiti Machungwa
+Cracked Orange Calcite Brick Stair=Ngazi za Tofali la Kalkiti Machungwa Lililo na Ufa
+
+Carnotite Stair=Ngazi za Karnotiti
+Carnotite Brick Stair=Ngazi za Tofali la Karnotiti
+Carnotite Block Stair=Ngazi za Kizuizi cha Karnotiti
+Cracked Carnotite Brick Stair=Ngazi za Tofali la Karnotiti Lililo na Ufa
+Cobbled Carnotite Stair=Ngazi za Mawe ya Karnotiti
+
+Celestine Stair=Ngazi za Selestini
+Celestine Brick Stair=Ngazi za Tofali la Selestini
+Celestine Block Stair=Ngazi za Kizuizi cha Selestini
+Cracked Celestine Brick Stair=Ngazi za Tofali la Selestini Lililo na Ufa
+
+Chalcanthite Stair=Ngazi za Chalkanthiti
+Chalcanthite Brick Stair=Ngazi za Tofali la Chalkanthiti
+Chalcanthite Block Stair=Ngazi za Kizuizi cha Chalkanthiti
+Cracked Chalcanthite Brick Stair=Ngazi za Tofali la Chalkanthiti Lililo na Ufa
+Cobbled Chalcanthite Stair=Ngazi za Mawe ya Chalkanthiti
+
+Chrysoprase Stair=Ngazi za Chrysoprasi
+Chrysoprase Brick Stair=Ngazi za Tofali la Chrysoprasi
+Chrysoprase Block Stair=Ngazi za Kizuizi cha Chrysoprasi
+Cracked Chrysoprase Brick Stair=Ngazi za Tofali la Chrysoprasi Lililo na Ufa
+
+Citrine Stair=Ngazi za Sitrini
+Citrine Brick Stair=Ngazi za Tofali la Sitrini
+Citrine Block Stair=Ngazi za Kizuizi cha Sitrini
+Cracked Citrine Brick Stair=Ngazi za Tofali la Sitrini Lililo na Ufa
+
+Covellite Stair=Ngazi za Koveliti
+Covellite Brick Stair=Ngazi za Tofali la Koveliti
+Covellite Block Stair=Ngazi za Kizuizi cha Koveliti
+Cracked Covellite Brick Stair=Ngazi za Tofali la Koveliti Lililo na Ufa
+Cobbled Covellite Stair=Ngazi za Mawe ya Koveliti
+
+Crocoite Stair=Ngazi za Krokoiti
+Crocoite Brick Stair=Ngazi za Tofali la Krokoiti
+Crocoite Block Stair=Ngazi za Kizuizi cha Krokoiti
+Cracked Crocoite Brick Stair=Ngazi za Tofali la Krokoiti Lililo na Ufa
+
+Diorite Stair=Ngazi za Dioriti
+Diorite Brick Stair=Ngazi za Tofali la Dioriti
+Diorite Block Stair=Ngazi za Kizuizi cha Dioriti
+Cracked Diorite Brick Stair=Ngazi za Tofali la Dioriti Lililo na Ufa
+Cobbled Diorite Stair=Ngazi za Mawe ya Dioriti
+
+Erythrite Stair=Ngazi za Erithriti
+Erythrite Brick Stair=Ngazi za Tofali la Erithriti
+Erythrite Block Stair=Ngazi za Kizuizi cha Erithriti
+Cracked Erythrite Brick Stair=Ngazi za Tofali la Erithriti Lililo na Ufa
+
+Eudialite Stair=Ngazi za Eudialiti
+Eudialite Brick Stair=Ngazi za Tofali la Eudialiti
+Eudialite Block Stair=Ngazi za Kizuizi cha Eudialiti
+Cracked Eudialite Brick Stair=Ngazi za Tofali la Eudialiti Lililo na Ufa
+
+Fluorite Stair=Ngazi za Fluoriti
+Fluorite Brick Stair=Ngazi za Tofali la Fluoriti
+Fluorite Block Stair=Ngazi za Kizuizi cha Fluoriti
+Cracked Fluorite Brick Stair=Ngazi za Tofali la Fluoriti Lililo na Ufa
+
+Gabbro Stair=Ngazi za Gabro
+Cobbled Gabbro Stair=Ngazi za Mawe ya Gabro
+Gabbro Brick Stair=Ngazi za Tofali la Gabro
+Gabbro Block Stair=Ngazi za Kizuizi cha Gabro
+Cracked Gabbro Brick Stair=Ngazi za Tofali la Gabro Lililo na Ufa
+
+Galena Stair=Ngazi za Galena
+Galena Brick Stair=Ngazi za Tofali la Galena
+Galena Block Stair=Ngazi za Kizuizi cha Galena
+Cracked Galena Brick Stair=Ngazi za Tofali la Galena Lililo na Ufa
+
+Black Granite Stair=Ngazi za Graniti Nyeusi
+Black Granite Brick Stair=Ngazi za Tofali la Graniti Nyeusi
+Black Granite Block Stair=Ngazi za Kizuizi cha Graniti Nyeusi
+Cracked Black Granite Brick Stair=Ngazi za Tofali la Graniti Nyeusi Lililo na Ufa
+Cobbled Black Granite Stair=Ngazi za Mawe ya Graniti Nyeusi
+
+Blue Granite Stair=Ngazi za Graniti Buluu
+Blue Granite Brick Stair=Ngazi za Tofali la Graniti Buluu
+Blue Granite Block Stair=Ngazi za Kizuizi cha Graniti Buluu
+Cracked Blue Granite Brick Stair=Ngazi za Tofali la Graniti Buluu Lililo na Ufa
+Cobbled Blue Granite Stair=Ngazi za Mawe ya Graniti Buluu
+
+Gray Granite Stair=Ngazi za Graniti Kijivu
+Gray Granite Brick Stair=Ngazi za Tofali la Graniti Kijivu
+Gray Granite Block Stair=Ngazi za Kizuizi cha Graniti Kijivu
+Cracked Gray Granite Brick Stair=Ngazi za Tofali la Graniti Kijivu Lililo na Ufa
+Cobbled Gray Granite Stair=Ngazi za Mawe ya Graniti Kijivu
+
+Green Granite Stair=Ngazi za Graniti Kijani
+Green Granite Brick Stair=Ngazi za Tofali la Graniti Kijani
+Green Granite Block Stair=Ngazi za Kizuizi cha Graniti Kijani
+Cracked Green Granite Brick Stair=Ngazi za Tofali la Graniti Kijani Lililo na Ufa
+Cobbled Green Granite Stair=Ngazi za Mawe ya Graniti Kijani
+
+Pink Granite Stair=Ngazi za Graniti Waridi
+Pink Granite Brick Stair=Ngazi za Tofali la Graniti Waridi
+Pink Granite Block Stair=Ngazi za Kizuizi cha Graniti Waridi
+Cracked Pink Granite Brick Stair=Ngazi za Tofali la Graniti Waridi Lililo na Ufa
+Cobbled Pink Granite Stair=Ngazi za Mawe ya Graniti Waridi
+
+Red Granite Stair=Ngazi za Graniti Nyekundu
+Red Granite Brick Stair=Ngazi za Tofali la Graniti Nyekundu
+Red Granite Block Stair=Ngazi za Kizuizi cha Graniti Nyekundu
+Cracked Red Granite Brick Stair=Ngazi za Tofali la Graniti Nyekundu Lililo na Ufa
+Cobbled Red Granite Stair=Ngazi za Mawe ya Graniti Nyekundu
+
+White Granite Stair=Ngazi za Graniti Nyeupe
+White Granite Brick Stair=Ngazi za Tofali la Graniti Nyeupe
+White Granite Block Stair=Ngazi za Kizuizi cha Graniti Nyeupe
+Cracked White Granite Brick Stair=Ngazi za Tofali la Graniti Nyeupe Lililo na Ufa
+Cobbled White Granite Stair=Ngazi za Mawe ya Graniti Nyeupe
+
+Yellow Granite Stair=Ngazi za Graniti Njano
+Yellow Granite Brick Stair=Ngazi za Tofali la Graniti Njano
+Yellow Granite Block Stair=Ngazi za Kizuizi cha Graniti Njano
+Cracked Yellow Granite Brick Stair=Ngazi za Tofali la Graniti Njano Lililo na Ufa
+Cobbled Yellow Granite Stair=Ngazi za Mawe ya Graniti Njano
+
+Heliodor Stair=Ngazi za Heliodori
+Heliodor Brick Stair=Ngazi za Tofali la Heliodori
+Heliodor Block Stair=Ngazi za Kizuizi cha Heliodori
+Cracked Heliodor Brick Stair=Ngazi za Tofali la Heliodori Lililo na Ufa
+
+Howlite Stair=Ngazi za Howliti
+Howlite Brick Stair=Ngazi za Tofali la Howliti
+Howlite Block Stair=Ngazi za Kizuizi cha Howliti
+Cracked Howlite Brick Stair=Ngazi za Tofali la Howliti Lililo na Ufa
+Cobbled Howlite Stair=Ngazi za Mawe ya Howliti
+
+Ilvaite Stair=Ngazi za Ilvaiti
+Ilvaite Brick Stair=Ngazi za Tofali la Ilvaiti
+Ilvaite Block Stair=Ngazi za Kizuizi cha Ilvaiti
+Cracked Ilvaite Brick Stair=Ngazi za Tofali la Ilvaiti Lililo na Ufa
+Cobbled Ilvaite Stair=Ngazi za Mawe ya Ilvaiti
+
+Jade Stair=Ngazi za Jadi
+Jade Brick Stair=Ngazi za Tofali la Jadi
+Jade Block Stair=Ngazi za Kizuizi cha Jadi
+Cracked Jade Brick Stair=Ngazi za Tofali la Jadi Lililo na Ufa
+Cobbled Jade Stair=Ngazi za Mawe ya Jadi
+
+Red Jasper Stair=Ngazi za Jaspa Nyekundu
+Red Jasper Brick Stair=Ngazi za Tofali la Jaspa Nyekundu
+Red Jasper Block Stair=Ngazi za Kizuizi cha Jaspa Nyekundu
+Cracked Red Jasper Brick Stair=Ngazi za Tofali la Jaspa Nyekundu Lililo na Ufa
+Cobbled Red Jasper Stair=Ngazi za Mawe ya Jaspa Nyekundu
+
+Kyanite Stair=Ngazi za Kyaniti
+Kyanite Brick Stair=Ngazi za Tofali la Kyaniti
+Kyanite Block Stair=Ngazi za Kizuizi cha Kyaniti
+Cracked Kyanite Brick Stair=Ngazi za Tofali la Kyaniti Lililo na Ufa
+Cobbled Kyanite Stair=Ngazi za Mawe ya Kyaniti
+
+Lapis Lazuli Stair=Ngazi za Lapis Lazuli
+Lapis Lazuli Brick Stair=Ngazi za Tofali la Lapis Lazuli
+Lapis Lazuli Block Stair=Ngazi za Kizuizi cha Lapis Lazuli
+Cracked Lapis Lazuli Brick Stair=Ngazi za Tofali la Lapis Lazuli Lililo na Ufa
+
+Lepidolite Stair=Ngazi za Lepidoliti
+Lepidolite Brick Stair=Ngazi za Tofali la Lepidoliti
+Lepidolite Block Stair=Ngazi za Kizuizi cha Lepidoliti
+Cracked Lepidolite Brick Stair=Ngazi za Tofali la Lepidoliti Lililo na Ufa
+Cobbled Lepidolite Stair=Ngazi za Mawe ya Lepidoliti
+
+Blue Limestone Stair=Ngazi za Chokaa Buluu
+Blue Limestone Brick Stair=Ngazi za Tofali la Chokaa Buluu
+Blue Limestone Block Stair=Ngazi za Kizuizi cha Chokaa Buluu
+Cracked Blue Limestone Brick Stair=Ngazi za Tofali la Chokaa Buluu Lililo na Ufa
+Cobbled Blue Limestone Stair=Ngazi za Mawe ya Chokaa Buluu
+
+White Limestone Stair=Ngazi za Chokaa Nyeupe
+White Limestone Brick Stair=Ngazi za Tofali la Chokaa Nyeupe
+White Limestone Block Stair=Ngazi za Kizuizi cha Chokaa Nyeupe
+Cracked White Limestone Brick Stair=Ngazi za Tofali la Chokaa Nyeupe Lililo na Ufa
+Cobbled White Limestone Stair=Ngazi za Mawe ya Chokaa Nyeupe
+
+Marble Stair=Ngazi za Marumaru
+Marble Brick Stair=Ngazi za Tofali la Marumaru
+Marble Block Stair=Ngazi za Kizuizi cha Marumaru
+Cracked Marble Brick Stair=Ngazi za Tofali la Marumaru Lililo na Ufa
+Cobbled Marble Stair=Ngazi za Mawe ya Marumaru
+
+Moonstone Stair=Ngazi za Jiwe la Mwezi
+Moonstone Brick Stair=Ngazi za Tofali la Jiwe la Mwezi
+Moonstone Block Stair=Ngazi za Kizuizi cha Jiwe la Mwezi
+Cracked Moonstone Brick Stair=Ngazi za Tofali la Jiwe la Mwezi Lililo na Ufa
+
+Morion Quartz Stair=Ngazi za Kwatzi Morioni
+Morion Quartz Brick Stair=Ngazi za Tofali la Kwatzi Morioni
+Morion Quartz Block Stair=Ngazi za Kizuizi cha Kwatzi Morioni
+Cracked Morion Quartz Brick Stair=Ngazi za Tofali la Kwatzi Morioni Lililo na Ufa
+
+Mudstone Stair=Ngazi za Jiwe la Matope
+Cobbled Mudstone Stair=Ngazi za Mawe ya Jiwe la Matope
+Mudstone Brick Stair=Ngazi za Tofali la Jiwe la Matope
+Mudstone Block Stair=Ngazi za Kizuizi cha Jiwe la Matope
+Cracked Mudstone Brick Stair=Ngazi za Tofali la Jiwe la Matope Lililo na Ufa
+
+Prasiolite Stair=Ngazi za Prasioliti
+Prasiolite Brick Stair=Ngazi za Tofali la Prasioliti
+Prasiolite Block Stair=Ngazi za Kizuizi cha Prasioliti
+Cracked Prasiolite Brick Stair=Ngazi za Tofali la Prasioliti Lililo na Ufa
+
+Pumice Stair=Ngazi za Pumisi
+Pumice Brick Stair=Ngazi za Tofali la Pumisi
+Pumice Block Stair=Ngazi za Kizuizi cha Pumisi
+Cracked Pumice Brick Stair=Ngazi za Tofali la Pumisi Lililo na Ufa
+
+Pyrite Stair=Ngazi za Pairiti
+Pyrite Brick Stair=Ngazi za Tofali la Pairiti
+Pyrite Block Stair=Ngazi za Kizuizi cha Pairiti
+Cracked Pyrite Brick Stair=Ngazi za Tofali la Pairiti Lililo na Ufa
+
+Quartz Stair=Ngazi za Kwatzi
+Quartz Brick Stair=Ngazi za Tofali la Kwatzi
+Quartz Block Stair=Ngazi za Kizuizi cha Kwatzi
+Cracked Quartz Brick Stair=Ngazi za Tofali la Kwatzi Lililo na Ufa
+
+Rose Quartz Stair=Ngazi za Kwatzi Waridi
+Rose Quartz Brick Stair=Ngazi za Tofali la Kwatzi Waridi
+Rose Quartz Block Stair=Ngazi za Kizuizi cha Kwatzi Waridi
+Cracked Rose Quartz Brick Stair=Ngazi za Tofali la Kwatzi Waridi Lililo na Ufa
+
+Rhodonite Stair=Ngazi za Rhodoniti
+Rhodonite Brick Stair=Ngazi za Tofali la Rhodoniti
+Rhodonite Block Stair=Ngazi za Kizuizi cha Rhodoniti
+Cracked Rhodonite Brick Stair=Ngazi za Tofali la Rhodoniti Lililo na Ufa
+Cobbled Rhodonite Stair=Ngazi za Mawe ya Rhodoniti
+
+Scoria Stair=Ngazi za Skoriya
+Scoria Brick Stair=Ngazi za Tofali la Skoriya
+Scoria Block Stair=Ngazi za Kizuizi cha Skoriya
+Cracked Scoria Brick Stair=Ngazi za Tofali la Skoriya Lililo na Ufa
+Cobbled Scoria Stair=Ngazi za Mawe ya Skoriya
+
+Serpentine Stair=Ngazi za Serpentini
+Cobbled Serpentine Stair=Ngazi za Mawe ya Serpentini
+Serpentine Brick Stair=Ngazi za Tofali la Serpentini
+Serpentine Block Stair=Ngazi za Kizuizi cha Serpentini
+Cracked Serpentine Brick Stair=Ngazi za Tofali la Serpentini Lililo na Ufa
+
+Shale Stair=Ngazi za Sheli
+Shale Brick Stair=Ngazi za Tofali la Sheli
+Shale Block Stair=Ngazi za Kizuizi cha Sheli
+Cracked Shale Brick Stair=Ngazi za Tofali la Sheli Lililo na Ufa
+Cobbled Shale Stair=Ngazi za Mawe ya Sheli
+
+Slate Stair=Ngazi za Sleti
+Slate Brick Stair=Ngazi za Tofali la Sleti
+Slate Block Stair=Ngazi za Kizuizi cha Sleti
+Cracked Slate Brick Stair=Ngazi za Tofali la Sleti Lililo na Ufa
+Cobbled Slate Stair=Ngazi za Mawe ya Sleti
+Slate Tile Stair=Ngazi za Vigae vya Sleti
+
+Smokey Quartz Stair=Ngazi za Kwatzi ya Moshi
+Smokey Quartz Brick Stair=Ngazi za Tofali la Kwatzi ya Moshi
+Smokey Quartz Block Stair=Ngazi za Kizuizi cha Kwatzi ya Moshi
+Cracked Smokey Quartz Brick Stair=Ngazi za Tofali la Kwatzi ya Moshi Lililo na Ufa
+
+Soapstone Stair=Ngazi za Jiwe la Sabuni
+Soapstone Brick Stair=Ngazi za Tofali la Jiwe la Sabuni
+Soapstone Block Stair=Ngazi za Kizuizi cha Jiwe la Sabuni
+Cracked Soapstone Brick Stair=Ngazi za Tofali la Jiwe la Sabuni Lililo na Ufa
+
+Sodalite Stair=Ngazi za Sodaliti
+Cobbled Sodalite Stair=Ngazi za Mawe ya Sodaliti
+Sodalite Brick Stair=Ngazi za Tofali la Sodaliti
+Sodalite Block Stair=Ngazi za Kizuizi cha Sodaliti
+Cracked Sodalite Brick Stair=Ngazi za Tofali la Sodaliti Lililo na Ufa
+
+Sugilite Stair=Ngazi za Sugiliti
+Sugilite Brick Stair=Ngazi za Tofali la Sugiliti
+Sugilite Block Stair=Ngazi za Kizuizi cha Sugiliti
+Cracked Sugilite Brick Stair=Ngazi za Tofali la Sugiliti Lililo na Ufa
+Cobbled Sugilite Stair=Ngazi za Mawe ya Sugiliti
+
+Green Tourmaline Stair=Ngazi za Turmalini Kijani
+Green Tourmaline Brick Stair=Ngazi za Tofali la Turmalini Kijani
+Green Tourmaline Block Stair=Ngazi za Kizuizi cha Turmalini Kijani
+Cracked Green Tourmaline Brick Stair=Ngazi za Tofali la Turmalini Kijani Lililo na Ufa
+
+Paraiba Tourmaline Stair=Ngazi za Turmalini Paraiba
+Paraiba Tourmaline Brick Stair=Ngazi za Tofali la Turmalini Paraiba
+Paraiba Tourmaline Block Stair=Ngazi za Kizuizi cha Turmalini Paraiba
+Cracked Paraiba Tourmaline Brick Stair=Ngazi za Tofali la Turmalini Paraiba Lililo na Ufa
+
+Pink Tourmaline Stair=Ngazi za Turmalini Waridi
+Pink Tourmaline Brick Stair=Ngazi za Tofali la Turmalini Waridi
+Pink Tourmaline Block Stair=Ngazi za Kizuizi cha Turmalini Waridi
+Cracked Pink Tourmaline Brick Stair=Ngazi za Tofali la Turmalini Waridi Lililo na Ufa
+
+Travertine Stair=Ngazi za Traversini
+Cobbled Travertine Stair=Ngazi za Mawe ya Traversini
+Travertine Brick Stair=Ngazi za Tofali la Traversini
+Travertine Block Stair=Ngazi za Kizuizi cha Traversini
+Cracked Travertine Brick Stair=Ngazi za Tofali la Traversini Lililo na Ufa
+
+Yellow Travertine Stair=Ngazi za Traversini Njano
+Cobbled Yellow Travertine Stair=Ngazi za Mawe ya Traversini Njano
+Yellow Travertine Brick Stair=Ngazi za Tofali la Traversini Njano
+Yellow Travertine Block Stair=Ngazi za Kizuizi cha Traversini Njano
+Cracked Yellow Travertine Brick Stair=Ngazi za Tofali la Traversini Njano Lililo na Ufa
+
+Beige Tuff Stair=Ngazi za Tafi Rangi ya Kahawia
+Beige Tuff Block Stair=Ngazi za Kizuizi cha Tafi Rangi ya Kahawia
+Cobbled Beige Tuff Stair=Ngazi za Mawe ya Tafi Rangi ya Kahawia
+Beige Tuff Brick Stair=Ngazi za Tofali la Tafi Rangi ya Kahawia
+Cracked Beige Tuff Stair=Ngazi za Tafi Rangi ya Kahawia Yenye Nyufa
+
+Grey Tuff Stair=Ngazi za Tafi Kijivu
+Grey Tuff Block Stair=Ngazi za Kizuizi cha Tafi Kijivu
+Cobbled Grey Tuff Stair=Ngazi za Mawe ya Tafi Kijivu
+Grey Tuff Brick Stair=Ngazi za Tofali la Tafi Kijivu
+Cracked Grey Tuff Stair=Ngazi za Tafi Kijivu Yenye Nyufa
+
+Red Tuff Stair=Ngazi za Tafi Nyekundu
+Red Tuff Block Stair=Ngazi za Kizuizi cha Tafi Nyekundu
+Cobbled Red Tuff Stair=Ngazi za Mawe ya Tafi Nyekundu
+Red Tuff Brick Stair=Ngazi za Tofali la Tafi Nyekundu
+Cracked Red Tuff Stair=Ngazi za Tafi Nyekundu Yenye Nyufa
+
+Turquoise Stair=Ngazi za Feruzi
+Turquoise Brick Stair=Ngazi za Tofali la Feruzi
+Turquoise Block Stair=Ngazi za Kizuizi cha Feruzi
+Cracked Turquoise Brick Stair=Ngazi za Tofali la Feruzi Lililo na Ufa
+Cobbled Turquoise Stair=Ngazi za Mawe ya Feruzi
+
+Vivianite Stair=Ngazi za Vivianiti
+Vivianite Brick Stair=Ngazi za Tofali la Vivianiti
+Vivianite Block Stair=Ngazi za Kizuizi cha Vivianiti
+Cracked Vivianite Brick Stair=Ngazi za Tofali la Vivianiti Lililo na Ufa
+
+
+
+Inner Aegirine Stair=Ngazi za Ndani za Aegirini
+
+Inner Blue Agate Stair=Ngazi za Ndani za Akiki Buluu
+Inner Gray Agate Stair=Ngazi za Ndani za Akiki Kijivu
+Inner Green Agate Stair=Ngazi za Ndani za Akiki Kijani
+Inner Moss Agate Stair=Ngazi za Ndani za Akiki Uani
+Inner Orange Agate Stair=Ngazi za Ndani za Akiki Machungwa
+Inner Purple Agate Stair=Ngazi za Ndani za Akiki Zambarau
+Inner Red Agate Stair=Ngazi za Ndani za Akiki Nyekundu
+
+Inner Amazonite Stair=Ngazi za Ndani za Amazoniti
+Inner Cobbled Amazonite Stair=Ngazi za Ndani za Mawe ya Amazoniti
+Inner Amazonite Brick Stair=Ngazi za Ndani za Tofali la Amazoniti
+Inner Amazonite Block Stair=Ngazi za Ndani za Kizuizi cha Amazoniti
+Inner Cracked Amazonite Brick Stair=Ngazi za Ndani za Tofali la Amazoniti Lililo na Ufa
+
+Inner Amber Stair=Ngazi za Ndani za Kaharaba
+Inner Amber Brick Stair=Ngazi za Ndani za Tofali la Kaharaba
+Inner Amber Block Stair=Ngazi za Ndani za Kizuizi cha Kaharaba
+Inner Cracked Amber Brick Stair=Ngazi za Ndani za Tofali la Kaharaba Lililo na Ufa
+
+Inner Amethyst Stair=Ngazi za Ndani za Amethisti
+Inner Amethyst Brick Stair=Ngazi za Ndani za Tofali la Amethisti
+Inner Amethyst Block Stair=Ngazi za Ndani za Kizuizi cha Amethisti
+Inner Cracked Amethyst Brick Stair=Ngazi za Ndani za Tofali la Amethisti Lililo na Ufa
+
+Inner Andesite Stair=Ngazi za Ndani za Andesiti
+Inner Andesite Block Stair=Ngazi za Ndani za Kizuizi cha Andesiti
+Inner Andesite Brick Stair=Ngazi za Ndani za Tofali la Andesiti
+Inner Cracked Andesite Brick Stair=Ngazi za Ndani za Tofali la Andesiti Lililo na Ufa
+Inner Cobbled Andesite Stair=Ngazi za Ndani za Mawe ya Andesiti
+
+Inner Basalt Stair=Ngazi za Ndani za Basalti
+Inner Basalt Brick Stair=Ngazi za Ndani za Tofali la Basalti
+Inner Basalt Block Stair=Ngazi za Ndani za Kizuizi cha Basalti
+Inner Cracked Basalt Brick Stair=Ngazi za Ndani za Tofali la Basalti Lililo na Ufa
+Inner Cobbled Basalt Stair=Ngazi za Ndani za Mawe ya Basalti
+Inner Basalt Tile Stair=Ngazi za Ndani za Vigae vya Basalti
+
+Inner Black Moonstone Stair=Ngazi za Ndani za Jiwe la Mwezi Nyeusi
+Inner Black Moonstone Brick Stair=Ngazi za Ndani za Tofali la Jiwe la Mwezi Nyeusi
+Inner Black Moonstone Block Stair=Ngazi za Ndani za Kizuizi cha Jiwe la Mwezi Nyeusi
+Inner Cracked Black Moonstone Brick Stair=Ngazi za Ndani za Tofali la Jiwe la Mwezi Nyeusi Lililo na Ufa
+
+Inner Grey Calcite Stair=Ngazi za Ndani za Kalkiti Kijivu
+Inner Grey Calcite Brick Stair=Ngazi za Ndani za Tofali la Kalkiti Kijivu
+Inner Grey Calcite Block Stair=Ngazi za Ndani za Kizuizi cha Kalkiti Kijivu
+Inner Cracked Grey Calcite Brick Stair=Ngazi za Ndani za Tofali la Kalkiti Kijivu Lililo na Ufa
+
+Inner Calcite Stair=Ngazi za Ndani za Kalkiti
+Inner Calcite Brick Stair=Ngazi za Ndani za Tofali la Kalkiti
+Inner Calcite Block Stair=Ngazi za Ndani za Kizuizi cha Kalkiti
+Inner Cracked Calcite Brick Stair=Ngazi za Ndani za Tofali la Kalkiti Lililo na Ufa
+
+Inner Orange Calcite Stair=Ngazi za Ndani za Kalkiti Machungwa
+Inner Orange Calcite Brick Stair=Ngazi za Ndani za Tofali la Kalkiti Machungwa
+Inner Orange Calcite Block Stair=Ngazi za Ndani za Kizuizi cha Kalkiti Machungwa
+Inner Cracked Orange Calcite Brick Stair=Ngazi za Ndani za Tofali la Kalkiti Machungwa Lililo na Ufa
+
+Inner Carnotite Stair=Ngazi za Ndani za Karnotiti
+Inner Carnotite Brick Stair=Ngazi za Ndani za Tofali la Karnotiti
+Inner Carnotite Block Stair=Ngazi za Ndani za Kizuizi cha Karnotiti
+Inner Cracked Carnotite Brick Stair=Ngazi za Ndani za Tofali la Karnotiti Lililo na Ufa
+Inner Cobbled Carnotite Stair=Ngazi za Ndani za Mawe ya Karnotiti
+
+Inner Celestine Stair=Ngazi za Ndani za Selestini
+Inner Celestine Brick Stair=Ngazi za Ndani za Tofali la Selestini
+Inner Celestine Block Stair=Ngazi za Ndani za Kizuizi cha Selestini
+Inner Cracked Celestine Brick Stair=Ngazi za Ndani za Tofali la Selestini Lililo na Ufa
+
+Inner Chalcanthite Stair=Ngazi za Ndani za Chalkanthiti
+Inner Chalcanthite Brick Stair=Ngazi za Ndani za Tofali la Chalkanthiti
+Inner Chalcanthite Block Stair=Ngazi za Ndani za Kizuizi cha Chalkanthiti
+Inner Cracked Chalcanthite Brick Stair=Ngazi za Ndani za Tofali la Chalkanthiti Lililo na Ufa
+Inner Cobbled Chalcanthite Stair=Ngazi za Ndani za Mawe ya Chalkanthiti
+
+Inner Chrysoprase Stair=Ngazi za Ndani za Chrysoprasi
+Inner Chrysoprase Brick Stair=Ngazi za Ndani za Tofali la Chrysoprasi
+Inner Chrysoprase Block Stair=Ngazi za Ndani za Kizuizi cha Chrysoprasi
+Inner Cracked Chrysoprase Brick Stair=Ngazi za Ndani za Tofali la Chrysoprasi Lililo na Ufa
+
+Inner Citrine Stair=Ngazi za Ndani za Sitrini
+Inner Citrine Brick Stair=Ngazi za Ndani za Tofali la Sitrini
+Inner Citrine Block Stair=Ngazi za Ndani za Kizuizi cha Sitrini
+Inner Cracked Citrine Brick Stair=Ngazi za Ndani za Tofali la Sitrini Lililo na Ufa
+
+Inner Covellite Stair=Ngazi za Ndani za Koveliti
+Inner Covellite Brick Stair=Ngazi za Ndani za Tofali la Koveliti
+Inner Covellite Block Stair=Ngazi za Ndani za Kizuizi cha Koveliti
+Inner Cracked Covellite Brick Stair=Ngazi za Ndani za Tofali la Koveliti Lililo na Ufa
+Inner Cobbled Covellite Stair=Ngazi za Ndani za Mawe ya Koveliti
+
+Inner Crocoite Stair=Ngazi za Ndani za Krokoiti
+Inner Crocoite Brick Stair=Ngazi za Ndani za Tofali la Krokoiti
+Inner Crocoite Block Stair=Ngazi za Ndani za Kizuizi cha Krokoiti
+Inner Cracked Crocoite Brick Stair=Ngazi za Ndani za Tofali la Krokoiti Lililo na Ufa
+
+Inner Diorite Stair=Ngazi za Ndani za Dioriti
+Inner Diorite Brick Stair=Ngazi za Ndani za Tofali la Dioriti
+Inner Diorite Block Stair=Ngazi za Ndani za Kizuizi cha Dioriti
+Inner Cracked Diorite Brick Stair=Ngazi za Ndani za Tofali la Dioriti Lililo na Ufa
+Inner Cobbled Diorite Stair=Ngazi za Ndani za Mawe ya Dioriti
+
+Inner Erythrite Stair=Ngazi za Ndani za Erithriti
+Inner Erythrite Brick Stair=Ngazi za Ndani za Tofali la Erithriti
+Inner Erythrite Block Stair=Ngazi za Ndani za Kizuizi cha Erithriti
+Inner Cracked Erythrite Brick Stair=Ngazi za Ndani za Tofali la Erithriti Lililo na Ufa
+
+Inner Eudialite Stair=Ngazi za Ndani za Eudialiti
+Inner Eudialite Brick Stair=Ngazi za Ndani za Tofali la Eudialiti
+Inner Eudialite Block Stair=Ngazi za Ndani za Kizuizi cha Eudialiti
+Inner Cracked Eudialite Brick Stair=Ngazi za Ndani za Tofali la Eudialiti Lililo na Ufa
+
+Inner Fluorite Stair=Ngazi za Ndani za Fluoriti
+Inner Fluorite Brick Stair=Ngazi za Ndani za Tofali la Fluoriti
+Inner Fluorite Block Stair=Ngazi za Ndani za Kizuizi cha Fluoriti
+Inner Cracked Fluorite Brick Stair=Ngazi za Ndani za Tofali la Fluoriti Lililo na Ufa
+
+Inner Gabbro Stair=Ngazi za Ndani za Gabro
+Inner Cobbled Gabbro Stair=Ngazi za Ndani za Mawe ya Gabro
+Inner Gabbro Brick Stair=Ngazi za Ndani za Tofali la Gabro
+Inner Gabbro Block Stair=Ngazi za Ndani za Kizuizi cha Gabro
+Inner Cracked Gabbro Brick Stair=Ngazi za Ndani za Tofali la Gabro Lililo na Ufa
+
+Inner Galena Stair=Ngazi za Ndani za Galena
+Inner Galena Brick Stair=Ngazi za Ndani za Tofali la Galena
+Inner Galena Block Stair=Ngazi za Ndani za Kizuizi cha Galena
+Inner Cracked Galena Brick Stair=Ngazi za Ndani za Tofali la Galena Lililo na Ufa
+
+Inner Black Granite Stair=Ngazi za Ndani za Graniti Nyeusi
+Inner Black Granite Brick Stair=Ngazi za Ndani za Tofali la Graniti Nyeusi
+Inner Black Granite Block Stair=Ngazi za Ndani za Kizuizi cha Graniti Nyeusi
+Inner Cracked Black Granite Brick Stair=Ngazi za Ndani za Tofali la Graniti Nyeusi Lililo na Ufa
+Inner Cobbled Black Granite Stair=Ngazi za Ndani za Mawe ya Graniti Nyeusi
+
+Inner Blue Granite Stair=Ngazi za Ndani za Graniti Buluu
+Inner Blue Granite Brick Stair=Ngazi za Ndani za Tofali la Graniti Buluu
+Inner Blue Granite Block Stair=Ngazi za Ndani za Kizuizi cha Graniti Buluu
+Inner Cracked Blue Granite Brick Stair=Ngazi za Ndani za Tofali la Graniti Buluu Lililo na Ufa
+Inner Cobbled Blue Granite Stair=Ngazi za Ndani za Mawe ya Graniti Buluu
+
+Inner Gray Granite Stair=Ngazi za Ndani za Graniti Kijivu
+Inner Gray Granite Brick Stair=Ngazi za Ndani za Tofali la Graniti Kijivu
+Inner Gray Granite Block Stair=Ngazi za Ndani za Kizuizi cha Graniti Kijivu
+Inner Cracked Gray Granite Brick Stair=Ngazi za Ndani za Tofali la Graniti Kijivu Lililo na Ufa
+Inner Cobbled Gray Granite Stair=Ngazi za Ndani za Mawe ya Graniti Kijivu
+
+Inner Green Granite Stair=Ngazi za Ndani za Graniti Kijani
+Inner Green Granite Brick Stair=Ngazi za Ndani za Tofali la Graniti Kijani
+Inner Green Granite Block Stair=Ngazi za Ndani za Kizuizi cha Graniti Kijani
+Inner Cracked Green Granite Brick Stair=Ngazi za Ndani za Tofali la Graniti Kijani Lililo na Ufa
+Inner Cobbled Green Granite Stair=Ngazi za Ndani za Mawe ya Graniti Kijani
+
+Inner Pink Granite Stair=Ngazi za Ndani za Graniti Waridi
+Inner Pink Granite Brick Stair=Ngazi za Ndani za Tofali la Graniti Waridi
+Inner Pink Granite Block Stair=Ngazi za Ndani za Kizuizi cha Graniti Waridi
+Inner Cracked Pink Granite Brick Stair=Ngazi za Ndani za Tofali la Graniti Waridi Lililo na Ufa
+Inner Cobbled Pink Granite Stair=Ngazi za Ndani za Mawe ya Graniti Waridi
+
+Inner Red Granite Stair=Ngazi za Ndani za Graniti Nyekundu
+Inner Red Granite Brick Stair=Ngazi za Ndani za Tofali la Graniti Nyekundu
+Inner Red Granite Block Stair=Ngazi za Ndani za Kizuizi cha Graniti Nyekundu
+Inner Cracked Red Granite Brick Stair=Ngazi za Ndani za Tofali la Graniti Nyekundu Lililo na Ufa
+Inner Cobbled Red Granite Stair=Ngazi za Ndani za Mawe ya Graniti Nyekundu
+
+Inner White Granite Stair=Ngazi za Ndani za Graniti Nyeupe
+Inner White Granite Brick Stair=Ngazi za Ndani za Tofali la Graniti Nyeupe
+Inner White Granite Block Stair=Ngazi za Ndani za Kizuizi cha Graniti Nyeupe
+Inner Cracked White Granite Brick Stair=Ngazi za Ndani za Tofali la Graniti Nyeupe Lililo na Ufa
+Inner Cobbled White Granite Stair=Ngazi za Ndani za Mawe ya Graniti Nyeupe
+
+Inner Yellow Granite Stair=Ngazi za Ndani za Graniti Njano
+Inner Yellow Granite Brick Stair=Ngazi za Ndani za Tofali la Graniti Njano
+Inner Yellow Granite Block Stair=Ngazi za Ndani za Kizuizi cha Graniti Njano
+Inner Cracked Yellow Granite Brick Stair=Ngazi za Ndani za Tofali la Graniti Njano Lililo na Ufa
+Inner Cobbled Yellow Granite Stair=Ngazi za Ndani za Mawe ya Graniti Njano
+
+Inner Heliodor Stair=Ngazi za Ndani za Heliodori
+Inner Heliodor Brick Stair=Ngazi za Ndani za Tofali la Heliodori
+Inner Heliodor Block Stair=Ngazi za Ndani za Kizuizi cha Heliodori
+Inner Cracked Heliodor Brick Stair=Ngazi za Ndani za Tofali la Heliodori Lililo na Ufa
+
+Inner Howlite Stair=Ngazi za Ndani za Howliti
+Inner Howlite Brick Stair=Ngazi za Ndani za Tofali la Howliti
+Inner Howlite Block Stair=Ngazi za Ndani za Kizuizi cha Howliti
+Inner Cracked Howlite Brick Stair=Ngazi za Ndani za Tofali la Howliti Lililo na Ufa
+Inner Cobbled Howlite Stair=Ngazi za Ndani za Mawe ya Howliti
+
+Inner Ilvaite Stair=Ngazi za Ndani za Ilvaiti
+Inner Ilvaite Brick Stair=Ngazi za Ndani za Tofali la Ilvaiti
+Inner Ilvaite Block Stair=Ngazi za Ndani za Kizuizi cha Ilvaiti
+Inner Cracked Ilvaite Brick Stair=Ngazi za Ndani za Tofali la Ilvaiti Lililo na Ufa
+Inner Cobbled Ilvaite Stair=Ngazi za Ndani za Mawe ya Ilvaiti
+
+Inner Jade Stair=Ngazi za Ndani za Jadi
+Inner Jade Brick Stair=Ngazi za Ndani za Tofali la Jadi
+Inner Jade Block Stair=Ngazi za Ndani za Kizuizi cha Jadi
+Inner Cracked Jade Brick Stair=Ngazi za Ndani za Tofali la Jadi Lililo na Ufa
+Inner Cobbled Jade Stair=Ngazi za Ndani za Mawe ya Jadi
+
+Inner Red Jasper Stair=Ngazi za Ndani za Jaspa Nyekundu
+Inner Red Jasper Brick Stair=Ngazi za Ndani za Tofali la Jaspa Nyekundu
+Inner Red Jasper Block Stair=Ngazi za Ndani za Kizuizi cha Jaspa Nyekundu
+Inner Cracked Red Jasper Brick Stair=Ngazi za Ndani za Tofali la Jaspa Nyekundu Lililo na Ufa
+Inner Cobbled Red Jasper Stair=Ngazi za Ndani za Mawe ya Jaspa Nyekundu
+
+Inner Kyanite Stair=Ngazi za Ndani za Kyaniti
+Inner Kyanite Brick Stair=Ngazi za Ndani za Tofali la Kyaniti
+Inner Kyanite Block Stair=Ngazi za Ndani za Kizuizi cha Kyaniti
+Inner Cracked Kyanite Brick Stair=Ngazi za Ndani za Tofali la Kyaniti Lililo na Ufa
+Inner Cobbled Kyanite Stair=Ngazi za Ndani za Mawe ya Kyaniti
+
+Inner Lapis Lazuli Stair=Ngazi za Ndani za Lapis Lazuli
+Inner Lapis Lazuli Brick Stair=Ngazi za Ndani za Tofali la Lapis Lazuli
+Inner Lapis Lazuli Block Stair=Ngazi za Ndani za Kizuizi cha Lapis Lazuli
+Inner Cracked Lapis Lazuli Brick Stair=Ngazi za Ndani za Tofali la Lapis Lazuli Lililo na Ufa
+
+Inner Lepidolite Stair=Ngazi za Ndani za Lepidoliti
+Inner Lepidolite Brick Stair=Ngazi za Ndani za Tofali la Lepidoliti
+Inner Lepidolite Block Stair=Ngazi za Ndani za Kizuizi cha Lepidoliti
+Inner Cracked Lepidolite Brick Stair=Ngazi za Ndani za Tofali la Lepidoliti Lililo na Ufa
+Inner Cobbled Lepidolite Stair=Ngazi za Ndani za Mawe ya Lepidoliti
+
+Inner Blue Limestone Stair=Ngazi za Ndani za Chokaa Buluu
+Inner Blue Limestone Brick Stair=Ngazi za Ndani za Tofali la Chokaa Buluu
+Inner Blue Limestone Block Stair=Ngazi za Ndani za Kizuizi cha Chokaa Buluu
+Inner Cracked Blue Limestone Brick Stair=Ngazi za Ndani za Tofali la Chokaa Buluu Lililo na Ufa
+Inner Cobbled Blue Limestone Stair=Ngazi za Ndani za Mawe ya Chokaa Buluu
+
+Inner White Limestone Stair=Ngazi za Ndani za Chokaa Nyeupe
+Inner White Limestone Brick Stair=Ngazi za Ndani za Tofali la Chokaa Nyeupe
+Inner White Limestone Block Stair=Ngazi za Ndani za Kizuizi cha Chokaa Nyeupe
+Inner Cracked White Limestone Brick Stair=Ngazi za Ndani za Tofali la Chokaa Nyeupe Lililo na Ufa
+Inner Cobbled White Limestone Stair=Ngazi za Ndani za Mawe ya Chokaa Nyeupe
+
+Inner Marble Stair=Ngazi za Ndani za Marumaru
+Inner Marble Brick Stair=Ngazi za Ndani za Tofali la Marumaru
+Inner Marble Block Stair=Ngazi za Ndani za Kizuizi cha Marumaru
+Inner Cracked Marble Brick Stair=Ngazi za Ndani za Tofali la Marumaru Lililo na Ufa
+Inner Cobbled Marble Stair=Ngazi za Ndani za Mawe ya Marumaru
+
+Inner Moonstone Stair=Ngazi za Ndani za Jiwe la Mwezi
+Inner Moonstone Brick Stair=Ngazi za Ndani za Tofali la Jiwe la Mwezi
+Inner Moonstone Block Stair=Ngazi za Ndani za Kizuizi cha Jiwe la Mwezi
+Inner Cracked Moonstone Brick Stair=Ngazi za Ndani za Tofali la Jiwe la Mwezi Lililo na Ufa
+
+Inner Morion Quartz Stair=Ngazi za Ndani za Kwatzi Morioni
+Inner Morion Quartz Brick Stair=Ngazi za Ndani za Tofali la Kwatzi Morioni
+Inner Morion Quartz Block Stair=Ngazi za Ndani za Kizuizi cha Kwatzi Morioni
+Inner Cracked Morion Quartz Brick Stair=Ngazi za Ndani za Tofali la Kwatzi Morioni Lililo na Ufa
+
+Inner Mudstone Stair=Ngazi za Ndani za Jiwe la Matope
+Inner Cobbled Mudstone Stair=Ngazi za Ndani za Mawe ya Jiwe la Matope
+Inner Mudstone Brick Stair=Ngazi za Ndani za Tofali la Jiwe la Matope
+Inner Mudstone Block Stair=Ngazi za Ndani za Kizuizi cha Jiwe la Matope
+Inner Cracked Mudstone Brick Stair=Ngazi za Ndani za Tofali la Jiwe la Matope Lililo na Ufa
+
+Inner Prasiolite Stair=Ngazi za Ndani za Prasioliti
+Inner Prasiolite Brick Stair=Ngazi za Ndani za Tofali la Prasioliti
+Inner Prasiolite Block Stair=Ngazi za Ndani za Kizuizi cha Prasioliti
+Inner Cracked Prasiolite Brick Stair=Ngazi za Ndani za Tofali la Prasioliti Lililo na Ufa
+
+Inner Pumice Stair=Ngazi za Ndani za Pumisi
+Inner Pumice Brick Stair=Ngazi za Ndani za Tofali la Pumisi
+Inner Pumice Block Stair=Ngazi za Ndani za Kizuizi cha Pumisi
+Inner Cracked Pumice Brick Stair=Ngazi za Ndani za Tofali la Pumisi Lililo na Ufa
+
+Inner Pyrite Stair=Ngazi za Ndani za Pairiti
+Inner Pyrite Brick Stair=Ngazi za Ndani za Tofali la Pairiti
+Inner Pyrite Block Stair=Ngazi za Ndani za Kizuizi cha Pairiti
+Inner Cracked Pyrite Brick Stair=Ngazi za Ndani za Tofali la Pairiti Lililo na Ufa
+
+Inner Quartz Stair=Ngazi za Ndani za Kwatzi
+Inner Quartz Brick Stair=Ngazi za Ndani za Tofali la Kwatzi
+Inner Quartz Block Stair=Ngazi za Ndani za Kizuizi cha Kwatzi
+Inner Cracked Quartz Brick Stair=Ngazi za Ndani za Tofali la Kwatzi Lililo na Ufa
+
+Inner Rose Quartz Stair=Ngazi za Ndani za Kwatzi Waridi
+Inner Rose Quartz Brick Stair=Ngazi za Ndani za Tofali la Kwatzi Waridi
+Inner Rose Quartz Block Stair=Ngazi za Ndani za Kizuizi cha Kwatzi Waridi
+Inner Cracked Rose Quartz Brick Stair=Ngazi za Ndani za Tofali la Kwatzi Waridi Lililo na Ufa
+
+Inner Rhodonite Stair=Ngazi za Ndani za Rhodoniti
+Inner Rhodonite Brick Stair=Ngazi za Ndani za Tofali la Rhodoniti
+Inner Rhodonite Block Stair=Ngazi za Ndani za Kizuizi cha Rhodoniti
+Inner Cracked Rhodonite Brick Stair=Ngazi za Ndani za Tofali la Rhodoniti Lililo na Ufa
+Inner Cobbled Rhodonite Stair=Ngazi za Ndani za Mawe ya Rhodoniti
+
+Inner Scoria Stair=Ngazi za Ndani za Skoriya
+Inner Scoria Brick Stair=Ngazi za Ndani za Tofali la Skoriya
+Inner Scoria Block Stair=Ngazi za Ndani za Kizuizi cha Skoriya
+Inner Cracked Scoria Brick Stair=Ngazi za Ndani za Tofali la Skoriya Lililo na Ufa
+Inner Cobbled Scoria Stair=Ngazi za Ndani za Mawe ya Skoriya
+
+Inner Serpentine Stair=Ngazi za Ndani za Serpentini
+Inner Cobbled Serpentine Stair=Ngazi za Ndani za Mawe ya Serpentini
+Inner Serpentine Brick Stair=Ngazi za Ndani za Tofali la Serpentini
+Inner Serpentine Block Stair=Ngazi za Ndani za Kizuizi cha Serpentini
+Inner Cracked Serpentine Brick Stair=Ngazi za Ndani za Tofali la Serpentini Lililo na Ufa
+
+Inner Shale Stair=Ngazi za Ndani za Sheli
+Inner Shale Brick Stair=Ngazi za Ndani za Tofali la Sheli
+Inner Shale Block Stair=Ngazi za Ndani za Kizuizi cha Sheli
+Inner Cracked Shale Brick Stair=Ngazi za Ndani za Tofali la Sheli Lililo na Ufa
+Inner Cobbled Shale Stair=Ngazi za Ndani za Mawe ya Sheli
+
+Inner Slate Stair=Ngazi za Ndani za Sleti
+Inner Slate Brick Stair=Ngazi za Ndani za Tofali la Sleti
+Inner Slate Block Stair=Ngazi za Ndani za Kizuizi cha Sleti
+Inner Cracked Slate Brick Stair=Ngazi za Ndani za Tofali la Sleti Lililo na Ufa
+Inner Cobbled Slate Stair=Ngazi za Ndani za Mawe ya Sleti
+Inner Slate Tile Stair=Ngazi za Ndani za Vigae vya Sleti
+
+Inner Smokey Quartz Stair=Ngazi za Ndani za Kwatzi ya Moshi
+Inner Smokey Quartz Brick Stair=Ngazi za Ndani za Tofali la Kwatzi ya Moshi
+Inner Smokey Quartz Block Stair=Ngazi za Ndani za Kizuizi cha Kwatzi ya Moshi
+Inner Cracked Smokey Quartz Brick Stair=Ngazi za Ndani za Tofali la Kwatzi ya Moshi Lililo na Ufa
+
+Inner Soapstone Stair=Ngazi za Ndani za Jiwe la Sabuni
+Inner Soapstone Brick Stair=Ngazi za Ndani za Tofali la Jiwe la Sabuni
+Inner Soapstone Block Stair=Ngazi za Ndani za Kizuizi cha Jiwe la Sabuni
+Inner Cracked Soapstone Brick Stair=Ngazi za Ndani za Tofali la Jiwe la Sabuni Lililo na Ufa
+
+Inner Sodalite Stair=Ngazi za Ndani za Sodaliti
+Inner Cobbled Sodalite Stair=Ngazi za Ndani za Mawe ya Sodaliti
+Inner Sodalite Brick Stair=Ngazi za Ndani za Tofali la Sodaliti
+Inner Sodalite Block Stair=Ngazi za Ndani za Kizuizi cha Sodaliti
+Inner Cracked Sodalite Brick Stair=Ngazi za Ndani za Tofali la Sodaliti Lililo na Ufa
+
+Inner Sugilite Stair=Ngazi za Ndani za Sugiliti
+Inner Sugilite Brick Stair=Ngazi za Ndani za Tofali la Sugiliti
+Inner Sugilite Block Stair=Ngazi za Ndani za Kizuizi cha Sugiliti
+Inner Cracked Sugilite Brick Stair=Ngazi za Ndani za Tofali la Sugiliti Lililo na Ufa
+Inner Cobbled Sugilite Stair=Ngazi za Ndani za Mawe ya Sugiliti
+
+Inner Green Tourmaline Stair=Ngazi za Ndani za Turmalini Kijani
+Inner Green Tourmaline Brick Stair=Ngazi za Ndani za Tofali la Turmalini Kijani
+Inner Green Tourmaline Block Stair=Ngazi za Ndani za Kizuizi cha Turmalini Kijani
+Inner Cracked Green Tourmaline Brick Stair=Ngazi za Ndani za Tofali la Turmalini Kijani Lililo na Ufa
+
+Inner Paraiba Tourmaline Stair=Ngazi za Ndani za Turmalini Paraiba
+Inner Paraiba Tourmaline Brick Stair=Ngazi za Ndani za Tofali la Turmalini Paraiba
+Inner Paraiba Tourmaline Block Stair=Ngazi za Ndani za Kizuizi cha Turmalini Paraiba
+Inner Cracked Paraiba Tourmaline Brick Stair=Ngazi za Ndani za Tofali la Turmalini Paraiba Lililo na Ufa
+
+Inner Pink Tourmaline Stair=Ngazi za Ndani za Turmalini Waridi
+Inner Pink Tourmaline Brick Stair=Ngazi za Ndani za Tofali la Turmalini Waridi
+Inner Pink Tourmaline Block Stair=Ngazi za Ndani za Kizuizi cha Turmalini Waridi
+Inner Cracked Pink Tourmaline Brick Stair=Ngazi za Ndani za Tofali la Turmalini Waridi Lililo na Ufa
+
+Inner Travertine Stair=Ngazi za Ndani za Traversini
+Inner Cobbled Travertine Stair=Ngazi za Ndani za Mawe ya Traversini
+Inner Travertine Brick Stair=Ngazi za Ndani za Tofali la Traversini
+Inner Travertine Block Stair=Ngazi za Ndani za Kizuizi cha Traversini
+Inner Cracked Travertine Brick Stair=Ngazi za Ndani za Tofali la Traversini Lililo na Ufa
+
+Inner Yellow Travertine Stair=Ngazi za Ndani za Traversini Njano
+Inner Cobbled Yellow Travertine Stair=Ngazi za Ndani za Mawe ya Traversini Njano
+Inner Yellow Travertine Brick Stair=Ngazi za Ndani za Tofali la Traversini Njano
+Inner Yellow Travertine Block Stair=Ngazi za Ndani za Kizuizi cha Traversini Njano
+Inner Cracked Yellow Travertine Brick Stair=Ngazi za Ndani za Tofali la Traversini Njano Lililo na Ufa
+
+Inner Beige Tuff Stair=Ngazi za Ndani za Tafi Rangi ya Kahawia
+Inner Beige Tuff Block Stair=Ngazi za Ndani za Kizuizi cha Tafi Rangi ya Kahawia
+Inner Cobbled Beige Tuff Stair=Ngazi za Ndani za Mawe ya Tafi Rangi ya Kahawia
+Inner Beige Tuff Brick Stair=Ngazi za Ndani za Tofali la Tafi Rangi ya Kahawia
+Inner Cracked Beige Tuff Stair=Ngazi za Ndani za Tafi Rangi ya Kahawia Yenye Nyufa
+
+Inner Grey Tuff Stair=Ngazi za Ndani za Tafi Kijivu
+Inner Grey Tuff Block Stair=Ngazi za Ndani za Kizuizi cha Tafi Kijivu
+Inner Cobbled Grey Tuff Stair=Ngazi za Ndani za Mawe ya Tafi Kijivu
+Inner Grey Tuff Brick Stair=Ngazi za Ndani za Tofali la Tafi Kijivu
+Inner Cracked Grey Tuff Stair=Ngazi za Ndani za Tafi Kijivu Yenye Nyufa
+
+Inner Red Tuff Stair=Ngazi za Ndani za Tafi Nyekundu
+Inner Red Tuff Block Stair=Ngazi za Ndani za Kizuizi cha Tafi Nyekundu
+Inner Cobbled Red Tuff Stair=Ngazi za Ndani za Mawe ya Tafi Nyekundu
+Inner Red Tuff Brick Stair=Ngazi za Ndani za Tofali la Tafi Nyekundu
+Inner Cracked Red Tuff Stair=Ngazi za Ndani za Tafi Nyekundu Yenye Nyufa
+
+Inner Turquoise Stair=Ngazi za Ndani za Feruzi
+Inner Turquoise Brick Stair=Ngazi za Ndani za Tofali la Feruzi
+Inner Turquoise Block Stair=Ngazi za Ndani za Kizuizi cha Feruzi
+Inner Cracked Turquoise Brick Stair=Ngazi za Ndani za Tofali la Feruzi Lililo na Ufa
+Inner Cobbled Turquoise Stair=Ngazi za Ndani za Mawe ya Feruzi
+
+Inner Vivianite Stair=Ngazi za Ndani za Vivianiti
+Inner Vivianite Brick Stair=Ngazi za Ndani za Tofali la Vivianiti
+Inner Vivianite Block Stair=Ngazi za Ndani za Kizuizi cha Vivianiti
+Inner Cracked Vivianite Brick Stair=Ngazi za Ndani za Tofali la Vivianiti Lililo na Ufa
+
+
+
+Outer Aegirine Stair=Ngazi za Nje za Aegirini
+
+Outer Blue Agate Stair=Ngazi za Nje za Akiki Buluu
+Outer Gray Agate Stair=Ngazi za Nje za Akiki Kijivu
+Outer Green Agate Stair=Ngazi za Nje za Akiki Kijani
+Outer Moss Agate Stair=Ngazi za Nje za Akiki Uani
+Outer Orange Agate Stair=Ngazi za Nje za Akiki Machungwa
+Outer Purple Agate Stair=Ngazi za Nje za Akiki Zambarau
+Outer Red Agate Stair=Ngazi za Nje za Akiki Nyekundu
+
+Outer Amazonite Stair=Ngazi za Nje za Amazoniti
+Outer Cobbled Amazonite Stair=Ngazi za Nje za Mawe ya Amazoniti
+Outer Amazonite Brick Stair=Ngazi za Nje za Tofali la Amazoniti
+Outer Amazonite Block Stair=Ngazi za Nje za Kizuizi cha Amazoniti
+Outer Cracked Amazonite Brick Stair=Ngazi za Nje za Tofali la Amazoniti Lililo na Ufa
+
+Outer Amber Stair=Ngazi za Nje za Kaharaba
+Outer Amber Brick Stair=Ngazi za Nje za Tofali la Kaharaba
+Outer Amber Block Stair=Ngazi za Nje za Kizuizi cha Kaharaba
+Outer Cracked Amber Brick Stair=Ngazi za Nje za Tofali la Kaharaba Lililo na Ufa
+
+Outer Amethyst Stair=Ngazi za Nje za Amethisti
+Outer Amethyst Brick Stair=Ngazi za Nje za Tofali la Amethisti
+Outer Amethyst Block Stair=Ngazi za Nje za Kizuizi cha Amethisti
+Outer Cracked Amethyst Brick Stair=Ngazi za Nje za Tofali la Amethisti Lililo na Ufa
+
+Outer Andesite Stair=Ngazi za Nje za Andesiti
+Outer Andesite Block Stair=Ngazi za Nje za Kizuizi cha Andesiti
+Outer Andesite Brick Stair=Ngazi za Nje za Tofali la Andesiti
+Outer Cracked Andesite Brick Stair=Ngazi za Nje za Tofali la Andesiti Lililo na Ufa
+Outer Cobbled Andesite Stair=Ngazi za Nje za Mawe ya Andesiti
+
+Outer Basalt Stair=Ngazi za Nje za Basalti
+Outer Basalt Brick Stair=Ngazi za Nje za Tofali la Basalti
+Outer Basalt Block Stair=Ngazi za Nje za Kizuizi cha Basalti
+Outer Cracked Basalt Brick Stair=Ngazi za Nje za Tofali la Basalti Lililo na Ufa
+Outer Cobbled Basalt Stair=Ngazi za Nje za Mawe ya Basalti
+Outer Basalt Tile Stair=Ngazi za Nje za Vigae vya Basalti
+
+Outer Black Moonstone Stair=Ngazi za Nje za Jiwe la Mwezi Nyeusi
+Outer Black Moonstone Brick Stair=Ngazi za Nje za Tofali la Jiwe la Mwezi Nyeusi
+Outer Black Moonstone Block Stair=Ngazi za Nje za Kizuizi cha Jiwe la Mwezi Nyeusi
+Outer Cracked Black Moonstone Brick Stair=Ngazi za Nje za Tofali la Jiwe la Mwezi Nyeusi Lililo na Ufa
+
+Outer Grey Calcite Stair=Ngazi za Nje za Kalkiti Kijivu
+Outer Grey Calcite Brick Stair=Ngazi za Nje za Tofali la Kalkiti Kijivu
+Outer Grey Calcite Block Stair=Ngazi za Nje za Kizuizi cha Kalkiti Kijivu
+Outer Cracked Grey Calcite Brick Stair=Ngazi za Nje za Tofali la Kalkiti Kijivu Lililo na Ufa
+
+Outer Calcite Stair=Ngazi za Nje za Kalkiti
+Outer Calcite Brick Stair=Ngazi za Nje za Tofali la Kalkiti
+Outer Calcite Block Stair=Ngazi za Nje za Kizuizi cha Kalkiti
+Outer Cracked Calcite Brick Stair=Ngazi za Nje za Tofali la Kalkiti Lililo na Ufa
+
+Outer Orange Calcite Stair=Ngazi za Nje za Kalkiti Machungwa
+Outer Orange Calcite Brick Stair=Ngazi za Nje za Tofali la Kalkiti Machungwa
+Outer Orange Calcite Block Stair=Ngazi za Nje za Kizuizi cha Kalkiti Machungwa
+Outer Cracked Orange Calcite Brick Stair=Ngazi za Nje za Tofali la Kalkiti Machungwa Lililo na Ufa
+
+Outer Carnotite Stair=Ngazi za Nje za Karnotiti
+Outer Carnotite Brick Stair=Ngazi za Nje za Tofali la Karnotiti
+Outer Carnotite Block Stair=Ngazi za Nje za Kizuizi cha Karnotiti
+Outer Cracked Carnotite Brick Stair=Ngazi za Nje za Tofali la Karnotiti Lililo na Ufa
+Outer Cobbled Carnotite Stair=Ngazi za Nje za Mawe ya Karnotiti
+
+Outer Celestine Stair=Ngazi za Nje za Selestini
+Outer Celestine Brick Stair=Ngazi za Nje za Tofali la Selestini
+Outer Celestine Block Stair=Ngazi za Nje za Kizuizi cha Selestini
+Outer Cracked Celestine Brick Stair=Ngazi za Nje za Tofali la Selestini Lililo na Ufa
+
+Outer Chalcanthite Stair=Ngazi za Nje za Chalkanthiti
+Outer Chalcanthite Brick Stair=Ngazi za Nje za Tofali la Chalkanthiti
+Outer Chalcanthite Block Stair=Ngazi za Nje za Kizuizi cha Chalkanthiti
+Outer Cracked Chalcanthite Brick Stair=Ngazi za Nje za Tofali la Chalkanthiti Lililo na Ufa
+Outer Cobbled Chalcanthite Stair=Ngazi za Nje za Mawe ya Chalkanthiti
+
+Outer Chrysoprase Stair=Ngazi za Nje za Chrysoprasi
+Outer Chrysoprase Brick Stair=Ngazi za Nje za Tofali la Chrysoprasi
+Outer Chrysoprase Block Stair=Ngazi za Nje za Kizuizi cha Chrysoprasi
+Outer Cracked Chrysoprase Brick Stair=Ngazi za Nje za Tofali la Chrysoprasi Lililo na Ufa
+
+Outer Citrine Stair=Ngazi za Nje za Sitrini
+Outer Citrine Brick Stair=Ngazi za Nje za Tofali la Sitrini
+Outer Citrine Block Stair=Ngazi za Nje za Kizuizi cha Sitrini
+Outer Cracked Citrine Brick Stair=Ngazi za Nje za Tofali la Sitrini Lililo na Ufa
+
+Outer Covellite Stair=Ngazi za Nje za Koveliti
+Outer Covellite Brick Stair=Ngazi za Nje za Tofali la Koveliti
+Outer Covellite Block Stair=Ngazi za Nje za Kizuizi cha Koveliti
+Outer Cracked Covellite Brick Stair=Ngazi za Nje za Tofali la Koveliti Lililo na Ufa
+Outer Cobbled Covellite Stair=Ngazi za Nje za Mawe ya Koveliti
+
+Outer Crocoite Stair=Ngazi za Nje za Krokoiti
+Outer Crocoite Brick Stair=Ngazi za Nje za Tofali la Krokoiti
+Outer Crocoite Block Stair=Ngazi za Nje za Kizuizi cha Krokoiti
+Outer Cracked Crocoite Brick Stair=Ngazi za Nje za Tofali la Krokoiti Lililo na Ufa
+
+Outer Diorite Stair=Ngazi za Nje za Dioriti
+Outer Diorite Brick Stair=Ngazi za Nje za Tofali la Dioriti
+Outer Diorite Block Stair=Ngazi za Nje za Kizuizi cha Dioriti
+Outer Cracked Diorite Brick Stair=Ngazi za Nje za Tofali la Dioriti Lililo na Ufa
+Outer Cobbled Diorite Stair=Ngazi za Nje za Mawe ya Dioriti
+
+Outer Erythrite Stair=Ngazi za Nje za Erithriti
+Outer Erythrite Brick Stair=Ngazi za Nje za Tofali la Erithriti
+Outer Erythrite Block Stair=Ngazi za Nje za Kizuizi cha Erithriti
+Outer Cracked Erythrite Brick Stair=Ngazi za Nje za Tofali la Erithriti Lililo na Ufa
+
+Outer Eudialite Stair=Ngazi za Nje za Eudialiti
+Outer Eudialite Brick Stair=Ngazi za Nje za Tofali la Eudialiti
+Outer Eudialite Block Stair=Ngazi za Nje za Kizuizi cha Eudialiti
+Outer Cracked Eudialite Brick Stair=Ngazi za Nje za Tofali la Eudialiti Lililo na Ufa
+
+Outer Fluorite Stair=Ngazi za Nje za Fluoriti
+Outer Fluorite Brick Stair=Ngazi za Nje za Tofali la Fluoriti
+Outer Fluorite Block Stair=Ngazi za Nje za Kizuizi cha Fluoriti
+Outer Cracked Fluorite Brick Stair=Ngazi za Nje za Tofali la Fluoriti Lililo na Ufa
+
+Outer Gabbro Stair=Ngazi za Nje za Gabro
+Outer Cobbled Gabbro Stair=Ngazi za Nje za Mawe ya Gabro
+Outer Gabbro Brick Stair=Ngazi za Nje za Tofali la Gabro
+Outer Gabbro Block Stair=Ngazi za Nje za Kizuizi cha Gabro
+Outer Cracked Gabbro Brick Stair=Ngazi za Nje za Tofali la Gabro Lililo na Ufa
+
+Outer Galena Stair=Ngazi za Nje za Galena
+Outer Galena Brick Stair=Ngazi za Nje za Tofali la Galena
+Outer Galena Block Stair=Ngazi za Nje za Kizuizi cha Galena
+Outer Cracked Galena Brick Stair=Ngazi za Nje za Tofali la Galena Lililo na Ufa
+
+Outer Black Granite Stair=Ngazi za Nje za Graniti Nyeusi
+Outer Black Granite Brick Stair=Ngazi za Nje za Tofali la Graniti Nyeusi
+Outer Black Granite Block Stair=Ngazi za Nje za Kizuizi cha Graniti Nyeusi
+Outer Cracked Black Granite Brick Stair=Ngazi za Nje za Tofali la Graniti Nyeusi Lililo na Ufa
+Outer Cobbled Black Granite Stair=Ngazi za Nje za Mawe ya Graniti Nyeusi
+
+Outer Blue Granite Stair=Ngazi za Nje za Graniti Buluu
+Outer Blue Granite Brick Stair=Ngazi za Nje za Tofali la Graniti Buluu
+Outer Blue Granite Block Stair=Ngazi za Nje za Kizuizi cha Graniti Buluu
+Outer Cracked Blue Granite Brick Stair=Ngazi za Nje za Tofali la Graniti Buluu Lililo na Ufa
+Outer Cobbled Blue Granite Stair=Ngazi za Nje za Mawe ya Graniti Buluu
+
+Outer Gray Granite Stair=Ngazi za Nje za Graniti Kijivu
+Outer Gray Granite Brick Stair=Ngazi za Nje za Tofali la Graniti Kijivu
+Outer Gray Granite Block Stair=Ngazi za Nje za Kizuizi cha Graniti Kijivu
+Outer Cracked Gray Granite Brick Stair=Ngazi za Nje za Tofali la Graniti Kijivu Lililo na Ufa
+Outer Cobbled Gray Granite Stair=Ngazi za Nje za Mawe ya Graniti Kijivu
+
+Outer Green Granite Stair=Ngazi za Nje za Graniti Kijani
+Outer Green Granite Brick Stair=Ngazi za Nje za Tofali la Graniti Kijani
+Outer Green Granite Block Stair=Ngazi za Nje za Kizuizi cha Graniti Kijani
+Outer Cracked Green Granite Brick Stair=Ngazi za Nje za Tofali la Graniti Kijani Lililo na Ufa
+Outer Cobbled Green Granite Stair=Ngazi za Nje za Mawe ya Graniti Kijani
+
+Outer Pink Granite Stair=Ngazi za Nje za Graniti Waridi
+Outer Pink Granite Brick Stair=Ngazi za Nje za Tofali la Graniti Waridi
+Outer Pink Granite Block Stair=Ngazi za Nje za Kizuizi cha Graniti Waridi
+Outer Cracked Pink Granite Brick Stair=Ngazi za Nje za Tofali la Graniti Waridi Lililo na Ufa
+Outer Cobbled Pink Granite Stair=Ngazi za Nje za Mawe ya Graniti Waridi
+
+Outer Red Granite Stair=Ngazi za Nje za Graniti Nyekundu
+Outer Red Granite Brick Stair=Ngazi za Nje za Tofali la Graniti Nyekundu
+Outer Red Granite Block Stair=Ngazi za Nje za Kizuizi cha Graniti Nyekundu
+Outer Cracked Red Granite Brick Stair=Ngazi za Nje za Tofali la Graniti Nyekundu Lililo na Ufa
+Outer Cobbled Red Granite Stair=Ngazi za Nje za Mawe ya Graniti Nyekundu
+
+Outer White Granite Stair=Ngazi za Nje za Graniti Nyeupe
+Outer White Granite Brick Stair=Ngazi za Nje za Tofali la Graniti Nyeupe
+Outer White Granite Block Stair=Ngazi za Nje za Kizuizi cha Graniti Nyeupe
+Outer Cracked White Granite Brick Stair=Ngazi za Nje za Tofali la Graniti Nyeupe Lililo na Ufa
+Outer Cobbled White Granite Stair=Ngazi za Nje za Mawe ya Graniti Nyeupe
+
+Outer Yellow Granite Stair=Ngazi za Nje za Graniti Njano
+Outer Yellow Granite Brick Stair=Ngazi za Nje za Tofali la Graniti Njano
+Outer Yellow Granite Block Stair=Ngazi za Nje za Kizuizi cha Graniti Njano
+Outer Cracked Yellow Granite Brick Stair=Ngazi za Nje za Tofali la Graniti Njano Lililo na Ufa
+Outer Cobbled Yellow Granite Stair=Ngazi za Nje za Mawe ya Graniti Njano
+
+Outer Heliodor Stair=Ngazi za Nje za Heliodori
+Outer Heliodor Brick Stair=Ngazi za Nje za Tofali la Heliodori
+Outer Heliodor Block Stair=Ngazi za Nje za Kizuizi cha Heliodori
+Outer Cracked Heliodor Brick Stair=Ngazi za Nje za Tofali la Heliodori Lililo na Ufa
+
+Outer Howlite Stair=Ngazi za Nje za Howliti
+Outer Howlite Brick Stair=Ngazi za Nje za Tofali la Howliti
+Outer Howlite Block Stair=Ngazi za Nje za Kizuizi cha Howliti
+Outer Cracked Howlite Brick Stair=Ngazi za Nje za Tofali la Howliti Lililo na Ufa
+Outer Cobbled Howlite Stair=Ngazi za Nje za Mawe ya Howliti
+
+Outer Ilvaite Stair=Ngazi za Nje za Ilvaiti
+Outer Ilvaite Brick Stair=Ngazi za Nje za Tofali la Ilvaiti
+Outer Ilvaite Block Stair=Ngazi za Nje za Kizuizi cha Ilvaiti
+Outer Cracked Ilvaite Brick Stair=Ngazi za Nje za Tofali la Ilvaiti Lililo na Ufa
+Outer Cobbled Ilvaite Stair=Ngazi za Nje za Mawe ya Ilvaiti
+
+Outer Jade Stair=Ngazi za Nje za Jadi
+Outer Jade Brick Stair=Ngazi za Nje za Tofali la Jadi
+Outer Jade Block Stair=Ngazi za Nje za Kizuizi cha Jadi
+Outer Cracked Jade Brick Stair=Ngazi za Nje za Tofali la Jadi Lililo na Ufa
+Outer Cobbled Jade Stair=Ngazi za Nje za Mawe ya Jadi
+
+Outer Red Jasper Stair=Ngazi za Nje za Jaspa Nyekundu
+Outer Red Jasper Brick Stair=Ngazi za Nje za Tofali la Jaspa Nyekundu
+Outer Red Jasper Block Stair=Ngazi za Nje za Kizuizi cha Jaspa Nyekundu
+Outer Cracked Red Jasper Brick Stair=Ngazi za Nje za Tofali la Jaspa Nyekundu Lililo na Ufa
+Outer Cobbled Red Jasper Stair=Ngazi za Nje za Mawe ya Jaspa Nyekundu
+
+Outer Kyanite Stair=Ngazi za Nje za Kyaniti
+Outer Kyanite Brick Stair=Ngazi za Nje za Tofali la Kyaniti
+Outer Kyanite Block Stair=Ngazi za Nje za Kizuizi cha Kyaniti
+Outer Cracked Kyanite Brick Stair=Ngazi za Nje za Tofali la Kyaniti Lililo na Ufa
+Outer Cobbled Kyanite Stair=Ngazi za Nje za Mawe ya Kyaniti
+
+Outer Lapis Lazuli Stair=Ngazi za Nje za Lapis Lazuli
+Outer Lapis Lazuli Brick Stair=Ngazi za Nje za Tofali la Lapis Lazuli
+Outer Lapis Lazuli Block Stair=Ngazi za Nje za Kizuizi cha Lapis Lazuli
+Outer Cracked Lapis Lazuli Brick Stair=Ngazi za Nje za Tofali la Lapis Lazuli Lililo na Ufa
+
+Outer Lepidolite Stair=Ngazi za Nje za Lepidoliti
+Outer Lepidolite Brick Stair=Ngazi za Nje za Tofali la Lepidoliti
+Outer Lepidolite Block Stair=Ngazi za Nje za Kizuizi cha Lepidoliti
+Outer Cracked Lepidolite Brick Stair=Ngazi za Nje za Tofali la Lepidoliti Lililo na Ufa
+Outer Cobbled Lepidolite Stair=Ngazi za Nje za Mawe ya Lepidoliti
+
+Outer Blue Limestone Stair=Ngazi za Nje za Chokaa Buluu
+Outer Blue Limestone Brick Stair=Ngazi za Nje za Tofali la Chokaa Buluu
+Outer Blue Limestone Block Stair=Ngazi za Nje za Kizuizi cha Chokaa Buluu
+Outer Cracked Blue Limestone Brick Stair=Ngazi za Nje za Tofali la Chokaa Buluu Lililo na Ufa
+Outer Cobbled Blue Limestone Stair=Ngazi za Nje za Mawe ya Chokaa Buluu
+
+Outer White Limestone Stair=Ngazi za Nje za Chokaa Nyeupe
+Outer White Limestone Brick Stair=Ngazi za Nje za Tofali la Chokaa Nyeupe
+Outer White Limestone Block Stair=Ngazi za Nje za Kizuizi cha Chokaa Nyeupe
+Outer Cracked White Limestone Brick Stair=Ngazi za Nje za Tofali la Chokaa Nyeupe Lililo na Ufa
+Outer Cobbled White Limestone Stair=Ngazi za Nje za Mawe ya Chokaa Nyeupe
+
+Outer Marble Stair=Ngazi za Nje za Marumaru
+Outer Marble Brick Stair=Ngazi za Nje za Tofali la Marumaru
+Outer Marble Block Stair=Ngazi za Nje za Kizuizi cha Marumaru
+Outer Cracked Marble Brick Stair=Ngazi za Nje za Tofali la Marumaru Lililo na Ufa
+Outer Cobbled Marble Stair=Ngazi za Nje za Mawe ya Marumaru
+
+Outer Moonstone Stair=Ngazi za Nje za Jiwe la Mwezi
+Outer Moonstone Brick Stair=Ngazi za Nje za Tofali la Jiwe la Mwezi
+Outer Moonstone Block Stair=Ngazi za Nje za Kizuizi cha Jiwe la Mwezi
+Outer Cracked Moonstone Brick Stair=Ngazi za Nje za Tofali la Jiwe la Mwezi Lililo na Ufa
+
+Outer Morion Quartz Stair=Ngazi za Nje za Kwatzi Morioni
+Outer Morion Quartz Brick Stair=Ngazi za Nje za Tofali la Kwatzi Morioni
+Outer Morion Quartz Block Stair=Ngazi za Nje za Kizuizi cha Kwatzi Morioni
+Outer Cracked Morion Quartz Brick Stair=Ngazi za Nje za Tofali la Kwatzi Morioni Lililo na Ufa
+
+Outer Mudstone Stair=Ngazi za Nje za Jiwe la Matope
+Outer Cobbled Mudstone Stair=Ngazi za Nje za Mawe ya Jiwe la Matope
+Outer Mudstone Brick Stair=Ngazi za Nje za Tofali la Jiwe la Matope
+Outer Mudstone Block Stair=Ngazi za Nje za Kizuizi cha Jiwe la Matope
+Outer Cracked Mudstone Brick Stair=Ngazi za Nje za Tofali la Jiwe la Matope Lililo na Ufa
+
+Outer Prasiolite Stair=Ngazi za Nje za Prasioliti
+Outer Prasiolite Brick Stair=Ngazi za Nje za Tofali la Prasioliti
+Outer Prasiolite Block Stair=Ngazi za Nje za Kizuizi cha Prasioliti
+Outer Cracked Prasiolite Brick Stair=Ngazi za Nje za Tofali la Prasioliti Lililo na Ufa
+
+Outer Pumice Stair=Ngazi za Nje za Pumisi
+Outer Pumice Brick Stair=Ngazi za Nje za Tofali la Pumisi
+Outer Pumice Block Stair=Ngazi za Nje za Kizuizi cha Pumisi
+Outer Cracked Pumice Brick Stair=Ngazi za Nje za Tofali la Pumisi Lililo na Ufa
+
+Outer Pyrite Stair=Ngazi za Nje za Pairiti
+Outer Pyrite Brick Stair=Ngazi za Nje za Tofali la Pairiti
+Outer Pyrite Block Stair=Ngazi za Nje za Kizuizi cha Pairiti
+Outer Cracked Pyrite Brick Stair=Ngazi za Nje za Tofali la Pairiti Lililo na Ufa
+
+Outer Quartz Stair=Ngazi za Nje za Kwatzi
+Outer Quartz Brick Stair=Ngazi za Nje za Tofali la Kwatzi
+Outer Quartz Block Stair=Ngazi za Nje za Kizuizi cha Kwatzi
+Outer Cracked Quartz Brick Stair=Ngazi za Nje za Tofali la Kwatzi Lililo na Ufa
+
+Outer Rose Quartz Stair=Ngazi za Nje za Kwatzi Waridi
+Outer Rose Quartz Brick Stair=Ngazi za Nje za Tofali la Kwatzi Waridi
+Outer Rose Quartz Block Stair=Ngazi za Nje za Kizuizi cha Kwatzi Waridi
+Outer Cracked Rose Quartz Brick Stair=Ngazi za Nje za Tofali la Kwatzi Waridi Lililo na Ufa
+
+Outer Rhodonite Stair=Ngazi za Nje za Rhodoniti
+Outer Rhodonite Brick Stair=Ngazi za Nje za Tofali la Rhodoniti
+Outer Rhodonite Block Stair=Ngazi za Nje za Kizuizi cha Rhodoniti
+Outer Cracked Rhodonite Brick Stair=Ngazi za Nje za Tofali la Rhodoniti Lililo na Ufa
+Outer Cobbled Rhodonite Stair=Ngazi za Nje za Mawe ya Rhodoniti
+
+Outer Scoria Stair=Ngazi za Nje za Skoriya
+Outer Scoria Brick Stair=Ngazi za Nje za Tofali la Skoriya
+Outer Scoria Block Stair=Ngazi za Nje za Kizuizi cha Skoriya
+Outer Cracked Scoria Brick Stair=Ngazi za Nje za Tofali la Skoriya Lililo na Ufa
+Outer Cobbled Scoria Stair=Ngazi za Nje za Mawe ya Skoriya
+
+Outer Serpentine Stair=Ngazi za Nje za Serpentini
+Outer Cobbled Serpentine Stair=Ngazi za Nje za Mawe ya Serpentini
+Outer Serpentine Brick Stair=Ngazi za Nje za Tofali la Serpentini
+Outer Serpentine Block Stair=Ngazi za Nje za Kizuizi cha Serpentini
+Outer Cracked Serpentine Brick Stair=Ngazi za Nje za Tofali la Serpentini Lililo na Ufa
+
+Outer Shale Stair=Ngazi za Nje za Sheli
+Outer Shale Brick Stair=Ngazi za Nje za Tofali la Sheli
+Outer Shale Block Stair=Ngazi za Nje za Kizuizi cha Sheli
+Outer Cracked Shale Brick Stair=Ngazi za Nje za Tofali la Sheli Lililo na Ufa
+Outer Cobbled Shale Stair=Ngazi za Nje za Mawe ya Sheli
+
+Outer Slate Stair=Ngazi za Nje za Sleti
+Outer Slate Brick Stair=Ngazi za Nje za Tofali la Sleti
+Outer Slate Block Stair=Ngazi za Nje za Kizuizi cha Sleti
+Outer Cracked Slate Brick Stair=Ngazi za Nje za Tofali la Sleti Lililo na Ufa
+Outer Cobbled Slate Stair=Ngazi za Nje za Mawe ya Sleti
+Outer Slate Tile Stair=Ngazi za Nje za Vigae vya Sleti
+
+Outer Smokey Quartz Stair=Ngazi za Nje za Kwatzi ya Moshi
+Outer Smokey Quartz Brick Stair=Ngazi za Nje za Tofali la Kwatzi ya Moshi
+Outer Smokey Quartz Block Stair=Ngazi za Nje za Kizuizi cha Kwatzi ya Moshi
+Outer Cracked Smokey Quartz Brick Stair=Ngazi za Nje za Tofali la Kwatzi ya Moshi Lililo na Ufa
+
+Outer Soapstone Stair=Ngazi za Nje za Jiwe la Sabuni
+Outer Soapstone Brick Stair=Ngazi za Nje za Tofali la Jiwe la Sabuni
+Outer Soapstone Block Stair=Ngazi za Nje za Kizuizi cha Jiwe la Sabuni
+Outer Cracked Soapstone Brick Stair=Ngazi za Nje za Tofali la Jiwe la Sabuni Lililo na Ufa
+
+Outer Sodalite Stair=Ngazi za Nje za Sodaliti
+Outer Cobbled Sodalite Stair=Ngazi za Nje za Mawe ya Sodaliti
+Outer Sodalite Brick Stair=Ngazi za Nje za Tofali la Sodaliti
+Outer Sodalite Block Stair=Ngazi za Nje za Kizuizi cha Sodaliti
+Outer Cracked Sodalite Brick Stair=Ngazi za Nje za Tofali la Sodaliti Lililo na Ufa
+
+Outer Sugilite Stair=Ngazi za Nje za Sugiliti
+Outer Sugilite Brick Stair=Ngazi za Nje za Tofali la Sugiliti
+Outer Sugilite Block Stair=Ngazi za Nje za Kizuizi cha Sugiliti
+Outer Cracked Sugilite Brick Stair=Ngazi za Nje za Tofali la Sugiliti Lililo na Ufa
+Outer Cobbled Sugilite Stair=Ngazi za Nje za Mawe ya Sugiliti
+
+Outer Green Tourmaline Stair=Ngazi za Nje za Turmalini Kijani
+Outer Green Tourmaline Brick Stair=Ngazi za Nje za Tofali la Turmalini Kijani
+Outer Green Tourmaline Block Stair=Ngazi za Nje za Kizuizi cha Turmalini Kijani
+Outer Cracked Green Tourmaline Brick Stair=Ngazi za Nje za Tofali la Turmalini Kijani Lililo na Ufa
+
+Outer Paraiba Tourmaline Stair=Ngazi za Nje za Turmalini Paraiba
+Outer Paraiba Tourmaline Brick Stair=Ngazi za Nje za Tofali la Turmalini Paraiba
+Outer Paraiba Tourmaline Block Stair=Ngazi za Nje za Kizuizi cha Turmalini Paraiba
+Outer Cracked Paraiba Tourmaline Brick Stair=Ngazi za Nje za Tofali la Turmalini Paraiba Lililo na Ufa
+
+Outer Pink Tourmaline Stair=Ngazi za Nje za Turmalini Waridi
+Outer Pink Tourmaline Brick Stair=Ngazi za Nje za Tofali la Turmalini Waridi
+Outer Pink Tourmaline Block Stair=Ngazi za Nje za Kizuizi cha Turmalini Waridi
+Outer Cracked Pink Tourmaline Brick Stair=Ngazi za Nje za Tofali la Turmalini Waridi Lililo na Ufa
+
+Outer Travertine Stair=Ngazi za Nje za Traversini
+Outer Cobbled Travertine Stair=Ngazi za Nje za Mawe ya Traversini
+Outer Travertine Brick Stair=Ngazi za Nje za Tofali la Traversini
+Outer Travertine Block Stair=Ngazi za Nje za Kizuizi cha Traversini
+Outer Cracked Travertine Brick Stair=Ngazi za Nje za Tofali la Traversini Lililo na Ufa
+
+Outer Yellow Travertine Stair=Ngazi za Nje za Traversini Njano
+Outer Cobbled Yellow Travertine Stair=Ngazi za Nje za Mawe ya Traversini Njano
+Outer Yellow Travertine Brick Stair=Ngazi za Nje za Tofali la Traversini Njano
+Outer Yellow Travertine Block Stair=Ngazi za Nje za Kizuizi cha Traversini Njano
+Outer Cracked Yellow Travertine Brick Stair=Ngazi za Nje za Tofali la Traversini Njano Lililo na Ufa
+
+Outer Beige Tuff Stair=Ngazi za Nje za Tafi Rangi ya Kahawia
+Outer Beige Tuff Block Stair=Ngazi za Nje za Kizuizi cha Tafi Rangi ya Kahawia
+Outer Cobbled Beige Tuff Stair=Ngazi za Nje za Mawe ya Tafi Rangi ya Kahawia
+Outer Beige Tuff Brick Stair=Ngazi za Nje za Tofali la Tafi Rangi ya Kahawia
+Outer Cracked Beige Tuff Stair=Ngazi za Nje za Tafi Rangi ya Kahawia Yenye Nyufa
+
+Outer Grey Tuff Stair=Ngazi za Nje za Tafi Kijivu
+Outer Grey Tuff Block Stair=Ngazi za Nje za Kizuizi cha Tafi Kijivu
+Outer Cobbled Grey Tuff Stair=Ngazi za Nje za Mawe ya Tafi Kijivu
+Outer Grey Tuff Brick Stair=Ngazi za Nje za Tofali la Tafi Kijivu
+Outer Cracked Grey Tuff Stair=Ngazi za Nje za Tafi Kijivu Yenye Nyufa
+
+Outer Red Tuff Stair=Ngazi za Nje za Tafi Nyekundu
+Outer Red Tuff Block Stair=Ngazi za Nje za Kizuizi cha Tafi Nyekundu
+Outer Cobbled Red Tuff Stair=Ngazi za Nje za Mawe ya Tafi Nyekundu
+Outer Red Tuff Brick Stair=Ngazi za Nje za Tofali la Tafi Nyekundu
+Outer Cracked Red Tuff Stair=Ngazi za Nje za Tafi Nyekundu Yenye Nyufa
+
+Outer Turquoise Stair=Ngazi za Nje za Feruzi
+Outer Turquoise Brick Stair=Ngazi za Nje za Tofali la Feruzi
+Outer Turquoise Block Stair=Ngazi za Nje za Kizuizi cha Feruzi
+Outer Cracked Turquoise Brick Stair=Ngazi za Nje za Tofali la Feruzi Lililo na Ufa
+Outer Cobbled Turquoise Stair=Ngazi za Nje za Mawe ya Feruzi
+
+Outer Vivianite Stair=Ngazi za Nje za Vivianiti
+Outer Vivianite Brick Stair=Ngazi za Nje za Tofali la Vivianiti
+Outer Vivianite Block Stair=Ngazi za Nje za Kizuizi cha Vivianiti
+Outer Cracked Vivianite Brick Stair=Ngazi za Nje za Tofali la Vivianiti Lililo na Ufa
+
+### nodes_glowing.lua ###
+
+Glowing Apatite=Apatiti Inayomulika
+Glowing Apatite Block=Kizuizi cha Apatiti Inayomulika
+Cobbled Glowing Apatite=Mawe ya Apatiti Inayomulika
+Glowing Apatite Brick=Tofali la Apatiti Inayomulika
+Cracked Glowing Apatite Brick=Tofali la Apatiti Inayomulika Lililo na Ufa
+
+Glowing Calcite=Kalkiti Inayomulika
+Glowing Calcite Block=Kizuizi cha Kalkiti Inayomulika
+Cobbled Glowing Calcite=Mawe ya Kalkiti Inayomulika
+Glowing Calcite Brick=Tofali la Kalkiti Inayomulika
+Cracked Glowing Calcite Brick=Tofali la Kalkiti Inayomulika Lililo na Ufa
+
+Glowing Esperite=Esperiti Inayomulika
+Glowing Esperite Block=Kizuizi cha Esperiti Inayomulika
+Cobbled Glowing Esperite=Mawe ya Esperiti Inayomulika
+Glowing Esperite Brick=Tofali la Esperiti Inayomulika
+Cracked Glowing Esperite Brick=Tofali la Esperiti Inayomulika Lililo na Ufa
+
+Glowing Fluorite=Fluoriti Inayomulika
+Glowing Fluorite Block=Kizuizi cha Fluoriti Inayomulika
+Cobbled Glowing Fluorite=Mawe ya Fluoriti Inayomulika
+Glowing Fluorite Brick=Tofali la Fluoriti Inayomulika
+Cracked Glowing Fluorite Brick=Tofali la Fluoriti Inayomulika Lililo na Ufa
+
+Glowing Selenite=Seleniti Inayomulika
+Glowing Selenite Block=Kizuizi cha Seleniti Inayomulika
+Cobbled Glowing Selenite=Mawe ya Seleniti Inayomulika
+Glowing Selenite Brick=Tofali la Seleniti Inayomulika
+Cracked Glowing Selenite Brick=Tofali la Seleniti Inayomulika Lililo na Ufa
+
+Glowing Sodalite=Sodaliti Inayomulika
+Glowing Sodalite Block=Kizuizi cha Sodaliti Inayomulika
+Cobbled Glowing Sodalite=Mawe ya Sodaliti Inayomulika
+Glowing Sodalite Brick=Tofali la Sodaliti Inayomulika
+Cracked Glowing Sodalite Brick=Tofali la Sodaliti Inayomulika Lililo na Ufa
+
+Glowing Willemite=Willemiti Inayomulika
+Glowing Willemite Block=Kizuizi cha Willemiti Inayomulika
+Cobbled Glowing Willemite=Mawe ya Willemiti Inayomulika
+Glowing Willemite Brick=Tofali la Willemiti Inayomulika
+Cracked Glowing Willemite Brick=Tofali la Willemiti Inayomulika Lililo na Ufa
+
+### nodes_crystal.lua ###
+
+Budding Aegirine=Aegirini Inayochipua
+Aegirine Crystal=Kristali ya Aegirini
+
+Budding Amazonite=Amazoniti Inayochipua
+Amazonite Crystal=Kristali ya Amazoniti
+
+Budding Amber=Kaharaba Inayochipua
+Amber Crystal=Kristali ya Kaharaba
+
+Budding Amethyst=Amethisti Inayochipua
+Amethyst Crystal=Kristali ya Amethisti
+
+Budding Celestine=Selestini Inayochipua
+Celestine Crystal=Kristali ya Selestini
+
+Budding Chalcanthite=Chalkanthiti Inayochipua
+Chalcanthite Crystal=Kristali ya Chalkanthiti
+
+Budding Citrine=Sitrini Inayochipua
+Citrine Crystal=Kristali ya Sitrini
+
+Budding Crocoite=Krokoiti Inayochipua
+Crocoite Crystal=Kristali ya Krokoiti
+
+Budding Eudialite=Eudialiti Inayochipua
+Eudialite Crystal=Kristali ya Eudialiti
+
+Budding Heliodor=Heliodori Inayochipua
+Heliodor Crystal=Kristali ya Heliodori
+
+Budding Kyanite=Kyaniti Inayochipua
+Kyanite Crystal=Kristali ya Kyaniti
+
+Budding Moonstone=Jiwe la Mwezi Linayochipua
+Moonstone Crystal=Kristali ya Jiwe la Mwezi
+
+Budding Morion Quartz=Kwatzi Morioni Inayochipua
+Morion Quartz Crystal=Kristali ya Kwatzi Morioni
+
+Budding Prasiolite=Prasioliti Inayochipua
+Prasiolite Crystal=Kristali ya Prasioliti
+
+Budding Quartz=Kwatzi Inayochipua
+Quartz Crystal=Kristali ya Kwatzi
+
+Budding Rose Quartz=Kwatzi Waridi Inayochipua
+Rose Quartz Crystal=Kristali ya Kwatzi Waridi
+
+Budding Smokey Quartz=Kwatzi ya Moshi Inayochipua
+Smokey Quartz Crystal=Kristali ya Kwatzi ya Moshi
+
+Budding Green Tourmaline=Turmalini Kijani Inayochipua
+Green Tourmaline Crystal=Kristali ya Turmalini Kijani
+
+Budding Paraiba Tourmaline=Turmalini Paraiba Inayochipua
+Paraiba Tourmaline Crystal=Kristali ya Turmalini Paraiba
+
+Budding Pink Tourmaline=Turmalini Waridi Inayochipua
+Pink Tourmaline Crystal=Kristali ya Turmalini Waridi
+
+Budding Vivianite=Vivianiti Inayochipua
+Vivianite Crystal=Kristali ya Vivianiti

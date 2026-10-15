@@ -1,0 +1,20 @@
+# textdomain: building_blocks
+Granite=
+Grate=
+Streak Free Glass=
+Wood Framed Glass=
+Adobe=
+Fake Grass=
+Hardwood=
+Roof block=
+Tar=
+Marble=
+Brobble Spread=
+Gravel Spread=
+Tarmac Spread=
+Terrycloth towel=
+Chess board tiling=
+Fireplace=
+Small bundle of sticks=
+Tar base=
+Tar Knife=

@@ -1,0 +1,45 @@
+# textdomain: currency
+
+
+### barter.lua ###
+
+Barter Table=Бартерный Стол
+Cancel=Отменить
+Confirm=Подтвердить
+Start=Начать
+
+### shop.lua ###
+
+Exchange=Обмен
+
+### craftitems.lua ###
+
+@1 Minegeld Note=Банконота @1 Minegeld
+@1 Minegeld cent coin=Монета @1 центов Minegeld
+Bundle of random Minegeld notes=Мешок случайных банкнот Minegeld
+
+### safe.lua ###
+
+Safe=Сейф
+Safe (owned by @1)=Сейф (владелец: @1)
+
+### shop.lua ###
+
+Customer gets:=Покупатель получает:
+Customer gives (pay here!)=Покупатели дают (платить здесь!)
+Customers gave:=Покупатели дали:
+Exchange can not be done, check if you put all items!=Обмен невозможен, проверьте, все ли предметы вы положили!
+Exchange can not be done, contact the shop owner.=Обмен невозможен, обратитесь к владельцу магазина.
+Exchange shop (owned by @1)=Обменный магазин (владелец: @1)
+Exchanged!=Обмен завершён!
+In exchange, you give:=В обмен, вы даёте:
+out of stock=нет в наличии
+Owner gives:=Владелец даёт:
+Owner wants:=Владелец хочет:
+
+Owner, Use (E)+Place (right mouse button) for customer interface=Владелец, Используйте (E)+Поставить (правая кнопка мыши) для интерфейса покупателя 
+
+Shop=Магазин
+This is your own shop, you can't exchange to yourself!=Это ваш собственный магазин, вы не можете обмениваться с самим собой!
+You want:=Вы хотите:
+Your stock:=Ваш запас:

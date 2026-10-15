@@ -1,0 +1,9 @@
+# textdomain: homedecor_bedroom
+Bed=
+Bed (king sized)=
+mahogany=
+oak=
+Nightstand with One Drawer (@1)=
+One-drawer Nightstand=
+Nightstand with Two Drawers (@1)=
+Two-drawer Nightstand=

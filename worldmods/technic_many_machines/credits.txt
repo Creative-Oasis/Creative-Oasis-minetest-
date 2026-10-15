@@ -1,0 +1,10 @@
+Thanks to LadyK for crypto.png
+
+MODIFIED TEXTURES/TEXTURES REFERENCED FROM SOMEWHERE ELSE
+technic_many_machines_base_plate.png based on modified carbon plate texture by Obko
+textures modified that are originally by tanmayameher
+technic_many_machines_hydro_side_mk2.png
+technic_many_machines_mv_hydro_top_mk2.png
+textures whose origin i cannot determine
+commit made in 2013 by realbadangel
+technic_many_machines_machine_bottom_mk2.png

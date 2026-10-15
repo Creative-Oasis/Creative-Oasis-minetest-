@@ -1,0 +1,15 @@
+# textdomain: homedecor_common
+Terracotta Roof Tile=Tuile en terre cuite
+Small Wooden Drawer=Petit tiroir en bois
+Not enough room - the space for the headboard is occupied!=Pas assez de place - l'espace pour la tête de lit est occupé !
+Someone already owns the spot where the headboard goes.=Quelqu'un possède déjà l'endroit où doit aller la tête de lit.
+Not enough room - the upper space is occupied!=Pas assez de place - l'espace en haut est occupé !
+Someone already owns that spot.=Quelqu'un est déjà propriétaire de cette zone.
+Furnace=Fourneau
+@1 (empty)=@1 (vide)
+@1 (out of fuel)=@1 (pas de combustible)
+@1 (output bins are full)=@1 (les réceptacles de sortie sont pleins)
+@1 (active: @2%)=@1 (actif : @2%)
+@1 (active)=@1 (actif)
+@1 (owned by @2)=@1 (propriété de @2)
+@1 (Locked)=@1 (verrouillé)

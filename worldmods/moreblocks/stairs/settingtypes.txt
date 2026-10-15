@@ -1,0 +1,5 @@
+# If true, registering stairs w/out a registered recipe item will still create the stair nodes.
+# This is how the stairs mod in minetest game works currently.
+# Unfortunately, they will not be craftable.
+# By default, trying to do this will create an error.
+stairs.legacy_stairs_without_recipeitem (Allow stairs without a base node) bool false

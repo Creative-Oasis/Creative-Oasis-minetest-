@@ -1,0 +1,4 @@
+
+# Enable/disable tools powered by combustion engine
+power_generators_enable_petrol_tools (enable/disable petrol tools) bool true
+

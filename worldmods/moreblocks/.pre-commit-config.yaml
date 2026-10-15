@@ -1,0 +1,69 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.3.0
+    hooks:
+      - id: fix-byte-order-marker
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: mixed-line-ending
+        args: [ --fix=lf ]
+
+  - repo: local
+    hooks:
+      - id: detect_debug
+        name: detect debug
+        language: pygrep
+        entry: DEBUG
+        pass_filenames: true
+        exclude: .pre-commit-config.yaml
+        fail_fast: true
+      - id: date_version
+        name: date version
+        language: script
+        entry: .check_date.sh
+        files: modpack.conf, mod.conf
+        always_run: true
+        fail_fast: true
+      - id: stylua
+        name: stylua
+        language: system
+        entry: stylua
+        pass_filenames: true
+        types: [ file, lua ]
+        fail_fast: true
+      - id: luacheck_invsaw
+        name: luacheck_invsaw
+        language: system
+        entry: luacheck
+        pass_filenames: false
+        args: [--config,./invsaw/.luacheckrc,-q,./invsaw]
+      - id: luacheck_moreblocks
+        name: luacheck_moreblocks
+        language: system
+        entry: luacheck
+        pass_filenames: false
+        args: [--config,./moreblocks/.luacheckrc,-q,./moreblocks]
+      - id: luacheck_moreblocks_legacy_recipes
+        name: luacheck_moreblocks_legacy_recipes
+        language: system
+        entry: luacheck
+        pass_filenames: false
+        args: [--config,./moreblocks_legacy_recipes/.luacheckrc,-q,./moreblocks_legacy_recipes]
+      - id: luacheck_stairs
+        name: luacheck_stairs
+        language: system
+        entry: luacheck
+        pass_filenames: false
+        args: [--config,./stairs/.luacheckrc,-q,./stairs]
+      - id: luacheck_stairsplus
+        name: luacheck_stairsplus
+        language: system
+        entry: luacheck
+        pass_filenames: false
+        args: [--config,./stairsplus/.luacheckrc,-q,./stairsplus]
+      - id: luacheck_stairsplus_legacy
+        name: luacheck_stairsplus_legacy
+        language: system
+        entry: luacheck
+        pass_filenames: false
+        args: [--config,./stairsplus_legacy/.luacheckrc,-q,./stairsplus_legacy]

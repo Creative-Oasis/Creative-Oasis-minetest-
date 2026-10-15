@@ -1,0 +1,12 @@
+# textdomain: homedecor_electronics
+Large Stereo Speaker=
+Large Stereo Speaker, open front=
+Small Surround Speaker=
+Stereo Receiver=
+Projection Screen Material=
+Small CRT Television=
+DVD and VCR=
+Telephone=
+VCR=
+DVD Player=
+Speaker driver=

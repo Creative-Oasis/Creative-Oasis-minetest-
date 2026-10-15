@@ -1,0 +1,16 @@
+# textdomain: homedecor_bathroom
+Bathroom/kitchen tiles (dark)=
+Bathroom/kitchen tiles (medium)=
+Bathroom/kitchen tiles (light)=
+Towel rod with towel=
+Medicine cabinet=
+Toilet=
+Toilet paper=
+Bathroom Sink=
+Bathroom taps/faucet=
+Bathroom taps/faucet (brass)=
+Shower Tray=
+Shower Head=
+Bathtub, clawfoot, with brass taps=
+Bathtub, clawfoot, with chrome taps=
+Bathroom sundries set=

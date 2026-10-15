@@ -1,0 +1,8 @@
+# Include obsidianmese chest. In case you have a mod what is adding chest with the same functionality and you don't want to have both of them, you can disable the chest here.
+x_obsidianmese_chest (Include Obsidianmese Chest) bool true
+
+# Include recipe of engrave sword. The original idea, before the recipe was added, was that this sword is unique and should be obtained by other means and not crafting, e.g. mob drops, dungeon chests, achievements... You can disable the recipe here to enable this idea.
+x_obsidianmese_sword_engraved_recipe (Include Sword Engraved Recipe) bool true
+
+# Some tools will have swing trail visual effect and sound - only on full punch interval
+x_obsidianmese_swing_trail_enabled (Enable Swing Trail) bool true

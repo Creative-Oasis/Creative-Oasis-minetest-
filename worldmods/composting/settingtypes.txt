@@ -1,0 +1,43 @@
+
+composting_amount_per_composter (Maximum amount of biomase per composter) int 200
+
+# Compost clod cost
+#
+# If compost is optimally fulled, it takes around 20 minutes for one compost clod to be finished (time_divider set to 3600) in normal composter and around 3 minutes in electric composter (electric_composter_time set to 10).
+#
+composting_clod_cost (How much amount of compost cost compost clod) int 25
+
+# Basic composting speed is one year.
+# Minetest use default day length 20 minutes, which means that time is divided by 72.
+# time_divider   72  -> ideal composting time 122 hours. 
+# time_divider  720  -> ideal composting time 12 hours. 
+# time_divider 3600  -> ideal composting time 2.5 hours. 
+# time_divider 7200  -> ideal composting time 1.25 hours. 
+#
+composting_time_divider (Time divider for composting speed) int 3600
+
+#
+composting_electric_composter_time (Time per one amount for electric composter) int 10
+
+# Garden soil time divider set how long it take to garden soil be exhauset and changed into farming soil.
+#
+# soil_time_divider    72 -> change to dirt in 61 - 122 hours
+# soil_time_divider   720 -> change to dirt in 6 - 12 hours
+# soil_time_divider  3600 -> change to dirt in 1.25 - 2.5 hours
+# soil_time_divider  7200 -> change to dirt in 0.6125 - 1.25 hours
+#
+composting_soil_time_divider (Time divider for garden soil timer) int 720
+
+# Wet points of garden soil
+#
+# Times is valid for soil_time_divider set to 720.
+# soil_wet_points  25 -> get dry in 71 minutes
+#
+composting_soil_wet_points (Wet points of garden soil) int 25
+
+# Growth acceleration effect
+#
+# Should work with all flora mods wchis uses timer for grow plants.
+#
+composting_growth_acc_effect (Growth acceleration effect) float 0.25 0 1
+

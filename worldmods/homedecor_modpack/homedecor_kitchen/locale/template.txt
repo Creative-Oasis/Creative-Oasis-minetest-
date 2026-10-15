@@ -1,0 +1,22 @@
+# textdomain: homedecor_kitchen
+Refrigerator (stainless steel)=
+Refrigerator=
+Oven=
+Oven (stainless steel)=
+Microwave Oven=
+Dishwasher=
+granite=
+marble=
+steel=
+wood=
+Dishwasher (@1)=
+Kitchen Cabinet=
+Kitchen Cabinet with drawers=
+Kitchen Cabinet (@1 top)=
+Kitchen Cabinet with drawers (@1 top)=
+Half-height Kitchen Cabinet (on ceiling)=
+Kitchen Cabinet with sink=
+Under-sink cabinet=
+Copper pans=
+Kitchen Faucet=
+Paper towels=

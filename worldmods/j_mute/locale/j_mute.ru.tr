@@ -1,0 +1,10 @@
+# textdomain: j_mute
+<playername>=<ник игрока>
+Mute a player=Лишить игрока возможности писать в чат
+@1 has been muted.=@1 был(а) лишен(а) возможности писать в чат.
+Unmute a player=Возвращает игроку возможность писать в чат
+@1 has been unmuted.=@1 снова получил возможность писать в чат.
+<playername> <seconds>=<ник игрока> <кол-во секунд>
+Temporarily mute a player=Временно лишает игрока возможности писать в чат
+@1 has been temporarily muted.=@1 временно был(а) лишен(а) возможности писать в чат.
+Player can mute others.=Игрок может лишать возможности писать в чат других.

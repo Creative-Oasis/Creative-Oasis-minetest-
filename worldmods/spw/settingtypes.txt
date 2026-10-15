@@ -1,0 +1,2 @@
+#    Posicion de mapa de city
+city_pos (Posicion de /city) string (0,0,0)

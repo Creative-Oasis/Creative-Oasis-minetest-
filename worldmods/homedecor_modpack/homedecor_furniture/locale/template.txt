@@ -1,0 +1,3 @@
+# textdomain: homedecor_furniture
+Bookshelf (open-frame)=
+Wall Shelf=

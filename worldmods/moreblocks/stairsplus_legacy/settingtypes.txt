@@ -1,0 +1,20 @@
+# enable registering stairsplus nodes for basic_materials
+stairsplus_legacy.basic_materials () bool true
+
+# enable registering stairsplus nodes for default
+stairsplus_legacy.default () bool true
+
+# enable registering stairsplus nodes for farming
+stairsplus_legacy.farming () bool true
+
+# enable registering stairsplus nodes for gloopblocks
+stairsplus_legacy.gloopblocks () bool true
+
+# enable registering stairsplus nodes for technic
+stairsplus_legacy.technic () bool true
+
+# enable registering stairsplus nodes for prefab
+stairsplus_legacy.prefab () bool true
+
+# enable registering stairsplus nodes for wool
+stairsplus_legacy.wool () bool true

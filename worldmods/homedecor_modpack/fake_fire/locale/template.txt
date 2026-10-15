@@ -1,0 +1,6 @@
+# textdomain: fake_fire
+Ice fire=
+Fancy Fire=
+Glowing Embers=
+Stone chimney top=
+Sandstone chimney top=

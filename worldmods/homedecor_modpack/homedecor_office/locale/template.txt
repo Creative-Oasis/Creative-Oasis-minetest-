@@ -1,0 +1,6 @@
+# textdomain: homedecor_office
+Filing cabinet=
+Desk=
+Desk globe=
+Calendar=
+Date (right-click to update):@n@1=

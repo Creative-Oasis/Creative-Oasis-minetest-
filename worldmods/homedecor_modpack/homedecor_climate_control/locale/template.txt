@@ -1,0 +1,7 @@
+# textdomain: homedecor_climate_control
+Air Conditioner=
+Desk Fan=
+Ceiling Fan=
+Space heater=
+Radiator heater=
+Fan blades=

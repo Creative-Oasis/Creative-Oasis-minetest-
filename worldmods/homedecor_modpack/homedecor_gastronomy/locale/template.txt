@@ -1,0 +1,10 @@
+# textdomain: homedecor_gastronomy
+Cutlery set=
+Brown bottle=
+Four brown bottles=
+Green bottle=
+Four green bottles=
+Four misc brown/green bottles=
+Wine rack=
+Coffee Maker=
+Toaster=

@@ -1,0 +1,10 @@
+# textdomain: j_mute
+<playername>=
+Mute a player=
+@1 has been muted.=
+Unmute a player=
+@1 has been unmuted.=
+<playername> <seconds>=
+Temporarily mute a player=
+@1 has been temporarily muted.=
+Player can mute others.=

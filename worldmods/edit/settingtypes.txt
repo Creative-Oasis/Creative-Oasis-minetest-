@@ -1,0 +1,16 @@
+# The maximum number of entities used to construct the paste preview.
+# If the copied area has a larger number of nodes, some nodes will be randomly excluded from the preview.
+edit_paste_preview_max_entities (Paste preview max entities) int 2000
+
+# The maximum volume of any edit operation. Increase to allow larger operations.
+edit_max_operation_volume (Max edit operation volume) int 20000
+
+# When the fill operation has a larger volume then the specified number, fast node fill will be used.
+# To disable fast node placement, set the threshold to be equil to the max operation volume.
+# To disable slow node placement, set the threshold to 0.
+# With fast node placement, callbacks are not called so some nodes might be broken.
+edit_fast_node_fill_threshold (Fast node fill threshold volume) int 2000
+
+# If one side of the polygon preview is greater than this setting,
+# a wire frame is used instead of the full preview.
+edit_polygon_preview_wire_frame_threshold (Polygon preview wire frame threshold) int 40

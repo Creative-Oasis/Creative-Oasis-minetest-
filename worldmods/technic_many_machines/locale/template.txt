@@ -1,0 +1,52 @@
+
+#items.lua
+Compressor Piston = 
+HV Machine Frame =
+Radiant Alloy =
+Radiant Alloy Dust = 
+Radiant Alloy Plate =
+Radiant Alloy Block =
+
+
+
+
+
+#MACHINES
+
+#advanced_alloy_furnace.lua
+Advanced Alloying = 
+HV Advanced Alloy Furnace = 
+Used for different alloying processes =
+(not useful yet) =
+
+#bulk_alloy_furnace.lua
+HV Bulk Alloy Furnace = 
+6 times faster than a MV alloy furnace =
+HV Bulk Alloy Furnace (Active) = 
+
+#cobblegen.lua
+Cobblestone Generating =
+LV Cobblestone Generator = 
+MV Cobblestone Generator =
+HV Cobblestone Generator =
+
+#drop_extractor.lua
+Drop Extracting =
+LV Drop Extractor =
+MV Drop Extractor =
+HV Drop Extractor =
+
+#mass_compressor.lua
+Bulk Compressing =
+HV Mass Compressor =
+Compresses items in bulk with new recipes =
+
+#movingwalkway.lua
+LV Moving Walkway =
+LV Moving Walkway Active =
+LV Moving Walkway Unpowered =
+
+#sawmill.lua
+Sawmilling =
+HV Sawmill =
+Used for doubling plank yield = 

@@ -1,0 +1,6 @@
+# textdomain: homedecor_clocks
+Plastic analog clock=
+Wooden analog clock=
+Digital clock=
+Alarm clock=
+Grandfather Clock=

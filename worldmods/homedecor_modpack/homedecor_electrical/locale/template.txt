@@ -1,0 +1,4 @@
+# textdomain: homedecor_electrical
+Power Outlet=
+Light switch=
+Doorbell=

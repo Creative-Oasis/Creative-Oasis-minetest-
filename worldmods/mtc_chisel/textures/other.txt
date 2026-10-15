@@ -1,0 +1,13 @@
+Credits:
+
+mtc_chisel_cobblestone_4: Hugues Ross (https://content.minetest.net/packages/Hugues%20Ross/rpg16/)
+mtc_chisel_cobblestone_5: WINNIE (https://content.minetest.net/packages/WINNIE/miner16px/)
+mtc_chisel_cobblestone_6: jp (https://content.minetest.net/packages/jp/pixelbox/)
+mtc_chisel_cobblestone_8: eyekay (https://content.minetest.net/packages/eyekay/alt_tp/)
+mtc_chisel_cobblestone_9: niwla23 (https://content.minetest.net/packages/niwla23/simple/)
+mtc_chisel_cobblestone_10: isaiah658 (https://content.minetest.net/packages/isaiah658/the_pixel_pack/)
+mtc_chisel_cobblestone_11: Wuzzy (https://content.minetest.net/packages/Wuzzy/retroplus/)
+
+
+mtc_chisel_cobblestone 12-21: Yulife (https://github.com/Chisel-Team/Chisel) (https://github.com/Unity-Resource-Pack/Unity/blob/1.16/LICENSE.md)
+mtc_chisel_brick 1: Yulife (https://github.com/Chisel-Team/Chisel) (https://github.com/Unity-Resource-Pack/Unity/blob/1.16/LICENSE.md)

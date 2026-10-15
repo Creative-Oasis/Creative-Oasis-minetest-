@@ -1,0 +1,2 @@
+#This makes hoppers take/give items to chest nodes that are open.
+open_chest_support (Open Chest Support) bool false

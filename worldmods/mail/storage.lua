@@ -1,0 +1,479 @@
+-- storage getter/setter
+local STORAGE_PREFIX = "mail/"
+
+-- create or populate empty fields on an entry
+local function populate_entry(e)
+	e = e or {}
+	e.contacts = e.contacts or {}
+	e.inbox = e.inbox or {}
+	e.outbox = e.outbox or {}
+	e.drafts = e.drafts or {}
+	e.trash = e.trash or {}
+	e.lists = e.lists or {}
+	e.settings = e.settings or {}
+	return e
+end
+
+local cache = {}
+
+-- retrieve the storage entry for the player
+function mail.get_storage_entry(playername)
+	local key = STORAGE_PREFIX .. playername
+	if cache[key] then
+		-- use cached entry
+		return cache[key]
+	end
+
+	local str = mail.storage:get_string(key)
+	local entry
+	if str == "" then
+		-- new entry
+		entry = populate_entry()
+	else
+		-- deserialize existing entry
+		local e = minetest.parse_json(str)
+		entry = populate_entry(e)
+	end
+
+	-- cache for next time
+	cache[key] = entry
+	return entry
+end
+
+-- entries queued for saving
+local save_queued_entries = {}
+
+-- save the storage entry for the player
+function mail.set_storage_entry(playername, entry)
+	local key = STORAGE_PREFIX .. playername
+	-- cache
+	cache[key] = entry
+	-- enqueue for writing
+	save_queued_entries[key] = entry
+end
+
+local function save_worker()
+	for key, entry in pairs(save_queued_entries) do
+		-- write to backend
+		mail.storage:set_string(key, minetest.write_json(entry))
+	end
+
+	-- clear queue
+	save_queued_entries = {}
+
+	-- clear cached entries
+	cache = {}
+
+	-- save every second
+	minetest.after(1, save_worker)
+end
+
+-- start save-worker loop
+save_worker()
+-- save on shutdown
+minetest.register_on_shutdown(save_worker)
+
+-- get a mail by id from the players in- or outbox
+function mail.get_message(playername, msg_id)
+	local entry = mail.get_storage_entry(playername)
+	for _, msg in ipairs(entry.inbox) do
+		if msg.id == msg_id then
+			return msg
+		end
+	end
+	for _, msg in ipairs(entry.outbox) do
+		if msg.id == msg_id then
+			return msg
+		end
+	end
+	for _, msg in ipairs(entry.drafts) do
+		if msg.id == msg_id then
+			return msg
+		end
+	end
+	for _, msg in ipairs(entry.trash) do
+		if msg.id == msg_id then
+			return msg
+		end
+	end
+end
+
+-- get player boxes where a message appears
+function mail.get_message_boxes(playername, msg_id)
+	local entry = mail.get_storage_entry(playername)
+	local boxes = {}
+	for _, msg in ipairs(entry.inbox) do
+		if msg.id == msg_id then
+			table.insert(boxes, "inbox")
+		end
+	end
+	for _, msg in ipairs(entry.outbox) do
+		if msg.id == msg_id then
+			table.insert(boxes, "outbox")
+		end
+	end
+	for _, msg in ipairs(entry.drafts) do
+		if msg.id == msg_id then
+			table.insert(boxes, "drafts")
+		end
+	end
+	for _, msg in ipairs(entry.trash) do
+		if msg.id == msg_id then
+			table.insert(boxes, "trash")
+		end
+	end
+	return boxes
+end
+
+local function safe_find(str, sub)
+	return str and sub and str:find(sub, 1, true) or nil
+end
+
+function mail.sort_messages(messages, sortfield, descending, filter)
+	local results = {}
+	-- Filtering
+	if filter and filter ~= "" then
+		for _, msg in ipairs(messages) do
+			if safe_find(msg.from, filter) or safe_find(msg.to, filter) or safe_find(msg.subject, filter) then
+				table.insert(results, msg)
+			end
+		end
+	else
+		for i = 1, #messages do
+			results[i] = messages[i]
+		end
+	end
+	-- Sorting
+	if sortfield ~= nil then
+		if descending then
+			table.sort(results, function(a, b) return a[sortfield] > b[sortfield] end)
+		else
+			table.sort(results, function(a, b) return a[sortfield] < b[sortfield] end)
+		end
+	end
+	return results
+end
+
+local function mark_property(playername, property, msg_ids, value, hud_update)
+	local entry = mail.get_storage_entry(playername)
+	if type(msg_ids) ~= "table" then -- if this is not a table
+		msg_ids = { msg_ids }
+	end
+	for _, property_msg_id in ipairs(msg_ids) do
+		for _, entry_msg in ipairs(entry.inbox) do
+			if entry_msg.id == property_msg_id then
+				entry_msg[property] = value
+			end
+		end
+	end
+	mail.set_storage_entry(playername, entry)
+	if hud_update then
+		mail.hud_update(playername, entry.inbox)
+	end
+	return
+end
+
+-- marks a mail read by its id
+function mail.mark_read(playername, msg_ids)
+	mark_property(playername, "read", msg_ids, true, true)
+	return
+end
+
+-- marks a mail unread by its id
+function mail.mark_unread(playername, msg_ids)
+	mark_property(playername, "read", msg_ids, false, true)
+	return
+end
+
+-- marks a mail as a spam
+function mail.mark_spam(playername, msg_ids)
+	mark_property(playername, "spam", msg_ids, true)
+	return
+end
+
+-- marks a mail as a non-spam
+function mail.unmark_spam(playername, msg_ids)
+	mark_property(playername, "spam", msg_ids, false)
+	return
+end
+
+-- deletes a mail by its id
+function mail.delete_mail(playername, msg_ids, delete_in_trash)
+	local entry = mail.get_storage_entry(playername)
+	if type(msg_ids) ~= "table" then -- if this is not a table
+		msg_ids = { msg_ids }
+	end
+	for i = #entry.inbox, 1, -1 do
+		for _, deleted_msg in ipairs(msg_ids) do
+			if entry.inbox[i].id == deleted_msg then
+				table.remove(entry.inbox, i)
+				break
+			end
+		end
+	end
+	for i = #entry.outbox, 1, -1 do
+		for _, deleted_msg in ipairs(msg_ids) do
+			if entry.outbox[i].id == deleted_msg then
+				table.remove(entry.outbox, i)
+				break
+			end
+		end
+	end
+	for i = #entry.drafts, 1, -1 do
+		for _, deleted_msg in ipairs(msg_ids) do
+			if entry.drafts[i].id == deleted_msg then
+				table.remove(entry.drafts, i)
+				break
+			end
+		end
+	end
+	if delete_in_trash then
+		for i = #entry.trash, 1, -1 do
+			for _, deleted_msg in ipairs(msg_ids) do
+				if entry.trash[i].id == deleted_msg then
+					table.remove(entry.trash, i)
+					break
+				end
+			end
+		end
+	end
+	mail.set_storage_entry(playername, entry)
+	mail.hud_update(playername, entry.inbox)
+	return
+end
+
+-- move to trash mails by id
+function mail.trash_mail(playername, msg_ids)
+	local entry = mail.get_storage_entry(playername)
+	if type(msg_ids) ~= "table" then -- if this is not a table
+		msg_ids = { msg_ids }
+	end
+	for _, id in ipairs(msg_ids) do
+		local msg = mail.get_message(playername, id)
+		msg.previous_boxes = mail.get_message_boxes(playername, id)
+		table.insert(entry.trash, 1, msg)
+	end
+	mail.set_storage_entry(playername, entry)
+	mail.delete_mail(playername, msg_ids)
+	return
+end
+
+-- restore a mail from trash
+function mail.restore_mail(playername, msg_id)
+	local entry = mail.get_storage_entry(playername)
+	for i, msg in ipairs(entry.trash) do
+		if msg.id == msg_id then
+			-- not anymore store previous boxes in json
+			local previous_boxes = msg.previous_boxes
+			msg.previous_boxes = nil
+			-- restore it in all previous boxes
+			for _, box in ipairs(previous_boxes) do
+				table.insert(entry[box], msg)
+			end
+			-- then delete it from trash
+			table.remove(entry.trash, i)
+		end
+	end
+	mail.set_storage_entry(playername, entry)
+	return
+end
+
+-- clear the trash
+function mail.empty_trash(playername)
+	local entry = mail.get_storage_entry(playername)
+	entry.trash = {}
+	mail.set_storage_entry(playername, entry)
+	return
+end
+
+-- add or update a contact
+function mail.update_contact(playername, contact)
+	local entry = mail.get_storage_entry(playername)
+	local existing_updated = false
+	for i, existing_contact in ipairs(entry.contacts) do
+		if existing_contact.name == contact.name then
+			-- update
+			entry.contacts[i] = contact
+			existing_updated = true
+			break
+		end
+	end
+	if not existing_updated then
+		-- insert
+		table.insert(entry.contacts, contact)
+	end
+	mail.set_storage_entry(playername, entry)
+end
+
+-- deletes a contact
+function mail.delete_contact(playername, contactname)
+	local entry = mail.get_storage_entry(playername)
+	for i, existing_contact in ipairs(entry.contacts) do
+		if existing_contact.name == contactname then
+			-- delete
+			table.remove(entry.contacts, i)
+			mail.set_storage_entry(playername, entry)
+			return
+		end
+	end
+end
+
+-- get all contacts
+function mail.get_contacts(playername)
+	local entry = mail.get_storage_entry(playername)
+	return entry.contacts
+end
+
+-- get a contact
+function mail.get_contact(playername, contactname)
+	local entry = mail.get_storage_entry(playername)
+	for _, existing_contact in ipairs(entry.contacts) do
+		if existing_contact.name == contactname then
+			return existing_contact
+		end
+	end
+	return false
+end
+
+-- returns the maillists of a player
+function mail.get_maillists(playername)
+	local entry = mail.get_storage_entry(playername)
+	return entry.lists
+end
+
+-- returns the maillists of a player
+function mail.get_maillist_by_name(playername, listname)
+	local entry = mail.get_storage_entry(playername)
+	for _, list in ipairs(entry.lists) do
+		if list.name == listname then
+			if not list.players then
+				list.players = {}
+			end
+			return list
+		end
+	end
+end
+
+-- updates or creates a maillist
+function mail.update_maillist(playername, list, old_list_name)
+	local entry = mail.get_storage_entry(playername)
+	for i, existing_list in ipairs(entry.lists) do
+		if existing_list.name == old_list_name then
+			-- delete
+			table.remove(entry.lists, i)
+			break
+		end
+	end
+	-- insert
+	if not list.players then
+		list.players = {}
+	end
+	table.insert(entry.lists, list)
+	mail.set_storage_entry(playername, entry)
+end
+
+function mail.delete_maillist(playername, listname)
+	local entry = mail.get_storage_entry(playername)
+	for i, list in ipairs(entry.lists) do
+		if list.name == listname then
+			-- delete
+			table.remove(entry.lists, i)
+			mail.set_storage_entry(playername, entry)
+			return
+		end
+	end
+end
+
+local function extract_maillists_main(receivers, maillists_owner, expanded_receivers, seen)
+	if type(receivers) == "string" then
+		receivers = mail.parse_player_list(receivers)
+	end
+
+	for _, receiver in pairs(receivers) do
+		if seen[receiver] then
+			-- Do not add/expand this receiver as it is already seen
+			minetest.log("verbose", ("mail: ignoring duplicate receiver %q during maillist expansion"):format(receiver))
+		elseif string.find(receiver, "^@") then
+			seen[receiver] = true
+			local listname = string.sub(receiver, 2)
+			local maillist = mail.get_maillist_by_name(maillists_owner, listname)
+			if maillist then
+				minetest.log("verbose", ("mail: expanding maillist %q"):format(listname))
+				for _, entry in ipairs(maillist.players) do
+					extract_maillists_main(entry, maillists_owner, expanded_receivers, seen)
+				end
+			end
+		else
+			seen[receiver] = true
+			minetest.log("verbose", ("mail: adding %q to receiver list during maillist expansion"):format(receiver))
+			table.insert(expanded_receivers, receiver)
+		end
+	end
+end
+
+function mail.extract_maillists(receivers, maillists_owner)
+	local expanded_receivers = {}
+	extract_maillists_main(receivers, maillists_owner, expanded_receivers, {})
+	return expanded_receivers
+end
+
+function mail.get_setting_default_value(key)
+	return mail.settings[key].default
+end
+
+function mail.get_setting(playername, key)
+	local entry = mail.get_storage_entry(playername)
+	local value = (entry.settings[key] == nil
+		and {mail.get_setting_default_value(key)}
+		or {entry.settings[key]})[1]
+
+	if mail.settings[key].sync then -- in case this setting is shared with another mod
+		local sync_value = mail.settings[key].sync(playername) -- get new value
+		if sync_value then
+			value = sync_value
+			mail.set_setting(playername, key, value, true) -- update the setting in mail storage and don't transfer it again
+		end
+	end
+
+	return value
+end
+
+-- add or update a setting
+function mail.set_setting(playername, key, value, not_transfer)
+	local entry = mail.get_storage_entry(playername)
+	local valid_value = value
+	if mail.settings[key].check then
+		valid_value = mail.settings[key].check(playername, value)
+	end
+	entry.settings[key] = valid_value
+	mail.set_storage_entry(playername, entry)
+	if not not_transfer and mail.settings[key].transfer then -- in case this setting is shared with another mod
+		mail.settings[key].transfer(playername, valid_value)
+	end
+end
+
+function mail.reset_settings(playername)
+	local entry = mail.get_storage_entry(playername)
+	entry.settings = {}
+	mail.set_storage_entry(playername, entry)
+end
+
+function mail.pairs_by_keys(t, f)
+	-- http://www.lua.org/pil/19.3.html
+	local a = {}
+	for n in pairs(t) do table.insert(a, n) end
+	table.sort(a, f)
+	local i = 0		-- iterator variable
+	local iter = function()		-- iterator function
+		i = i + 1
+		if a[i] == nil then
+			return nil
+		else
+			--return a[i], t[a[i]]
+			-- add the current position and the length for convenience
+			return a[i], t[a[i]], i, #a
+		end
+	end
+	return iter
+end
+

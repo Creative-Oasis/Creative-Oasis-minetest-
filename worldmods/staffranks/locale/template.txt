@@ -1,0 +1,35 @@
+# textdomain: staffranks
+This privilege allows you to manage ranks=
+[Error] =
+The player @1 doesn't exist.=
+The player @1 is not connected.=
+Please specify a player name.=
+@1's rank has been reinisialised.=
+@1 has cleared the rank of @2=
+The player @1 has no rank.=
+@1's rank has been set to @2.=
+@1 has set the rank of @2 to @3=
+The @1 rank does not exist.=
+@1 tried to set the rank of @2 to a non-existent rank: @3=
+The player @1 has the rank @2.=
+Add, view or see all ranks of players.=
+player=
+List of all ranks: @1=
+Add a rank to player.=
+@@If the rank name is 'clear' it resets the player's rank.=
+@@See /ranks_list to view all available ranks.=
+See the list of all ranks.=
+View a player's rank.=
+@1 sent a message: @2=
+Administrator=
+Moderator=
+Developer=
+Builder=
+Contributor=
+VIP=
+
+
+##### not used anymore #####
+
+# textdomain: staffranks
+@1 [MESSAGE] @2@n=

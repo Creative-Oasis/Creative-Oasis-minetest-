@@ -1,0 +1,2 @@
+# whether to increase the yield of certain crafting recipes as in moreblocks 2.*
+moreblocks_legacy_recipes.enabled (Enable legacy recipes) bool false
